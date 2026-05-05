@@ -1,0 +1,5455 @@
+[
+  {
+    "slug": "lamball",
+    "name": "Lamball",
+    "number": 1,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SheepBall_icon_normal.png",
+    "guideId": "lamball",
+    "sourceUrl": "https://palworld.gg/pal/lamball"
+  },
+  {
+    "slug": "cattiva",
+    "name": "Cattiva",
+    "number": 2,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_PinkCat_icon_normal.png",
+    "guideId": "cattiva",
+    "sourceUrl": "https://palworld.gg/pal/cattiva"
+  },
+  {
+    "slug": "chikipi",
+    "name": "Chikipi",
+    "number": 3,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_ChickenPal_icon_normal.png",
+    "guideId": "chikipi",
+    "sourceUrl": "https://palworld.gg/pal/chikipi"
+  },
+  {
+    "slug": "lifmunk",
+    "name": "Lifmunk",
+    "number": 4,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Carbunclo_icon_normal.png",
+    "guideId": "lifmunk",
+    "sourceUrl": "https://palworld.gg/pal/lifmunk"
+  },
+  {
+    "slug": "foxparks",
+    "name": "Foxparks",
+    "number": 5,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Kitsunebi_icon_normal.png",
+    "guideId": "foxparks",
+    "sourceUrl": "https://palworld.gg/pal/foxparks"
+  },
+  {
+    "slug": "foxparks-cryst",
+    "name": "Foxparks Cryst",
+    "number": 5,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Kitsunebi_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/foxparks-cryst"
+  },
+  {
+    "slug": "fuack",
+    "name": "Fuack",
+    "number": 6,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BluePlatypus_icon_normal.png",
+    "guideId": "fuack",
+    "sourceUrl": "https://palworld.gg/pal/fuack"
+  },
+  {
+    "slug": "fuack-ignis",
+    "name": "Fuack Ignis",
+    "number": 6,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Kindling",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BluePlatypus_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/fuack-ignis"
+  },
+  {
+    "slug": "sparkit",
+    "name": "Sparkit",
+    "number": 7,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_ElecCat_icon_normal.png",
+    "guideId": "sparkit",
+    "sourceUrl": "https://palworld.gg/pal/sparkit"
+  },
+  {
+    "slug": "tanzee",
+    "name": "Tanzee",
+    "number": 8,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Monkey_icon_normal.png",
+    "guideId": "tanzee",
+    "sourceUrl": "https://palworld.gg/pal/tanzee"
+  },
+  {
+    "slug": "rooby",
+    "name": "Rooby",
+    "number": 9,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_FlameBambi_icon_normal.png",
+    "guideId": "rooby",
+    "sourceUrl": "https://palworld.gg/pal/rooby"
+  },
+  {
+    "slug": "pengullet",
+    "name": "Pengullet",
+    "number": 10,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Water",
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Penguin_icon_normal.png",
+    "guideId": "pengullet",
+    "sourceUrl": "https://palworld.gg/pal/pengullet"
+  },
+  {
+    "slug": "pengullet-lux",
+    "name": "Pengullet Lux",
+    "number": 10,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Penguin_Electric_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/pengullet-lux"
+  },
+  {
+    "slug": "penking",
+    "name": "Penking",
+    "number": 11,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Water",
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Watering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_CaptainPenguin_icon_normal.png",
+    "guideId": "penking",
+    "sourceUrl": "https://palworld.gg/pal/penking"
+  },
+  {
+    "slug": "penking-lux",
+    "name": "Penking Lux",
+    "number": 11,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Watering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_CaptainPenguin_Black_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/penking-lux"
+  },
+  {
+    "slug": "jolthog",
+    "name": "Jolthog",
+    "number": 12,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Hedgehog_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/jolthog"
+  },
+  {
+    "slug": "jolthog-cryst",
+    "name": "Jolthog Cryst",
+    "number": 12,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Hedgehog_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/jolthog-cryst"
+  },
+  {
+    "slug": "gumoss",
+    "name": "Gumoss",
+    "number": 13,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Planting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_PlantSlime_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/gumoss"
+  },
+  {
+    "slug": "vixy",
+    "name": "Vixy",
+    "number": 14,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_CuteFox_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/vixy"
+  },
+  {
+    "slug": "hoocrates",
+    "name": "Hoocrates",
+    "number": 15,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WizardOwl_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/hoocrates"
+  },
+  {
+    "slug": "teafant",
+    "name": "Teafant",
+    "number": 16,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Ganesha_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/teafant"
+  },
+  {
+    "slug": "depresso",
+    "name": "Depresso",
+    "number": 17,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_NegativeKoala_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/depresso"
+  },
+  {
+    "slug": "cremis",
+    "name": "Cremis",
+    "number": 18,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WoolFox_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/cremis"
+  },
+  {
+    "slug": "daedream",
+    "name": "Daedream",
+    "number": 19,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_DreamDemon_icon_normal.png",
+    "guideId": "daedream",
+    "sourceUrl": "https://palworld.gg/pal/daedream"
+  },
+  {
+    "slug": "rushoar",
+    "name": "Rushoar",
+    "number": 20,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Boar_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/rushoar"
+  },
+  {
+    "slug": "nox",
+    "name": "Nox",
+    "number": 21,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_NightFox_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/nox"
+  },
+  {
+    "slug": "fuddler",
+    "name": "Fuddler",
+    "number": 22,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_CuteMole_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/fuddler"
+  },
+  {
+    "slug": "killamari",
+    "name": "Killamari",
+    "number": 23,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Dark",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_NegativeOctopus_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/killamari"
+  },
+  {
+    "slug": "killamari-primo",
+    "name": "Killamari Primo",
+    "number": 23,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Neutral",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_NegativeOctopus_Neutral_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/killamari-primo"
+  },
+  {
+    "slug": "mau",
+    "name": "Mau",
+    "number": 24,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Bastet_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/mau"
+  },
+  {
+    "slug": "mau-cryst",
+    "name": "Mau Cryst",
+    "number": 24,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 1
+      },
+      {
+        "name": "Farming",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Bastet_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/mau-cryst"
+  },
+  {
+    "slug": "celaray",
+    "name": "Celaray",
+    "number": 25,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_FlyingManta_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/celaray"
+  },
+  {
+    "slug": "celaray-lux",
+    "name": "Celaray Lux",
+    "number": 25,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Water",
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_FlyingManta_Thunder_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/celaray-lux"
+  },
+  {
+    "slug": "direhowl",
+    "name": "Direhowl",
+    "number": 26,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Garm_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/direhowl"
+  },
+  {
+    "slug": "tocotoco",
+    "name": "Tocotoco",
+    "number": 27,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_ColorfulBird_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/tocotoco"
+  },
+  {
+    "slug": "flopie",
+    "name": "Flopie",
+    "number": 28,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_FlowerRabbit_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/flopie"
+  },
+  {
+    "slug": "mozzarina",
+    "name": "Mozzarina",
+    "number": 29,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_CowPal_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/mozzarina"
+  },
+  {
+    "slug": "bristla",
+    "name": "Bristla",
+    "number": 30,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LittleBriarRose_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/bristla"
+  },
+  {
+    "slug": "gobfin",
+    "name": "Gobfin",
+    "number": 31,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SharkKid_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/gobfin"
+  },
+  {
+    "slug": "gobfin-ignis",
+    "name": "Gobfin Ignis",
+    "number": 31,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SharkKid_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/gobfin-ignis"
+  },
+  {
+    "slug": "hangyu",
+    "name": "Hangyu",
+    "number": 32,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WindChimes_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/hangyu"
+  },
+  {
+    "slug": "hangyu-cryst",
+    "name": "Hangyu Cryst",
+    "number": 32,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Cooling",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WindChimes_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/hangyu-cryst"
+  },
+  {
+    "slug": "mossanda",
+    "name": "Mossanda",
+    "number": 33,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GrassPanda_icon_normal.png",
+    "guideId": "mossanda",
+    "sourceUrl": "https://palworld.gg/pal/mossanda"
+  },
+  {
+    "slug": "mossanda-lux",
+    "name": "Mossanda Lux",
+    "number": 33,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Generating Electricity",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GrassPanda_Electric_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/mossanda-lux"
+  },
+  {
+    "slug": "woolipop",
+    "name": "Woolipop",
+    "number": 34,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SweetsSheep_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/woolipop"
+  },
+  {
+    "slug": "caprity",
+    "name": "Caprity",
+    "number": 35,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Farming",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BerryGoat_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/caprity"
+  },
+  {
+    "slug": "caprity-noct",
+    "name": "Caprity Noct",
+    "number": 35,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Farming",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BerryGoat_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/caprity-noct"
+  },
+  {
+    "slug": "melpaca",
+    "name": "Melpaca",
+    "number": 36,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Alpaca_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/melpaca"
+  },
+  {
+    "slug": "eikthyrdeer",
+    "name": "Eikthyrdeer",
+    "number": 37,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Deer_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/eikthyrdeer"
+  },
+  {
+    "slug": "eikthyrdeer-terra",
+    "name": "Eikthyrdeer Terra",
+    "number": 37,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Deer_Ground_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/eikthyrdeer-terra"
+  },
+  {
+    "slug": "nitewing",
+    "name": "Nitewing",
+    "number": 38,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_HawkBird_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/nitewing"
+  },
+  {
+    "slug": "ribbuny",
+    "name": "Ribbuny",
+    "number": 39,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_PinkRabbit_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/ribbuny"
+  },
+  {
+    "slug": "ribbuny-botan",
+    "name": "Ribbuny Botan",
+    "number": 39,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_PinkRabbit_Grass_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/ribbuny-botan"
+  },
+  {
+    "slug": "incineram",
+    "name": "Incineram",
+    "number": 40,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Kindling",
+        "level": 1
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Baphomet_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/incineram"
+  },
+  {
+    "slug": "incineram-noct",
+    "name": "Incineram Noct",
+    "number": 40,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Baphomet_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/incineram-noct"
+  },
+  {
+    "slug": "cinnamoth",
+    "name": "Cinnamoth",
+    "number": 41,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_CuteButterfly_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/cinnamoth"
+  },
+  {
+    "slug": "arsox",
+    "name": "Arsox",
+    "number": 42,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_FlameBuffalo_icon_normal.png",
+    "guideId": "arsox",
+    "sourceUrl": "https://palworld.gg/pal/arsox"
+  },
+  {
+    "slug": "dumud",
+    "name": "Dumud",
+    "number": 43,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Ground",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LazyCatfish_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/dumud"
+  },
+  {
+    "slug": "dumud-gild",
+    "name": "Dumud Gild",
+    "number": 43,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Ground",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LazyCatfish_Gold_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/dumud-gild"
+  },
+  {
+    "slug": "cawgnito",
+    "name": "Cawgnito",
+    "number": 44,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_DarkCrow_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/cawgnito"
+  },
+  {
+    "slug": "leezpunk",
+    "name": "Leezpunk",
+    "number": 45,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LizardMan_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/leezpunk"
+  },
+  {
+    "slug": "leezpunk-ignis",
+    "name": "Leezpunk Ignis",
+    "number": 45,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Kindling",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LizardMan_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/leezpunk-ignis"
+  },
+  {
+    "slug": "loupmoon",
+    "name": "Loupmoon",
+    "number": 46,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Werewolf_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/loupmoon"
+  },
+  {
+    "slug": "loupmoon-cryst",
+    "name": "Loupmoon Cryst",
+    "number": 46,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 3
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Werewolf_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/loupmoon-cryst"
+  },
+  {
+    "slug": "galeclaw",
+    "name": "Galeclaw",
+    "number": 47,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Eagle_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/galeclaw"
+  },
+  {
+    "slug": "robinquill",
+    "name": "Robinquill",
+    "number": 48,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_RobinHood_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/robinquill"
+  },
+  {
+    "slug": "robinquill-terra",
+    "name": "Robinquill Terra",
+    "number": 48,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_RobinHood_Ground_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/robinquill-terra"
+  },
+  {
+    "slug": "gorirat",
+    "name": "Gorirat",
+    "number": 49,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Gorilla_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/gorirat"
+  },
+  {
+    "slug": "gorirat-terra",
+    "name": "Gorirat Terra",
+    "number": 49,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Gorilla_Ground_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/gorirat-terra"
+  },
+  {
+    "slug": "beegarde",
+    "name": "Beegarde",
+    "number": 50,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      },
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SoldierBee_icon_normal.png",
+    "guideId": "beegarde",
+    "sourceUrl": "https://palworld.gg/pal/beegarde"
+  },
+  {
+    "slug": "elizabee",
+    "name": "Elizabee",
+    "number": 51,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_QueenBee_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/elizabee"
+  },
+  {
+    "slug": "grintale",
+    "name": "Grintale",
+    "number": 52,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_NaughtyCat_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/grintale"
+  },
+  {
+    "slug": "swee",
+    "name": "Swee",
+    "number": 53,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_MopBaby_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/swee"
+  },
+  {
+    "slug": "sweepa",
+    "name": "Sweepa",
+    "number": 54,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_MopKing_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/sweepa"
+  },
+  {
+    "slug": "chillet",
+    "name": "Chillet",
+    "number": 55,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WeaselDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/chillet"
+  },
+  {
+    "slug": "chillet-ignis",
+    "name": "Chillet Ignis",
+    "number": 55,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Fire",
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WeaselDragon_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/chillet-ignis"
+  },
+  {
+    "slug": "univolt",
+    "name": "Univolt",
+    "number": 56,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Kirin_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/univolt"
+  },
+  {
+    "slug": "foxcicle",
+    "name": "Foxcicle",
+    "number": 57,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_IceFox_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/foxcicle"
+  },
+  {
+    "slug": "pyrin",
+    "name": "Pyrin",
+    "number": 58,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_FireKirin_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/pyrin"
+  },
+  {
+    "slug": "pyrin-noct",
+    "name": "Pyrin Noct",
+    "number": 58,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_FireKirin_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/pyrin-noct"
+  },
+  {
+    "slug": "reindrix",
+    "name": "Reindrix",
+    "number": 59,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_IceDeer_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/reindrix"
+  },
+  {
+    "slug": "rayhound",
+    "name": "Rayhound",
+    "number": 60,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_ThunderDog_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/rayhound"
+  },
+  {
+    "slug": "kitsun",
+    "name": "Kitsun",
+    "number": 61,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_AmaterasuWolf_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/kitsun"
+  },
+  {
+    "slug": "kitsun-noct",
+    "name": "Kitsun Noct",
+    "number": 61,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_AmaterasuWolf_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/kitsun-noct"
+  },
+  {
+    "slug": "dazzi",
+    "name": "Dazzi",
+    "number": 62,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_RaijinDaughter_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/dazzi"
+  },
+  {
+    "slug": "dazzi-noct",
+    "name": "Dazzi Noct",
+    "number": 62,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_RaijinDaughter_Water_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/dazzi-noct"
+  },
+  {
+    "slug": "lunaris",
+    "name": "Lunaris",
+    "number": 63,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Mutant_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/lunaris"
+  },
+  {
+    "slug": "dinossom",
+    "name": "Dinossom",
+    "number": 64,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Grass",
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FlowerDinosaur_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/dinossom"
+  },
+  {
+    "slug": "dinossom-lux",
+    "name": "Dinossom Lux",
+    "number": 64,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Electric",
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Generating Electricity",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FlowerDinosaur_Electric_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/dinossom-lux"
+  },
+  {
+    "slug": "surfent",
+    "name": "Surfent",
+    "number": 65,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Serpent_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/surfent"
+  },
+  {
+    "slug": "surfent-terra",
+    "name": "Surfent Terra",
+    "number": 65,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Serpent_Ground_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/surfent-terra"
+  },
+  {
+    "slug": "maraith",
+    "name": "Maraith",
+    "number": 66,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_GhostBeast_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/maraith"
+  },
+  {
+    "slug": "digtoise",
+    "name": "Digtoise",
+    "number": 67,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_DrillGame_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/digtoise"
+  },
+  {
+    "slug": "tombat",
+    "name": "Tombat",
+    "number": 68,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_CatBat_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/tombat"
+  },
+  {
+    "slug": "lovander",
+    "name": "Lovander",
+    "number": 69,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_PinkLizard_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/lovander"
+  },
+  {
+    "slug": "flambelle",
+    "name": "Flambelle",
+    "number": 70,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Kindling",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LavaGirl_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/flambelle"
+  },
+  {
+    "slug": "vanwyrm",
+    "name": "Vanwyrm",
+    "number": 71,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Kindling",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BirdDragon_icon_normal.png",
+    "guideId": "vanwyrm",
+    "sourceUrl": "https://palworld.gg/pal/vanwyrm"
+  },
+  {
+    "slug": "vanwyrm-cryst",
+    "name": "Vanwyrm Cryst",
+    "number": 71,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Ice",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Cooling",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_BirdDragon_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/vanwyrm-cryst"
+  },
+  {
+    "slug": "bushi",
+    "name": "Bushi",
+    "number": 72,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 3
+      },
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Ronin_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/bushi"
+  },
+  {
+    "slug": "bushi-noct",
+    "name": "Bushi Noct",
+    "number": 72,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 3
+      },
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Ronin_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/bushi-noct"
+  },
+  {
+    "slug": "beakon",
+    "name": "Beakon",
+    "number": 73,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Generating Electricity",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_ThunderBird_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/beakon"
+  },
+  {
+    "slug": "ragnahawk",
+    "name": "Ragnahawk",
+    "number": 74,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_RedArmorBird_icon_normal.png",
+    "guideId": "ragnahawk",
+    "sourceUrl": "https://palworld.gg/pal/ragnahawk"
+  },
+  {
+    "slug": "katress",
+    "name": "Katress",
+    "number": 75,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_CatMage_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/katress"
+  },
+  {
+    "slug": "katress-ignis",
+    "name": "Katress Ignis",
+    "number": 75,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_CatMage_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/katress-ignis"
+  },
+  {
+    "slug": "wixen",
+    "name": "Wixen",
+    "number": 76,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FoxMage_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/wixen"
+  },
+  {
+    "slug": "wixen-noct",
+    "name": "Wixen Noct",
+    "number": 76,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FoxMage_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/wixen-noct"
+  },
+  {
+    "slug": "verdash",
+    "name": "Verdash",
+    "number": 77,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 3
+      },
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GrassRabbitMan_icon_normal.png",
+    "guideId": "verdash",
+    "sourceUrl": "https://palworld.gg/pal/verdash"
+  },
+  {
+    "slug": "vaelet",
+    "name": "Vaelet",
+    "number": 78,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Medicine Production",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_VioletFairy_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/vaelet"
+  },
+  {
+    "slug": "sibelyx",
+    "name": "Sibelyx",
+    "number": 79,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Farming",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WhiteMoth_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/sibelyx"
+  },
+  {
+    "slug": "elphidran",
+    "name": "Elphidran",
+    "number": 80,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FairyDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/elphidran"
+  },
+  {
+    "slug": "elphidran-aqua",
+    "name": "Elphidran Aqua",
+    "number": 80,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FairyDragon_Water_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/elphidran-aqua"
+  },
+  {
+    "slug": "kelpsea",
+    "name": "Kelpsea",
+    "number": 81,
+    "rarity": "Common",
+    "rarityLevel": 1,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Kelpie_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/kelpsea"
+  },
+  {
+    "slug": "kelpsea-ignis",
+    "name": "Kelpsea Ignis",
+    "number": 81,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Kindling",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Kelpie_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/kelpsea-ignis"
+  },
+  {
+    "slug": "azurobe",
+    "name": "Azurobe",
+    "number": 82,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Water",
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_BlueDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/azurobe"
+  },
+  {
+    "slug": "azurobe-cryst",
+    "name": "Azurobe Cryst",
+    "number": 82,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_BlueDragon_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/azurobe-cryst"
+  },
+  {
+    "slug": "cryolinx",
+    "name": "Cryolinx",
+    "number": 83,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WhiteTiger_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/cryolinx"
+  },
+  {
+    "slug": "cryolinx-terra",
+    "name": "Cryolinx Terra",
+    "number": 83,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WhiteTiger_Ground_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/cryolinx-terra"
+  },
+  {
+    "slug": "blazehowl",
+    "name": "Blazehowl",
+    "number": 84,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Manticore_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/blazehowl"
+  },
+  {
+    "slug": "blazehowl-noct",
+    "name": "Blazehowl Noct",
+    "number": 84,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Manticore_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/blazehowl-noct"
+  },
+  {
+    "slug": "relaxaurus",
+    "name": "Relaxaurus",
+    "number": 85,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LazyDragon_icon_normal.png",
+    "guideId": "relaxaurus",
+    "sourceUrl": "https://palworld.gg/pal/relaxaurus"
+  },
+  {
+    "slug": "relaxaurus-lux",
+    "name": "Relaxaurus Lux",
+    "number": 85,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LazyDragon_Electric_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/relaxaurus-lux"
+  },
+  {
+    "slug": "broncherry",
+    "name": "Broncherry",
+    "number": 86,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Planting",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_SakuraSaurus_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/broncherry"
+  },
+  {
+    "slug": "broncherry-aqua",
+    "name": "Broncherry Aqua",
+    "number": 86,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Grass",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_SakuraSaurus_Water_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/broncherry-aqua"
+  },
+  {
+    "slug": "petallia",
+    "name": "Petallia",
+    "number": 87,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Planting",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_FlowerDoll_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/petallia"
+  },
+  {
+    "slug": "reptyro",
+    "name": "Reptyro",
+    "number": 88,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Fire",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 3
+      },
+      {
+        "name": "Mining",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_VolcanicMonster_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/reptyro"
+  },
+  {
+    "slug": "reptyro-cryst",
+    "name": "Reptyro Cryst",
+    "number": 88,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 3
+      },
+      {
+        "name": "Mining",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_VolcanicMonster_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/reptyro-cryst"
+  },
+  {
+    "slug": "kingpaca",
+    "name": "Kingpaca",
+    "number": 89,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_KingAlpaca_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/kingpaca"
+  },
+  {
+    "slug": "kingpaca-cryst",
+    "name": "Kingpaca Cryst",
+    "number": 89,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_KingAlpaca_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/kingpaca-cryst"
+  },
+  {
+    "slug": "mammorest",
+    "name": "Mammorest",
+    "number": 90,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GrassMammoth_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/mammorest"
+  },
+  {
+    "slug": "mammorest-cryst",
+    "name": "Mammorest Cryst",
+    "number": 90,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GrassMammoth_Ice_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/mammorest-cryst"
+  },
+  {
+    "slug": "wumpo",
+    "name": "Wumpo",
+    "number": 91,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 4
+      },
+      {
+        "name": "Deforesting",
+        "level": 3
+      },
+      {
+        "name": "Cooling",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Yeti_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/wumpo"
+  },
+  {
+    "slug": "wumpo-botan",
+    "name": "Wumpo Botan",
+    "number": 91,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 4
+      },
+      {
+        "name": "Deforesting",
+        "level": 3
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_Yeti_Grass_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/wumpo-botan"
+  },
+  {
+    "slug": "warsect",
+    "name": "Warsect",
+    "number": 92,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Ground",
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Planting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_HerculesBeetle_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/warsect"
+  },
+  {
+    "slug": "warsect-terra",
+    "name": "Warsect Terra",
+    "number": 92,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_HerculesBeetle_Ground_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/warsect-terra"
+  },
+  {
+    "slug": "fenglope",
+    "name": "Fenglope",
+    "number": 93,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FengyunDeeper_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/fenglope"
+  },
+  {
+    "slug": "fenglope-lux",
+    "name": "Fenglope Lux",
+    "number": 93,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Generating Electricity",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FengyunDeeper_Electric_icon_norma.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/fenglope-lux"
+  },
+  {
+    "slug": "felbat",
+    "name": "Felbat",
+    "number": 94,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Medicine Production",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_CatVampire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/felbat"
+  },
+  {
+    "slug": "quivern",
+    "name": "Quivern",
+    "number": 95,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SkyDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/quivern"
+  },
+  {
+    "slug": "quivern-botan",
+    "name": "Quivern Botan",
+    "number": 95,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Dragon",
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SkyDragon_Grass_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/quivern-botan"
+  },
+  {
+    "slug": "blazamut",
+    "name": "Blazamut",
+    "number": 96,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 4
+      },
+      {
+        "name": "Kindling",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_KingBahamut_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/blazamut"
+  },
+  {
+    "slug": "blazamut-ryu",
+    "name": "Blazamut Ryu",
+    "number": 96,
+    "rarity": "Epic",
+    "rarityLevel": 10,
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 4
+      },
+      {
+        "name": "Mining",
+        "level": 4
+      }
+    ],
+    "image": "/pal/T_KingBahamut_Dragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/blazamut-ryu"
+  },
+  {
+    "slug": "helzephyr",
+    "name": "Helzephyr",
+    "number": 97,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Transporting",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_HadesBird_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/helzephyr"
+  },
+  {
+    "slug": "helzephyr-lux",
+    "name": "Helzephyr Lux",
+    "number": 97,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_HadesBird_Electric_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/helzephyr-lux"
+  },
+  {
+    "slug": "astegon",
+    "name": "Astegon",
+    "number": 98,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Dragon",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 4
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BlackMetalDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/astegon"
+  },
+  {
+    "slug": "menasting",
+    "name": "Menasting",
+    "number": 99,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Dark",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_DarkScorpion_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/menasting"
+  },
+  {
+    "slug": "menasting-terra",
+    "name": "Menasting Terra",
+    "number": 99,
+    "rarity": "Epic",
+    "rarityLevel": 10,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_DarkScorpion_Ground_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/menasting-terra"
+  },
+  {
+    "slug": "anubis",
+    "name": "Anubis",
+    "number": 100,
+    "rarity": "Epic",
+    "rarityLevel": 10,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 4
+      },
+      {
+        "name": "Mining",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Anubis_icon_normal.png",
+    "guideId": "anubis",
+    "sourceUrl": "https://palworld.gg/pal/anubis"
+  },
+  {
+    "slug": "jormuntide",
+    "name": "Jormuntide",
+    "number": 101,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Dragon",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 4
+      }
+    ],
+    "image": "/pal/T_Umihebi_icon_normal.png",
+    "guideId": "jormuntide",
+    "sourceUrl": "https://palworld.gg/pal/jormuntide"
+  },
+  {
+    "slug": "jormuntide-ignis",
+    "name": "Jormuntide Ignis",
+    "number": 101,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Dragon",
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 4
+      }
+    ],
+    "image": "/pal/T_Umihebi_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/jormuntide-ignis"
+  },
+  {
+    "slug": "suzaku",
+    "name": "Suzaku",
+    "number": 102,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_Suzaku_icon_normal.png",
+    "guideId": "suzaku",
+    "sourceUrl": "https://palworld.gg/pal/suzaku"
+  },
+  {
+    "slug": "suzaku-aqua",
+    "name": "Suzaku Aqua",
+    "number": 102,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_Suzaku_Water_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/suzaku-aqua"
+  },
+  {
+    "slug": "grizzbolt",
+    "name": "Grizzbolt",
+    "number": 103,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_ElecPanda_icon_normal.png",
+    "guideId": "grizzbolt",
+    "sourceUrl": "https://palworld.gg/pal/grizzbolt"
+  },
+  {
+    "slug": "lyleen",
+    "name": "Lyleen",
+    "number": 104,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Planting",
+        "level": 4
+      },
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Medicine Production",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_LilyQueen_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/lyleen"
+  },
+  {
+    "slug": "lyleen-noct",
+    "name": "Lyleen Noct",
+    "number": 104,
+    "rarity": "Epic",
+    "rarityLevel": 10,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Medicine Production",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_LilyQueen_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/lyleen-noct"
+  },
+  {
+    "slug": "faleris",
+    "name": "Faleris",
+    "number": 105,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_Horus_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/faleris"
+  },
+  {
+    "slug": "faleris-aqua",
+    "name": "Faleris Aqua",
+    "number": 105,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 4
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_Horus_Water_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/faleris-aqua"
+  },
+  {
+    "slug": "orserk",
+    "name": "Orserk",
+    "number": 106,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 4
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_ThunderDragonMan_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/orserk"
+  },
+  {
+    "slug": "shadowbeak",
+    "name": "Shadowbeak",
+    "number": 107,
+    "rarity": "Epic",
+    "rarityLevel": 10,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BlackGriffon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/shadowbeak"
+  },
+  {
+    "slug": "paladius",
+    "name": "Paladius",
+    "number": 108,
+    "rarity": "Legendary",
+    "rarityLevel": 20,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_SaintCentaur_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/paladius"
+  },
+  {
+    "slug": "necromus",
+    "name": "Necromus",
+    "number": 109,
+    "rarity": "Legendary",
+    "rarityLevel": 20,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_BlackCentaur_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/necromus"
+  },
+  {
+    "slug": "frostallion",
+    "name": "Frostallion",
+    "number": 110,
+    "rarity": "Legendary",
+    "rarityLevel": 20,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 4
+      }
+    ],
+    "image": "/pal/T_IceHorse_icon_normal.png",
+    "guideId": "frostallion",
+    "sourceUrl": "https://palworld.gg/pal/frostallion"
+  },
+  {
+    "slug": "frostallion-noct",
+    "name": "Frostallion Noct",
+    "number": 110,
+    "rarity": "Legendary",
+    "rarityLevel": 20,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 4
+      }
+    ],
+    "image": "/pal/T_IceHorse_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/frostallion-noct"
+  },
+  {
+    "slug": "jetragon",
+    "name": "Jetragon",
+    "number": 111,
+    "rarity": "Legendary",
+    "rarityLevel": 20,
+    "elements": [
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_JetDragon_icon_normal.png",
+    "guideId": "jetragon",
+    "sourceUrl": "https://palworld.gg/pal/jetragon"
+  },
+  {
+    "slug": "bellanoir",
+    "name": "Bellanoir",
+    "number": 112,
+    "rarity": "Legendary",
+    "rarityLevel": 20,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Medicine Production",
+        "level": 4
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_NightLady_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/bellanoir"
+  },
+  {
+    "slug": "bellanoir-libero",
+    "name": "Bellanoir Libero",
+    "number": 112,
+    "rarity": "Legendary",
+    "rarityLevel": 20,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Medicine Production",
+        "level": 4
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_NightLady_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/bellanoir-libero"
+  },
+  {
+    "slug": "selyne",
+    "name": "Selyne",
+    "number": 113,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 4
+      },
+      {
+        "name": "Medicine Production",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_MoonQueen_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/selyne"
+  },
+  {
+    "slug": "croajiro",
+    "name": "Croajiro",
+    "number": 114,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_KendoFrog_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/croajiro"
+  },
+  {
+    "slug": "croajiro-noct",
+    "name": "Croajiro Noct",
+    "number": 114,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_KendoFrog_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/croajiro-noct"
+  },
+  {
+    "slug": "lullu",
+    "name": "Lullu",
+    "number": 115,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LeafPrincess_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/lullu"
+  },
+  {
+    "slug": "shroomer",
+    "name": "Shroomer",
+    "number": 116,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_MushroomDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/shroomer"
+  },
+  {
+    "slug": "shroomer-noct",
+    "name": "Shroomer Noct",
+    "number": 116,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_MushroomDragon_Dark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/shroomer-noct"
+  },
+  {
+    "slug": "kikit",
+    "name": "Kikit",
+    "number": 117,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SmallArmadillo_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/kikit"
+  },
+  {
+    "slug": "sootseer",
+    "name": "Sootseer",
+    "number": 118,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 3
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      },
+      {
+        "name": "Farming",
+        "level": 1
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_CandleGhost_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/sootseer"
+  },
+  {
+    "slug": "prixter",
+    "name": "Prixter",
+    "number": 119,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Dark",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_ScorpionMan_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/prixter"
+  },
+  {
+    "slug": "knocklem",
+    "name": "Knocklem",
+    "number": 120,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 4
+      },
+      {
+        "name": "Transporting",
+        "level": 4
+      },
+      {
+        "name": "Gathering",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_WingGolem_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/knocklem"
+  },
+  {
+    "slug": "yakumo",
+    "name": "Yakumo",
+    "number": 121,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GuardianDog_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/yakumo"
+  },
+  {
+    "slug": "dogen",
+    "name": "Dogen",
+    "number": 122,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SifuDog_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/dogen"
+  },
+  {
+    "slug": "dazemu",
+    "name": "Dazemu",
+    "number": 123,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_FeatherOstrich_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/dazemu"
+  },
+  {
+    "slug": "mimog",
+    "name": "Mimog",
+    "number": 124,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_MimicDog_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/mimog"
+  },
+  {
+    "slug": "xenovader",
+    "name": "Xenovader",
+    "number": 125,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_DarkAlien_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/xenovader"
+  },
+  {
+    "slug": "xenogard",
+    "name": "Xenogard",
+    "number": 126,
+    "rarity": "Epic",
+    "rarityLevel": 9,
+    "elements": [
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_WhiteAlienDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/xenogard"
+  },
+  {
+    "slug": "xenolord",
+    "name": "Xenolord",
+    "number": 127,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Dark",
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_DarkMechaDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/xenolord"
+  },
+  {
+    "slug": "nitemary",
+    "name": "Nitemary",
+    "number": 128,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GhostRabbit_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/nitemary"
+  },
+  {
+    "slug": "starryon",
+    "name": "Starryon",
+    "number": 129,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_NightBlueHorse_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/starryon"
+  },
+  {
+    "slug": "silvegis",
+    "name": "Silvegis",
+    "number": 130,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Dragon"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_WhiteShieldDragon_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/silvegis"
+  },
+  {
+    "slug": "smokie",
+    "name": "Smokie",
+    "number": 131,
+    "rarity": "Common",
+    "rarityLevel": 2,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_BlackPuppy_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/smokie"
+  },
+  {
+    "slug": "celesdir",
+    "name": "Celesdir",
+    "number": 132,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Deforesting",
+        "level": 4
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_WhiteDeer_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/celesdir"
+  },
+  {
+    "slug": "omascul",
+    "name": "Omascul",
+    "number": 133,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_MysteryMask_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/omascul"
+  },
+  {
+    "slug": "splatterina",
+    "name": "Splatterina",
+    "number": 134,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 4
+      },
+      {
+        "name": "Medicine Production",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Deforesting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_GrimGirl_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/splatterina"
+  },
+  {
+    "slug": "tarantriss",
+    "name": "Tarantriss",
+    "number": 135,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_PurpleSpider_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/tarantriss"
+  },
+  {
+    "slug": "azurmane",
+    "name": "Azurmane",
+    "number": 136,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Electric"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Generating Electricity",
+        "level": 4
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BlueThunderHorse_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/azurmane"
+  },
+  {
+    "slug": "bastigor",
+    "name": "Bastigor",
+    "number": 137,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 4
+      },
+      {
+        "name": "Deforesting",
+        "level": 3
+      },
+      {
+        "name": "Mining",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_SnowTigerBeastman_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/bastigor"
+  },
+  {
+    "slug": "prunelia",
+    "name": "Prunelia",
+    "number": 138,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Grass",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Medicine Production",
+        "level": 3
+      },
+      {
+        "name": "Planting",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_BlueberryFairy_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/prunelia"
+  },
+  {
+    "slug": "nyafia",
+    "name": "Nyafia",
+    "number": 139,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 3
+      },
+      {
+        "name": "Deforesting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_BadCatgirl_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/nyafia"
+  },
+  {
+    "slug": "gildane",
+    "name": "Gildane",
+    "number": 140,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GoldenHorse_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/gildane"
+  },
+  {
+    "slug": "herbil",
+    "name": "Herbil",
+    "number": 141,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Grass",
+      "Neutral"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Planting",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_LeafMomonga_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/herbil"
+  },
+  {
+    "slug": "icelyn",
+    "name": "Icelyn",
+    "number": 142,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 3
+      },
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Medicine Production",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_IceWitch_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/icelyn"
+  },
+  {
+    "slug": "frostplume",
+    "name": "Frostplume",
+    "number": 143,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Ice"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 2
+      },
+      {
+        "name": "Gathering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_SnowPeafowl_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/frostplume"
+  },
+  {
+    "slug": "palumba",
+    "name": "Palumba",
+    "number": 144,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Grass"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Mining",
+        "level": 3
+      },
+      {
+        "name": "Gathering",
+        "level": 2
+      },
+      {
+        "name": "Planting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_TropicalOstrich_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/palumba"
+  },
+  {
+    "slug": "braloha",
+    "name": "Braloha",
+    "number": 145,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Gathering",
+        "level": 4
+      },
+      {
+        "name": "Planting",
+        "level": 4
+      },
+      {
+        "name": "Mining",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_Plesiosaur_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/braloha"
+  },
+  {
+    "slug": "munchill",
+    "name": "Munchill",
+    "number": 146,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      },
+      {
+        "name": "Watering",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_IceCrocodile_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/munchill"
+  },
+  {
+    "slug": "polapup",
+    "name": "Polapup",
+    "number": 147,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 3
+      },
+      {
+        "name": "Watering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_IceSeal_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/polapup"
+  },
+  {
+    "slug": "turtacle",
+    "name": "Turtacle",
+    "number": 148,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_TentacleTurtle_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/turtacle"
+  },
+  {
+    "slug": "turtacle-terra",
+    "name": "Turtacle Terra",
+    "number": 148,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Water",
+      "Ground"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 2
+      },
+      {
+        "name": "Mining",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_TentacleTurtle_Ground_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/turtacle-terra"
+  },
+  {
+    "slug": "jellroy",
+    "name": "Jellroy",
+    "number": 149,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Medicine Production",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_JellyfishGhost_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/jellroy"
+  },
+  {
+    "slug": "jelliette",
+    "name": "Jelliette",
+    "number": 150,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 2
+      },
+      {
+        "name": "Handiwork",
+        "level": 1
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_JellyfishFairy_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/jelliette"
+  },
+  {
+    "slug": "gloopie",
+    "name": "Gloopie",
+    "number": 151,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Water",
+      "Dark"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Handiwork",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      },
+      {
+        "name": "Watering",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_OctopusGirl_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/gloopie"
+  },
+  {
+    "slug": "finsider",
+    "name": "Finsider",
+    "number": 152,
+    "rarity": "Common",
+    "rarityLevel": 3,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_StuffedShark_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/finsider"
+  },
+  {
+    "slug": "finsider-ignis",
+    "name": "Finsider Ignis",
+    "number": 152,
+    "rarity": "Common",
+    "rarityLevel": 4,
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Kindling",
+        "level": 2
+      },
+      {
+        "name": "Watering",
+        "level": 2
+      },
+      {
+        "name": "Transporting",
+        "level": 1
+      }
+    ],
+    "image": "/pal/T_StuffedShark_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/finsider-ignis"
+  },
+  {
+    "slug": "ghangler",
+    "name": "Ghangler",
+    "number": 153,
+    "rarity": "Rare",
+    "rarityLevel": 5,
+    "elements": [
+      "Dark",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 4
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GhostAnglerfish_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/ghangler"
+  },
+  {
+    "slug": "ghangler-ignis",
+    "name": "Ghangler Ignis",
+    "number": 153,
+    "rarity": "Rare",
+    "rarityLevel": 6,
+    "elements": [
+      "Fire",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 4
+      },
+      {
+        "name": "Kindling",
+        "level": 3
+      },
+      {
+        "name": "Transporting",
+        "level": 2
+      }
+    ],
+    "image": "/pal/T_GhostAnglerfish_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/ghangler-ignis"
+  },
+  {
+    "slug": "whalaska",
+    "name": "Whalaska",
+    "number": 154,
+    "rarity": "Rare",
+    "rarityLevel": 7,
+    "elements": [
+      "Ice",
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 4
+      },
+      {
+        "name": "Watering",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_IceNarwhal_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/whalaska"
+  },
+  {
+    "slug": "whalaska-ignis",
+    "name": "Whalaska Ignis",
+    "number": 154,
+    "rarity": "Epic",
+    "rarityLevel": 8,
+    "elements": [
+      "Ice",
+      "Fire"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Cooling",
+        "level": 4
+      },
+      {
+        "name": "Kindling",
+        "level": 3
+      }
+    ],
+    "image": "/pal/T_IceNarwhal_Fire_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/whalaska-ignis"
+  },
+  {
+    "slug": "neptilius",
+    "name": "Neptilius",
+    "number": 155,
+    "rarity": "Legendary",
+    "rarityLevel": 20,
+    "elements": [
+      "Water"
+    ],
+    "workSuitabilities": [
+      {
+        "name": "Watering",
+        "level": 4
+      }
+    ],
+    "image": "/pal/T_PoseidonOrca_icon_normal.png",
+    "guideId": null,
+    "sourceUrl": "https://palworld.gg/pal/neptilius"
+  }
+]

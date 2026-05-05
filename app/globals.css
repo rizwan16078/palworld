@@ -1,0 +1,382 @@
+@import "tailwindcss";
+
+/* ── Palworld Design System ─────────────────────────────────────────────────── */
+
+:root {
+  color-scheme: dark;
+
+  /* Core palette */
+  --pw-bg: #0F1923;
+  --pw-bg-alt: #162232;
+  --pw-surface: rgba(255, 255, 255, 0.06);
+  --pw-surface-hover: rgba(255, 255, 255, 0.10);
+  --pw-border: rgba(255, 255, 255, 0.08);
+  --pw-border-hover: rgba(255, 255, 255, 0.16);
+
+  /* Brand colors */
+  --pw-blue: #4F9CF7;
+  --pw-blue-glow: rgba(79, 156, 247, 0.25);
+  --pw-yellow: #FFD93D;
+  --pw-yellow-glow: rgba(255, 217, 61, 0.20);
+
+  /* Text */
+  --pw-text: #F0F4F8;
+  --pw-text-muted: #8899AA;
+  --pw-text-dim: #556677;
+
+  /* Element colors */
+  --el-neutral: #A8A77A;
+  --el-fire: #EE8130;
+  --el-water: #6390F0;
+  --el-electric: #F7D02C;
+  --el-grass: #7AC74C;
+  --el-ice: #96D9D6;
+  --el-ground: #E2BF65;
+  --el-dragon: #6F35FC;
+  --el-dark: #705898;
+
+  /* Rarity */
+  --rarity-common: #9CA3AF;
+  --rarity-uncommon: #34D399;
+  --rarity-rare: #60A5FA;
+  --rarity-epic: #A78BFA;
+  --rarity-legendary: #FBBF24;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-glow-blue: 0 0 30px var(--pw-blue-glow);
+}
+
+/* ── Tailwind v4 Theme Tokens ───────────────────────────────────────────────── */
+
+@theme inline {
+  --color-background: var(--pw-bg);
+  --color-foreground: var(--pw-text);
+  --color-pw-blue: var(--pw-blue);
+  --color-pw-yellow: var(--pw-yellow);
+  --color-pw-surface: var(--pw-surface);
+  --color-pw-border: var(--pw-border);
+  --color-pw-muted: var(--pw-text-muted);
+  --color-pw-dim: var(--pw-text-dim);
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Base Reset ─────────────────────────────────────────────────────────────── */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--pw-bg);
+  color: var(--pw-text);
+  font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(79, 156, 247, 0.3);
+  color: #fff;
+}
+
+a, button, input, select, summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ── Background Pattern ─────────────────────────────────────────────────────── */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(79, 156, 247, 0.12), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 20%, rgba(255, 217, 61, 0.06), transparent 50%),
+    linear-gradient(180deg, var(--pw-bg) 0%, #0a1420 100%);
+  pointer-events: none;
+}
+
+/* ── Glass Panels ───────────────────────────────────────────────────────────── */
+
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border: 1px solid var(--pw-border);
+  border-radius: 1rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-card);
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--pw-border-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.glass-card-static {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border: 1px solid var(--pw-border);
+  border-radius: 1rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-card);
+}
+
+/* ── Pal Selector Circle ────────────────────────────────────────────────────── */
+
+.pal-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px dashed var(--pw-border-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--pw-surface);
+}
+
+.pal-circle:hover {
+  border-color: var(--pw-blue);
+  background: var(--pw-blue-glow);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-glow-blue);
+}
+
+.pal-circle.selected {
+  border: 2px solid var(--pw-blue);
+  background: rgba(79, 156, 247, 0.1);
+  box-shadow: var(--shadow-glow-blue);
+}
+
+/* ── Element Badges ─────────────────────────────────────────────────────────── */
+
+.element-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Power Bar ──────────────────────────────────────────────────────────────── */
+
+.power-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.power-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--pw-blue), var(--pw-yellow));
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Tab System ─────────────────────────────────────────────────────────────── */
+
+.tab-list {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--pw-border);
+}
+
+.tab-trigger {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--pw-text-muted);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tab-trigger:hover {
+  color: var(--pw-text);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tab-trigger[data-active="true"] {
+  background: rgba(79, 156, 247, 0.15);
+  color: var(--pw-blue);
+  font-weight: 600;
+}
+
+/* ── Search Modal ───────────────────────────────────────────────────────────── */
+
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.search-modal {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  background: var(--pw-bg-alt);
+  border: 1px solid var(--pw-border-hover);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  animation: modal-in 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: none;
+  border-bottom: 1px solid var(--pw-border);
+  background: transparent;
+  color: var(--pw-text);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--pw-text-dim);
+}
+
+.search-list {
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.search-item:hover, .search-item[data-focused="true"] {
+  background: rgba(79, 156, 247, 0.1);
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out infinite 3s;
+}
+
+/* ── Chain Step Cards ───────────────────────────────────────────────────────── */
+
+.chain-connector {
+  width: 2px;
+  height: 2rem;
+  background: linear-gradient(to bottom, var(--pw-blue), transparent);
+  margin: 0 auto;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Utilities ──────────────────────────────────────────────────────────────── */
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--pw-blue), var(--pw-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px var(--pw-blue-glow), 0 0 60px rgba(79, 156, 247, 0.1);
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .pal-circle {
+    width: 96px;
+    height: 96px;
+  }
+
+  .search-overlay {
+    padding-top: 0;
+    align-items: flex-end;
+  }
+
+  .search-modal {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 1rem 1rem 0 0;
+    max-height: 85vh;
+  }
+
+  .search-list {
+    max-height: 50vh;
+  }
+}

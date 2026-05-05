@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "space",
+    "name": "Space",
+    "pack": "Space",
+    "route": "/space-box-odds",
+    "lastUpdated": "2026-05-01",
+    "source": "public_estimate",
+    "price": 20,
+    "dropRates": {
+      "uncommon": 0.75,
+      "rare": 0.2,
+      "epic": 0.045,
+      "legendary": 0.0045,
+      "chroma": 0.0005
+    },
+    "avgSellValue": 12.175,
+    "effectiveCost": 7.825,
+    "accent": {
+      "from": "#60a5fa",
+      "to": "#8b5cf6",
+      "glow": "#38bdf8"
+    },
+    "featuredBlooks": [
+      {
+        "name": "Earth",
+        "rarity": "Uncommon",
+        "dropRate": 0.1875
+      },
+      {
+        "name": "UFO",
+        "rarity": "Rare",
+        "dropRate": 0.2
+      },
+      {
+        "name": "Alien",
+        "rarity": "Epic",
+        "dropRate": 0.045
+      },
+      {
+        "name": "Astronaut",
+        "rarity": "Legendary",
+        "dropRate": 0.0045
+      },
+      {
+        "name": "Astronaut Chroma (rotates by day)",
+        "rarity": "Chroma",
+        "dropRate": 0.0005
+      }
+    ]
+  },
+  {
+    "slug": "medieval",
+    "name": "Medieval",
+    "pack": "Medieval",
+    "route": "/medieval-box-odds",
+    "lastUpdated": "2026-05-01",
+    "source": "public_estimate",
+    "price": 20,
+    "dropRates": {
+      "uncommon": 0.65,
+      "rare": 0.29,
+      "epic": 0.05,
+      "legendary": 0.01,
+      "chroma": 0
+    },
+    "avgSellValue": 14.8,
+    "effectiveCost": 5.2,
+    "accent": {
+      "from": "#f59e0b",
+      "to": "#ef4444",
+      "glow": "#f97316"
+    },
+    "featuredBlooks": [
+      {
+        "name": "Dragon",
+        "rarity": "Uncommon",
+        "dropRate": 0.13
+      },
+      {
+        "name": "Jester",
+        "rarity": "Rare",
+        "dropRate": 0.09
+      },
+      {
+        "name": "Unicorn",
+        "rarity": "Epic",
+        "dropRate": 0.05
+      },
+      {
+        "name": "King",
+        "rarity": "Legendary",
+        "dropRate": 0.01
+      }
+    ]
+  },
+  {
+    "slug": "aquatic",
+    "name": "Aquatic",
+    "pack": "Aquatic",
+    "route": "/aquatic-box-odds",
+    "lastUpdated": "2026-05-01",
+    "source": "public_estimate",
+    "price": 20,
+    "dropRates": {
+      "uncommon": 0.75,
+      "rare": 0.18,
+      "epic": 0.065,
+      "legendary": 0.005,
+      "chroma": 0
+    },
+    "avgSellValue": 13.225,
+    "effectiveCost": 6.775,
+    "accent": {
+      "from": "#22d3ee",
+      "to": "#14b8a6",
+      "glow": "#06b6d4"
+    },
+    "featuredBlooks": [
+      {
+        "name": "Clownfish",
+        "rarity": "Uncommon",
+        "dropRate": 0.15
+      },
+      {
+        "name": "Octopus",
+        "rarity": "Rare",
+        "dropRate": 0.061
+      },
+      {
+        "name": "Dolphin",
+        "rarity": "Epic",
+        "dropRate": 0.03
+      },
+      {
+        "name": "Baby Shark",
+        "rarity": "Legendary",
+        "dropRate": 0.005
+      },
+      {
+        "name": "Megalodon",
+        "rarity": "Legendary",
+        "dropRate": 0.002
+      }
+    ]
+  }
+]
