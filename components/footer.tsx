@@ -17,8 +17,8 @@ export default function Footer() {
               <span className="font-bold text-sm">PalBreeder</span>
             </div>
             <p className="text-xs text-[var(--pw-text-muted)] leading-relaxed max-w-xs">
-              The fastest Palworld breeding calculator. Find optimal breeding
-              combinations, discover parent pairs, and plan breeding chains.
+              Palworld tools for breeding, capture planning, structures, local
+              pal art, and quick reference guides.
             </p>
           </div>
 
@@ -34,6 +34,30 @@ export default function Footer() {
                   className="text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-blue)] transition-colors"
                 >
                   Breeding Calculator
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/capture-rate"
+                  className="text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-blue)] transition-colors"
+                >
+                  Capture Rate Calculator
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/tier-list"
+                  className="text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-blue)] transition-colors"
+                >
+                  Tier List
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/structures"
+                  className="text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-blue)] transition-colors"
+                >
+                  Structures
                 </Link>
               </li>
               <li>

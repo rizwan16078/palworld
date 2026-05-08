@@ -46,8 +46,26 @@ export default function Navbar() {
             Calculator
           </Link>
           <Link
-            href="/pals"
+            href="/capture-rate"
             className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200"
+          >
+            Capture
+          </Link>
+          <Link
+            href="/tier-list"
+            className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200"
+          >
+            Tier List
+          </Link>
+          <Link
+            href="/structures"
+            className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200"
+          >
+            Structures
+          </Link>
+          <Link
+            href="/pals"
+            className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200 hidden sm:block"
           >
             Pals
           </Link>

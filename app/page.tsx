@@ -91,6 +91,38 @@ export default function HomePage() {
             Breed any two Pals, find parent combos, and discover the shortest
             breeding chains — instantly.
           </p>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+            <Link
+              href="/tier-list"
+              className="inline-flex items-center rounded-full border border-[var(--pw-yellow)]/25 bg-[var(--pw-yellow)]/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--pw-yellow)] transition-colors hover:bg-[var(--pw-yellow)]/18"
+            >
+              Tier List
+            </Link>
+            <Link
+              href="/capture-rate"
+              className="inline-flex items-center rounded-full border border-[var(--pw-blue)]/30 bg-[var(--pw-blue)]/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--pw-blue)] transition-colors hover:bg-[var(--pw-blue)]/20"
+            >
+              Capture Rate
+            </Link>
+            <Link
+              href="/technology"
+              className="inline-flex items-center rounded-full border border-[var(--pw-border)] bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--pw-text-muted)] transition-colors hover:bg-white/10 hover:text-[var(--pw-text)]"
+            >
+              Technology
+            </Link>
+            <Link
+              href="/structures"
+              className="inline-flex items-center rounded-full border border-[var(--pw-border)] bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--pw-text-muted)] transition-colors hover:bg-white/10 hover:text-[var(--pw-text)]"
+            >
+              Structures
+            </Link>
+            <Link
+              href="/pals"
+              className="inline-flex items-center rounded-full border border-[var(--pw-border)] bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--pw-text-muted)] transition-colors hover:bg-white/10 hover:text-[var(--pw-text)]"
+            >
+              Pals
+            </Link>
+          </div>
         </div>
 
         {/* Calculator Card — THE HERO */}

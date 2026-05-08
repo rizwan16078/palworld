@@ -278,6 +278,7 @@ function TechnologyCard({ entry }: { entry: TechnologyEntry }) {
             alt={entry.name}
             fill
             sizes="64px"
+            unoptimized
             className="object-contain p-2"
           />
         </div>

@@ -1,0 +1,3882 @@
+[
+  {
+    "id": "overall",
+    "label": "Best Overall",
+    "title": "Pals Tier List",
+    "description": "Most powerful, and useful Pals to have.",
+    "path": "/tier-list",
+    "sourceUrl": "https://palworld.gg/tier-list",
+    "tiers": [
+      {
+        "tier": "S",
+        "pals": [
+          {
+            "slug": "frostallion",
+            "name": "Frostallion",
+            "speed": null
+          },
+          {
+            "slug": "frostallion-noct",
+            "name": "Frostallion Noct",
+            "speed": null
+          },
+          {
+            "slug": "jetragon",
+            "name": "Jetragon",
+            "speed": null
+          },
+          {
+            "slug": "paladius",
+            "name": "Paladius",
+            "speed": null
+          },
+          {
+            "slug": "necromus",
+            "name": "Necromus",
+            "speed": null
+          },
+          {
+            "slug": "bellanoir",
+            "name": "Bellanoir",
+            "speed": null
+          },
+          {
+            "slug": "bellanoir-libero",
+            "name": "Bellanoir Libero",
+            "speed": null
+          },
+          {
+            "slug": "neptilius",
+            "name": "Neptilius",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "A",
+        "pals": [
+          {
+            "slug": "gildane",
+            "name": "Gildane",
+            "speed": null
+          },
+          {
+            "slug": "anubis",
+            "name": "Anubis",
+            "speed": null
+          },
+          {
+            "slug": "grizzbolt",
+            "name": "Grizzbolt",
+            "speed": null
+          },
+          {
+            "slug": "jormuntide",
+            "name": "Jormuntide",
+            "speed": null
+          },
+          {
+            "slug": "jormuntide-ignis",
+            "name": "Jormuntide Ignis",
+            "speed": null
+          },
+          {
+            "slug": "suzaku",
+            "name": "Suzaku",
+            "speed": null
+          },
+          {
+            "slug": "suzaku-aqua",
+            "name": "Suzaku Aqua",
+            "speed": null
+          },
+          {
+            "slug": "elphidran-aqua",
+            "name": "Elphidran Aqua",
+            "speed": null
+          },
+          {
+            "slug": "azurobe-cryst",
+            "name": "Azurobe Cryst",
+            "speed": null
+          },
+          {
+            "slug": "relaxaurus",
+            "name": "Relaxaurus",
+            "speed": null
+          },
+          {
+            "slug": "relaxaurus-lux",
+            "name": "Relaxaurus Lux",
+            "speed": null
+          },
+          {
+            "slug": "mammorest",
+            "name": "Mammorest",
+            "speed": null
+          },
+          {
+            "slug": "mammorest-cryst",
+            "name": "Mammorest Cryst",
+            "speed": null
+          },
+          {
+            "slug": "broncherry-aqua",
+            "name": "Broncherry Aqua",
+            "speed": null
+          },
+          {
+            "slug": "faleris",
+            "name": "Faleris",
+            "speed": null
+          },
+          {
+            "slug": "blazamut",
+            "name": "Blazamut",
+            "speed": null
+          },
+          {
+            "slug": "blazamut-ryu",
+            "name": "Blazamut Ryu",
+            "speed": null
+          },
+          {
+            "slug": "shadowbeak",
+            "name": "Shadowbeak",
+            "speed": null
+          },
+          {
+            "slug": "wumpo-botan",
+            "name": "Wumpo Botan",
+            "speed": null
+          },
+          {
+            "slug": "vaelet",
+            "name": "Vaelet",
+            "speed": null
+          },
+          {
+            "slug": "lyleen",
+            "name": "Lyleen",
+            "speed": null
+          },
+          {
+            "slug": "lyleen-noct",
+            "name": "Lyleen Noct",
+            "speed": null
+          },
+          {
+            "slug": "elizabee",
+            "name": "Elizabee",
+            "speed": null
+          },
+          {
+            "slug": "astegon",
+            "name": "Astegon",
+            "speed": null
+          },
+          {
+            "slug": "verdash",
+            "name": "Verdash",
+            "speed": null
+          },
+          {
+            "slug": "blazehowl-noct",
+            "name": "Blazehowl Noct",
+            "speed": null
+          },
+          {
+            "slug": "kingpaca",
+            "name": "Kingpaca",
+            "speed": null
+          },
+          {
+            "slug": "kingpaca-cryst",
+            "name": "Kingpaca Cryst",
+            "speed": null
+          },
+          {
+            "slug": "warsect",
+            "name": "Warsect",
+            "speed": null
+          },
+          {
+            "slug": "warsect-terra",
+            "name": "Warsect Terra",
+            "speed": null
+          },
+          {
+            "slug": "quivern-botan",
+            "name": "Quivern Botan",
+            "speed": null
+          },
+          {
+            "slug": "helzephyr-lux",
+            "name": "Helzephyr Lux",
+            "speed": null
+          },
+          {
+            "slug": "petallia",
+            "name": "Petallia",
+            "speed": null
+          },
+          {
+            "slug": "menasting",
+            "name": "Menasting",
+            "speed": null
+          },
+          {
+            "slug": "menasting-terra",
+            "name": "Menasting Terra",
+            "speed": null
+          },
+          {
+            "slug": "orserk",
+            "name": "Orserk",
+            "speed": null
+          },
+          {
+            "slug": "selyne",
+            "name": "Selyne",
+            "speed": null
+          },
+          {
+            "slug": "knocklem",
+            "name": "Knocklem",
+            "speed": null
+          },
+          {
+            "slug": "xenogard",
+            "name": "Xenogard",
+            "speed": null
+          },
+          {
+            "slug": "xenolord",
+            "name": "Xenolord",
+            "speed": null
+          },
+          {
+            "slug": "silvegis",
+            "name": "Silvegis",
+            "speed": null
+          },
+          {
+            "slug": "whalaska-ignis",
+            "name": "Whalaska Ignis",
+            "speed": null
+          },
+          {
+            "slug": "faleris-aqua",
+            "name": "Faleris Aqua",
+            "speed": null
+          },
+          {
+            "slug": "bastigor",
+            "name": "Bastigor",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "B",
+        "pals": [
+          {
+            "slug": "prunelia",
+            "name": "Prunelia",
+            "speed": null
+          },
+          {
+            "slug": "incineram-noct",
+            "name": "Incineram Noct",
+            "speed": null
+          },
+          {
+            "slug": "eikthyrdeer-terra",
+            "name": "Eikthyrdeer Terra",
+            "speed": null
+          },
+          {
+            "slug": "digtoise",
+            "name": "Digtoise",
+            "speed": null
+          },
+          {
+            "slug": "gorirat",
+            "name": "Gorirat",
+            "speed": null
+          },
+          {
+            "slug": "gorirat-terra",
+            "name": "Gorirat Terra",
+            "speed": null
+          },
+          {
+            "slug": "univolt",
+            "name": "Univolt",
+            "speed": null
+          },
+          {
+            "slug": "lunaris",
+            "name": "Lunaris",
+            "speed": null
+          },
+          {
+            "slug": "pyrin",
+            "name": "Pyrin",
+            "speed": null
+          },
+          {
+            "slug": "pyrin-noct",
+            "name": "Pyrin Noct",
+            "speed": null
+          },
+          {
+            "slug": "elphidran",
+            "name": "Elphidran",
+            "speed": null
+          },
+          {
+            "slug": "cryolinx",
+            "name": "Cryolinx",
+            "speed": null
+          },
+          {
+            "slug": "surfent-terra",
+            "name": "Surfent Terra",
+            "speed": null
+          },
+          {
+            "slug": "azurobe",
+            "name": "Azurobe",
+            "speed": null
+          },
+          {
+            "slug": "reptyro",
+            "name": "Reptyro",
+            "speed": null
+          },
+          {
+            "slug": "reptyro-cryst",
+            "name": "Reptyro Cryst",
+            "speed": null
+          },
+          {
+            "slug": "maraith",
+            "name": "Maraith",
+            "speed": null
+          },
+          {
+            "slug": "robinquill",
+            "name": "Robinquill",
+            "speed": null
+          },
+          {
+            "slug": "robinquill-terra",
+            "name": "Robinquill Terra",
+            "speed": null
+          },
+          {
+            "slug": "kitsun",
+            "name": "Kitsun",
+            "speed": null
+          },
+          {
+            "slug": "vanwyrm-cryst",
+            "name": "Vanwyrm Cryst",
+            "speed": null
+          },
+          {
+            "slug": "dinossom",
+            "name": "Dinossom",
+            "speed": null
+          },
+          {
+            "slug": "dinossom-lux",
+            "name": "Dinossom Lux",
+            "speed": null
+          },
+          {
+            "slug": "felbat",
+            "name": "Felbat",
+            "speed": null
+          },
+          {
+            "slug": "broncherry",
+            "name": "Broncherry",
+            "speed": null
+          },
+          {
+            "slug": "sibelyx",
+            "name": "Sibelyx",
+            "speed": null
+          },
+          {
+            "slug": "wixen",
+            "name": "Wixen",
+            "speed": null
+          },
+          {
+            "slug": "wixen-noct",
+            "name": "Wixen Noct",
+            "speed": null
+          },
+          {
+            "slug": "lovander",
+            "name": "Lovander",
+            "speed": null
+          },
+          {
+            "slug": "wumpo",
+            "name": "Wumpo",
+            "speed": null
+          },
+          {
+            "slug": "tombat",
+            "name": "Tombat",
+            "speed": null
+          },
+          {
+            "slug": "mossanda",
+            "name": "Mossanda",
+            "speed": null
+          },
+          {
+            "slug": "mossanda-lux",
+            "name": "Mossanda Lux",
+            "speed": null
+          },
+          {
+            "slug": "rayhound",
+            "name": "Rayhound",
+            "speed": null
+          },
+          {
+            "slug": "foxcicle",
+            "name": "Foxcicle",
+            "speed": null
+          },
+          {
+            "slug": "blazehowl",
+            "name": "Blazehowl",
+            "speed": null
+          },
+          {
+            "slug": "sweepa",
+            "name": "Sweepa",
+            "speed": null
+          },
+          {
+            "slug": "katress",
+            "name": "Katress",
+            "speed": null
+          },
+          {
+            "slug": "katress-ignis",
+            "name": "Katress Ignis",
+            "speed": null
+          },
+          {
+            "slug": "beakon",
+            "name": "Beakon",
+            "speed": null
+          },
+          {
+            "slug": "nox",
+            "name": "Nox",
+            "speed": null
+          },
+          {
+            "slug": "penking",
+            "name": "Penking",
+            "speed": null
+          },
+          {
+            "slug": "penking-lux",
+            "name": "Penking Lux",
+            "speed": null
+          },
+          {
+            "slug": "chillet-ignis",
+            "name": "Chillet Ignis",
+            "speed": null
+          },
+          {
+            "slug": "quivern",
+            "name": "Quivern",
+            "speed": null
+          },
+          {
+            "slug": "helzephyr",
+            "name": "Helzephyr",
+            "speed": null
+          },
+          {
+            "slug": "ragnahawk",
+            "name": "Ragnahawk",
+            "speed": null
+          },
+          {
+            "slug": "bushi",
+            "name": "Bushi",
+            "speed": null
+          },
+          {
+            "slug": "bushi-noct",
+            "name": "Bushi Noct",
+            "speed": null
+          },
+          {
+            "slug": "grintale",
+            "name": "Grintale",
+            "speed": null
+          },
+          {
+            "slug": "dumud-gild",
+            "name": "Dumud Gild",
+            "speed": null
+          },
+          {
+            "slug": "croajiro-noct",
+            "name": "Croajiro Noct",
+            "speed": null
+          },
+          {
+            "slug": "shroomer-noct",
+            "name": "Shroomer Noct",
+            "speed": null
+          },
+          {
+            "slug": "sootseer",
+            "name": "Sootseer",
+            "speed": null
+          },
+          {
+            "slug": "prixter",
+            "name": "Prixter",
+            "speed": null
+          },
+          {
+            "slug": "dogen",
+            "name": "Dogen",
+            "speed": null
+          },
+          {
+            "slug": "dazemu",
+            "name": "Dazemu",
+            "speed": null
+          },
+          {
+            "slug": "mimog",
+            "name": "Mimog",
+            "speed": null
+          },
+          {
+            "slug": "xenovader",
+            "name": "Xenovader",
+            "speed": null
+          },
+          {
+            "slug": "nitemary",
+            "name": "Nitemary",
+            "speed": null
+          },
+          {
+            "slug": "starryon",
+            "name": "Starryon",
+            "speed": null
+          },
+          {
+            "slug": "celesdir",
+            "name": "Celesdir",
+            "speed": null
+          },
+          {
+            "slug": "azurmane",
+            "name": "Azurmane",
+            "speed": null
+          },
+          {
+            "slug": "gloopie",
+            "name": "Gloopie",
+            "speed": null
+          },
+          {
+            "slug": "whalaska",
+            "name": "Whalaska",
+            "speed": null
+          },
+          {
+            "slug": "kitsun-noct",
+            "name": "Kitsun Noct",
+            "speed": null
+          },
+          {
+            "slug": "cryolinx-terra",
+            "name": "Cryolinx Terra",
+            "speed": null
+          },
+          {
+            "slug": "ghangler",
+            "name": "Ghangler",
+            "speed": null
+          },
+          {
+            "slug": "ghangler-ignis",
+            "name": "Ghangler Ignis",
+            "speed": null
+          },
+          {
+            "slug": "polapup",
+            "name": "Polapup",
+            "speed": null
+          },
+          {
+            "slug": "braloha",
+            "name": "Braloha",
+            "speed": null
+          },
+          {
+            "slug": "eye-of-cthulhu",
+            "name": "Eye of Cthulhu",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "C",
+        "pals": [
+          {
+            "slug": "nyafia",
+            "name": "Nyafia",
+            "speed": null
+          },
+          {
+            "slug": "turtacle",
+            "name": "Turtacle",
+            "speed": null
+          },
+          {
+            "slug": "turtacle-terra",
+            "name": "Turtacle Terra",
+            "speed": null
+          },
+          {
+            "slug": "incineram",
+            "name": "Incineram",
+            "speed": null
+          },
+          {
+            "slug": "eikthyrdeer",
+            "name": "Eikthyrdeer",
+            "speed": null
+          },
+          {
+            "slug": "gobfin-ignis",
+            "name": "Gobfin Ignis",
+            "speed": null
+          },
+          {
+            "slug": "loupmoon",
+            "name": "Loupmoon",
+            "speed": null
+          },
+          {
+            "slug": "woolipop",
+            "name": "Woolipop",
+            "speed": null
+          },
+          {
+            "slug": "melpaca",
+            "name": "Melpaca",
+            "speed": null
+          },
+          {
+            "slug": "surfent",
+            "name": "Surfent",
+            "speed": null
+          },
+          {
+            "slug": "cawgnito",
+            "name": "Cawgnito",
+            "speed": null
+          },
+          {
+            "slug": "fenglope",
+            "name": "Fenglope",
+            "speed": null
+          },
+          {
+            "slug": "leezpunk-ignis",
+            "name": "Leezpunk Ignis",
+            "speed": null
+          },
+          {
+            "slug": "vanwyrm",
+            "name": "Vanwyrm",
+            "speed": null
+          },
+          {
+            "slug": "caprity",
+            "name": "Caprity",
+            "speed": null
+          },
+          {
+            "slug": "reindrix",
+            "name": "Reindrix",
+            "speed": null
+          },
+          {
+            "slug": "nitewing",
+            "name": "Nitewing",
+            "speed": null
+          },
+          {
+            "slug": "beegarde",
+            "name": "Beegarde",
+            "speed": null
+          },
+          {
+            "slug": "arsox",
+            "name": "Arsox",
+            "speed": null
+          },
+          {
+            "slug": "chillet",
+            "name": "Chillet",
+            "speed": null
+          },
+          {
+            "slug": "celaray",
+            "name": "Celaray",
+            "speed": null
+          },
+          {
+            "slug": "celaray-lux",
+            "name": "Celaray Lux",
+            "speed": null
+          },
+          {
+            "slug": "cinnamoth",
+            "name": "Cinnamoth",
+            "speed": null
+          },
+          {
+            "slug": "dumud",
+            "name": "Dumud",
+            "speed": null
+          },
+          {
+            "slug": "croajiro",
+            "name": "Croajiro",
+            "speed": null
+          },
+          {
+            "slug": "lullu",
+            "name": "Lullu",
+            "speed": null
+          },
+          {
+            "slug": "shroomer",
+            "name": "Shroomer",
+            "speed": null
+          },
+          {
+            "slug": "kikit",
+            "name": "Kikit",
+            "speed": null
+          },
+          {
+            "slug": "yakumo",
+            "name": "Yakumo",
+            "speed": null
+          },
+          {
+            "slug": "omascul",
+            "name": "Omascul",
+            "speed": null
+          },
+          {
+            "slug": "splatterina",
+            "name": "Splatterina",
+            "speed": null
+          },
+          {
+            "slug": "tarantriss",
+            "name": "Tarantriss",
+            "speed": null
+          },
+          {
+            "slug": "jelliette",
+            "name": "Jelliette",
+            "speed": null
+          },
+          {
+            "slug": "caprity-noct",
+            "name": "Caprity Noct",
+            "speed": null
+          },
+          {
+            "slug": "loupmoon-cryst",
+            "name": "Loupmoon Cryst",
+            "speed": null
+          },
+          {
+            "slug": "fenglope-lux",
+            "name": "Fenglope Lux",
+            "speed": null
+          },
+          {
+            "slug": "icelyn",
+            "name": "Icelyn",
+            "speed": null
+          },
+          {
+            "slug": "herbil",
+            "name": "Herbil",
+            "speed": null
+          },
+          {
+            "slug": "munchill",
+            "name": "Munchill",
+            "speed": null
+          },
+          {
+            "slug": "finsider",
+            "name": "Finsider",
+            "speed": null
+          },
+          {
+            "slug": "finsider-ignis",
+            "name": "Finsider Ignis",
+            "speed": null
+          },
+          {
+            "slug": "palumba",
+            "name": "Palumba",
+            "speed": null
+          },
+          {
+            "slug": "frostplume",
+            "name": "Frostplume",
+            "speed": null
+          },
+          {
+            "slug": "jellroy",
+            "name": "Jellroy",
+            "speed": null
+          },
+          {
+            "slug": "green-slime",
+            "name": "Green Slime",
+            "speed": null
+          },
+          {
+            "slug": "blue-slime",
+            "name": "Blue Slime",
+            "speed": null
+          },
+          {
+            "slug": "red-slime",
+            "name": "Red Slime",
+            "speed": null
+          },
+          {
+            "slug": "purple-slime",
+            "name": "Purple Slime",
+            "speed": null
+          },
+          {
+            "slug": "illuminant-slime",
+            "name": "Illuminant Slime",
+            "speed": null
+          },
+          {
+            "slug": "rainbow-slime",
+            "name": "Rainbow Slime",
+            "speed": null
+          },
+          {
+            "slug": "enchanted-sword",
+            "name": "Enchanted Sword",
+            "speed": null
+          },
+          {
+            "slug": "cave-bat",
+            "name": "Cave Bat",
+            "speed": null
+          },
+          {
+            "slug": "illuminant-bat",
+            "name": "Illuminant Bat",
+            "speed": null
+          },
+          {
+            "slug": "demon-eye",
+            "name": "Demon Eye",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "D",
+        "pals": [
+          {
+            "slug": "mau",
+            "name": "Mau",
+            "speed": null
+          },
+          {
+            "slug": "mau-cryst",
+            "name": "Mau Cryst",
+            "speed": null
+          },
+          {
+            "slug": "rushoar",
+            "name": "Rushoar",
+            "speed": null
+          },
+          {
+            "slug": "lifmunk",
+            "name": "Lifmunk",
+            "speed": null
+          },
+          {
+            "slug": "tocotoco",
+            "name": "Tocotoco",
+            "speed": null
+          },
+          {
+            "slug": "galeclaw",
+            "name": "Galeclaw",
+            "speed": null
+          },
+          {
+            "slug": "teafant",
+            "name": "Teafant",
+            "speed": null
+          },
+          {
+            "slug": "direhowl",
+            "name": "Direhowl",
+            "speed": null
+          },
+          {
+            "slug": "jolthog",
+            "name": "Jolthog",
+            "speed": null
+          },
+          {
+            "slug": "jolthog-cryst",
+            "name": "Jolthog Cryst",
+            "speed": null
+          },
+          {
+            "slug": "foxparks",
+            "name": "Foxparks",
+            "speed": null
+          },
+          {
+            "slug": "bristla",
+            "name": "Bristla",
+            "speed": null
+          },
+          {
+            "slug": "pengullet",
+            "name": "Pengullet",
+            "speed": null
+          },
+          {
+            "slug": "pengullet-lux",
+            "name": "Pengullet Lux",
+            "speed": null
+          },
+          {
+            "slug": "dazzi",
+            "name": "Dazzi",
+            "speed": null
+          },
+          {
+            "slug": "gobfin",
+            "name": "Gobfin",
+            "speed": null
+          },
+          {
+            "slug": "lamball",
+            "name": "Lamball",
+            "speed": null
+          },
+          {
+            "slug": "hangyu",
+            "name": "Hangyu",
+            "speed": null
+          },
+          {
+            "slug": "hangyu-cryst",
+            "name": "Hangyu Cryst",
+            "speed": null
+          },
+          {
+            "slug": "cattiva",
+            "name": "Cattiva",
+            "speed": null
+          },
+          {
+            "slug": "depresso",
+            "name": "Depresso",
+            "speed": null
+          },
+          {
+            "slug": "leezpunk",
+            "name": "Leezpunk",
+            "speed": null
+          },
+          {
+            "slug": "fuack",
+            "name": "Fuack",
+            "speed": null
+          },
+          {
+            "slug": "fuack-ignis",
+            "name": "Fuack Ignis",
+            "speed": null
+          },
+          {
+            "slug": "chikipi",
+            "name": "Chikipi",
+            "speed": null
+          },
+          {
+            "slug": "sparkit",
+            "name": "Sparkit",
+            "speed": null
+          },
+          {
+            "slug": "vixy",
+            "name": "Vixy",
+            "speed": null
+          },
+          {
+            "slug": "hoocrates",
+            "name": "Hoocrates",
+            "speed": null
+          },
+          {
+            "slug": "kelpsea",
+            "name": "Kelpsea",
+            "speed": null
+          },
+          {
+            "slug": "kelpsea-ignis",
+            "name": "Kelpsea Ignis",
+            "speed": null
+          },
+          {
+            "slug": "killamari",
+            "name": "Killamari",
+            "speed": null
+          },
+          {
+            "slug": "killamari-primo",
+            "name": "Killamari Primo",
+            "speed": null
+          },
+          {
+            "slug": "mozzarina",
+            "name": "Mozzarina",
+            "speed": null
+          },
+          {
+            "slug": "flopie",
+            "name": "Flopie",
+            "speed": null
+          },
+          {
+            "slug": "fuddler",
+            "name": "Fuddler",
+            "speed": null
+          },
+          {
+            "slug": "daedream",
+            "name": "Daedream",
+            "speed": null
+          },
+          {
+            "slug": "tanzee",
+            "name": "Tanzee",
+            "speed": null
+          },
+          {
+            "slug": "gumoss",
+            "name": "Gumoss",
+            "speed": null
+          },
+          {
+            "slug": "swee",
+            "name": "Swee",
+            "speed": null
+          },
+          {
+            "slug": "ribbuny",
+            "name": "Ribbuny",
+            "speed": null
+          },
+          {
+            "slug": "cremis",
+            "name": "Cremis",
+            "speed": null
+          },
+          {
+            "slug": "flambelle",
+            "name": "Flambelle",
+            "speed": null
+          },
+          {
+            "slug": "rooby",
+            "name": "Rooby",
+            "speed": null
+          },
+          {
+            "slug": "smokie",
+            "name": "Smokie",
+            "speed": null
+          },
+          {
+            "slug": "foxparks-cryst",
+            "name": "Foxparks Cryst",
+            "speed": null
+          },
+          {
+            "slug": "ribbuny-botan",
+            "name": "Ribbuny Botan",
+            "speed": null
+          },
+          {
+            "slug": "dazzi-noct",
+            "name": "Dazzi Noct",
+            "speed": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "workers",
+    "label": "Workers",
+    "title": "Work Pals Tier List",
+    "description": "Best Pals to put to work in your base.",
+    "path": "/tier-list/base-work",
+    "sourceUrl": "https://palworld.gg/tier-list/base-work",
+    "tiers": [
+      {
+        "tier": "S",
+        "pals": [
+          {
+            "slug": "prunelia",
+            "name": "Prunelia",
+            "speed": null
+          },
+          {
+            "slug": "anubis",
+            "name": "Anubis",
+            "speed": null
+          },
+          {
+            "slug": "grizzbolt",
+            "name": "Grizzbolt",
+            "speed": null
+          },
+          {
+            "slug": "jormuntide",
+            "name": "Jormuntide",
+            "speed": null
+          },
+          {
+            "slug": "jormuntide-ignis",
+            "name": "Jormuntide Ignis",
+            "speed": null
+          },
+          {
+            "slug": "frostallion",
+            "name": "Frostallion",
+            "speed": null
+          },
+          {
+            "slug": "frostallion-noct",
+            "name": "Frostallion Noct",
+            "speed": null
+          },
+          {
+            "slug": "blazamut",
+            "name": "Blazamut",
+            "speed": null
+          },
+          {
+            "slug": "blazamut-ryu",
+            "name": "Blazamut Ryu",
+            "speed": null
+          },
+          {
+            "slug": "blazamut-ryu",
+            "name": "Blazamut Ryu",
+            "speed": null
+          },
+          {
+            "slug": "wumpo",
+            "name": "Wumpo",
+            "speed": null
+          },
+          {
+            "slug": "wumpo-botan",
+            "name": "Wumpo Botan",
+            "speed": null
+          },
+          {
+            "slug": "vaelet",
+            "name": "Vaelet",
+            "speed": null
+          },
+          {
+            "slug": "lyleen",
+            "name": "Lyleen",
+            "speed": null
+          },
+          {
+            "slug": "astegon",
+            "name": "Astegon",
+            "speed": null
+          },
+          {
+            "slug": "verdash",
+            "name": "Verdash",
+            "speed": null
+          },
+          {
+            "slug": "penking",
+            "name": "Penking",
+            "speed": null
+          },
+          {
+            "slug": "penking-lux",
+            "name": "Penking Lux",
+            "speed": null
+          },
+          {
+            "slug": "quivern-botan",
+            "name": "Quivern Botan",
+            "speed": null
+          },
+          {
+            "slug": "petallia",
+            "name": "Petallia",
+            "speed": null
+          },
+          {
+            "slug": "orserk",
+            "name": "Orserk",
+            "speed": null
+          },
+          {
+            "slug": "bellanoir",
+            "name": "Bellanoir",
+            "speed": null
+          },
+          {
+            "slug": "bellanoir-libero",
+            "name": "Bellanoir Libero",
+            "speed": null
+          },
+          {
+            "slug": "selyne",
+            "name": "Selyne",
+            "speed": null
+          },
+          {
+            "slug": "knocklem",
+            "name": "Knocklem",
+            "speed": null
+          },
+          {
+            "slug": "knocklem",
+            "name": "Knocklem",
+            "speed": null
+          },
+          {
+            "slug": "dogen",
+            "name": "Dogen",
+            "speed": null
+          },
+          {
+            "slug": "celesdir",
+            "name": "Celesdir",
+            "speed": null
+          },
+          {
+            "slug": "splatterina",
+            "name": "Splatterina",
+            "speed": null
+          },
+          {
+            "slug": "azurmane",
+            "name": "Azurmane",
+            "speed": null
+          },
+          {
+            "slug": "whalaska",
+            "name": "Whalaska",
+            "speed": null
+          },
+          {
+            "slug": "whalaska-ignis",
+            "name": "Whalaska Ignis",
+            "speed": null
+          },
+          {
+            "slug": "faleris-aqua",
+            "name": "Faleris Aqua",
+            "speed": null
+          },
+          {
+            "slug": "bastigor",
+            "name": "Bastigor",
+            "speed": null
+          },
+          {
+            "slug": "ghangler",
+            "name": "Ghangler",
+            "speed": null
+          },
+          {
+            "slug": "ghangler-ignis",
+            "name": "Ghangler Ignis",
+            "speed": null
+          },
+          {
+            "slug": "braloha",
+            "name": "Braloha",
+            "speed": null
+          },
+          {
+            "slug": "braloha",
+            "name": "Braloha",
+            "speed": null
+          },
+          {
+            "slug": "neptilius",
+            "name": "Neptilius",
+            "speed": null
+          },
+          {
+            "slug": "eye-of-cthulhu",
+            "name": "Eye of Cthulhu",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "A",
+        "pals": [
+          {
+            "slug": "nyafia",
+            "name": "Nyafia",
+            "speed": null
+          },
+          {
+            "slug": "cryolinx",
+            "name": "Cryolinx",
+            "speed": null
+          },
+          {
+            "slug": "robinquill",
+            "name": "Robinquill",
+            "speed": null
+          },
+          {
+            "slug": "robinquill-terra",
+            "name": "Robinquill Terra",
+            "speed": null
+          },
+          {
+            "slug": "lyleen-noct",
+            "name": "Lyleen Noct",
+            "speed": null
+          },
+          {
+            "slug": "elizabee",
+            "name": "Elizabee",
+            "speed": null
+          },
+          {
+            "slug": "beegarde",
+            "name": "Beegarde",
+            "speed": null
+          },
+          {
+            "slug": "mossanda",
+            "name": "Mossanda",
+            "speed": null
+          },
+          {
+            "slug": "mossanda-lux",
+            "name": "Mossanda Lux",
+            "speed": null
+          },
+          {
+            "slug": "katress-ignis",
+            "name": "Katress Ignis",
+            "speed": null
+          },
+          {
+            "slug": "warsect",
+            "name": "Warsect",
+            "speed": null
+          },
+          {
+            "slug": "quivern",
+            "name": "Quivern",
+            "speed": null
+          },
+          {
+            "slug": "bushi",
+            "name": "Bushi",
+            "speed": null
+          },
+          {
+            "slug": "bushi-noct",
+            "name": "Bushi Noct",
+            "speed": null
+          },
+          {
+            "slug": "sootseer",
+            "name": "Sootseer",
+            "speed": null
+          },
+          {
+            "slug": "tarantriss",
+            "name": "Tarantriss",
+            "speed": null
+          },
+          {
+            "slug": "cryolinx-terra",
+            "name": "Cryolinx Terra",
+            "speed": null
+          },
+          {
+            "slug": "icelyn",
+            "name": "Icelyn",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "B",
+        "pals": [
+          {
+            "slug": "incineram",
+            "name": "Incineram",
+            "speed": null
+          },
+          {
+            "slug": "incineram-noct",
+            "name": "Incineram Noct",
+            "speed": null
+          },
+          {
+            "slug": "lifmunk",
+            "name": "Lifmunk",
+            "speed": null
+          },
+          {
+            "slug": "gorirat",
+            "name": "Gorirat",
+            "speed": null
+          },
+          {
+            "slug": "gorirat-terra",
+            "name": "Gorirat Terra",
+            "speed": null
+          },
+          {
+            "slug": "bristla",
+            "name": "Bristla",
+            "speed": null
+          },
+          {
+            "slug": "lunaris",
+            "name": "Lunaris",
+            "speed": null
+          },
+          {
+            "slug": "pengullet-lux",
+            "name": "Pengullet Lux",
+            "speed": null
+          },
+          {
+            "slug": "hangyu-cryst",
+            "name": "Hangyu Cryst",
+            "speed": null
+          },
+          {
+            "slug": "elphidran-aqua",
+            "name": "Elphidran Aqua",
+            "speed": null
+          },
+          {
+            "slug": "reptyro",
+            "name": "Reptyro",
+            "speed": null
+          },
+          {
+            "slug": "reptyro-cryst",
+            "name": "Reptyro Cryst",
+            "speed": null
+          },
+          {
+            "slug": "vanwyrm-cryst",
+            "name": "Vanwyrm Cryst",
+            "speed": null
+          },
+          {
+            "slug": "mammorest",
+            "name": "Mammorest",
+            "speed": null
+          },
+          {
+            "slug": "mammorest-cryst",
+            "name": "Mammorest Cryst",
+            "speed": null
+          },
+          {
+            "slug": "faleris",
+            "name": "Faleris",
+            "speed": null
+          },
+          {
+            "slug": "sibelyx",
+            "name": "Sibelyx",
+            "speed": null
+          },
+          {
+            "slug": "wixen",
+            "name": "Wixen",
+            "speed": null
+          },
+          {
+            "slug": "wixen-noct",
+            "name": "Wixen Noct",
+            "speed": null
+          },
+          {
+            "slug": "lovander",
+            "name": "Lovander",
+            "speed": null
+          },
+          {
+            "slug": "flopie",
+            "name": "Flopie",
+            "speed": null
+          },
+          {
+            "slug": "tombat",
+            "name": "Tombat",
+            "speed": null
+          },
+          {
+            "slug": "tanzee",
+            "name": "Tanzee",
+            "speed": null
+          },
+          {
+            "slug": "blazehowl",
+            "name": "Blazehowl",
+            "speed": null
+          },
+          {
+            "slug": "blazehowl-noct",
+            "name": "Blazehowl Noct",
+            "speed": null
+          },
+          {
+            "slug": "katress",
+            "name": "Katress",
+            "speed": null
+          },
+          {
+            "slug": "beakon",
+            "name": "Beakon",
+            "speed": null
+          },
+          {
+            "slug": "warsect-terra",
+            "name": "Warsect Terra",
+            "speed": null
+          },
+          {
+            "slug": "helzephyr-lux",
+            "name": "Helzephyr Lux",
+            "speed": null
+          },
+          {
+            "slug": "ragnahawk",
+            "name": "Ragnahawk",
+            "speed": null
+          },
+          {
+            "slug": "menasting",
+            "name": "Menasting",
+            "speed": null
+          },
+          {
+            "slug": "menasting-terra",
+            "name": "Menasting Terra",
+            "speed": null
+          },
+          {
+            "slug": "dumud",
+            "name": "Dumud",
+            "speed": null
+          },
+          {
+            "slug": "dumud-gild",
+            "name": "Dumud Gild",
+            "speed": null
+          },
+          {
+            "slug": "lullu",
+            "name": "Lullu",
+            "speed": null
+          },
+          {
+            "slug": "shroomer",
+            "name": "Shroomer",
+            "speed": null
+          },
+          {
+            "slug": "shroomer-noct",
+            "name": "Shroomer Noct",
+            "speed": null
+          },
+          {
+            "slug": "prixter",
+            "name": "Prixter",
+            "speed": null
+          },
+          {
+            "slug": "nitemary",
+            "name": "Nitemary",
+            "speed": null
+          },
+          {
+            "slug": "gloopie",
+            "name": "Gloopie",
+            "speed": null
+          },
+          {
+            "slug": "loupmoon-cryst",
+            "name": "Loupmoon Cryst",
+            "speed": null
+          },
+          {
+            "slug": "finsider-ignis",
+            "name": "Finsider Ignis",
+            "speed": null
+          },
+          {
+            "slug": "polapup",
+            "name": "Polapup",
+            "speed": null
+          },
+          {
+            "slug": "palumba",
+            "name": "Palumba",
+            "speed": null
+          },
+          {
+            "slug": "jellroy",
+            "name": "Jellroy",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "C",
+        "pals": [
+          {
+            "slug": "turtacle",
+            "name": "Turtacle",
+            "speed": null
+          },
+          {
+            "slug": "turtacle-terra",
+            "name": "Turtacle Terra",
+            "speed": null
+          },
+          {
+            "slug": "digtoise",
+            "name": "Digtoise",
+            "speed": null
+          },
+          {
+            "slug": "univolt",
+            "name": "Univolt",
+            "speed": null
+          },
+          {
+            "slug": "pengullet",
+            "name": "Pengullet",
+            "speed": null
+          },
+          {
+            "slug": "dazzi",
+            "name": "Dazzi",
+            "speed": null
+          },
+          {
+            "slug": "gobfin",
+            "name": "Gobfin",
+            "speed": null
+          },
+          {
+            "slug": "gobfin-ignis",
+            "name": "Gobfin Ignis",
+            "speed": null
+          },
+          {
+            "slug": "lamball",
+            "name": "Lamball",
+            "speed": null
+          },
+          {
+            "slug": "hangyu",
+            "name": "Hangyu",
+            "speed": null
+          },
+          {
+            "slug": "suzaku",
+            "name": "Suzaku",
+            "speed": null
+          },
+          {
+            "slug": "suzaku-aqua",
+            "name": "Suzaku Aqua",
+            "speed": null
+          },
+          {
+            "slug": "pyrin",
+            "name": "Pyrin",
+            "speed": null
+          },
+          {
+            "slug": "pyrin-noct",
+            "name": "Pyrin Noct",
+            "speed": null
+          },
+          {
+            "slug": "azurobe",
+            "name": "Azurobe",
+            "speed": null
+          },
+          {
+            "slug": "azurobe-cryst",
+            "name": "Azurobe Cryst",
+            "speed": null
+          },
+          {
+            "slug": "cattiva",
+            "name": "Cattiva",
+            "speed": null
+          },
+          {
+            "slug": "depresso",
+            "name": "Depresso",
+            "speed": null
+          },
+          {
+            "slug": "maraith",
+            "name": "Maraith",
+            "speed": null
+          },
+          {
+            "slug": "relaxaurus",
+            "name": "Relaxaurus",
+            "speed": null
+          },
+          {
+            "slug": "relaxaurus-lux",
+            "name": "Relaxaurus Lux",
+            "speed": null
+          },
+          {
+            "slug": "leezpunk",
+            "name": "Leezpunk",
+            "speed": null
+          },
+          {
+            "slug": "leezpunk-ignis",
+            "name": "Leezpunk Ignis",
+            "speed": null
+          },
+          {
+            "slug": "fuack",
+            "name": "Fuack",
+            "speed": null
+          },
+          {
+            "slug": "fuack-ignis",
+            "name": "Fuack Ignis",
+            "speed": null
+          },
+          {
+            "slug": "vanwyrm",
+            "name": "Vanwyrm",
+            "speed": null
+          },
+          {
+            "slug": "dinossom",
+            "name": "Dinossom",
+            "speed": null
+          },
+          {
+            "slug": "dinossom-lux",
+            "name": "Dinossom Lux",
+            "speed": null
+          },
+          {
+            "slug": "sparkit",
+            "name": "Sparkit",
+            "speed": null
+          },
+          {
+            "slug": "felbat",
+            "name": "Felbat",
+            "speed": null
+          },
+          {
+            "slug": "broncherry",
+            "name": "Broncherry",
+            "speed": null
+          },
+          {
+            "slug": "broncherry-aqua",
+            "name": "Broncherry Aqua",
+            "speed": null
+          },
+          {
+            "slug": "caprity",
+            "name": "Caprity",
+            "speed": null
+          },
+          {
+            "slug": "reindrix",
+            "name": "Reindrix",
+            "speed": null
+          },
+          {
+            "slug": "killamari",
+            "name": "Killamari",
+            "speed": null
+          },
+          {
+            "slug": "killamari-primo",
+            "name": "Killamari Primo",
+            "speed": null
+          },
+          {
+            "slug": "arsox",
+            "name": "Arsox",
+            "speed": null
+          },
+          {
+            "slug": "fuddler",
+            "name": "Fuddler",
+            "speed": null
+          },
+          {
+            "slug": "jetragon",
+            "name": "Jetragon",
+            "speed": null
+          },
+          {
+            "slug": "daedream",
+            "name": "Daedream",
+            "speed": null
+          },
+          {
+            "slug": "kingpaca-cryst",
+            "name": "Kingpaca Cryst",
+            "speed": null
+          },
+          {
+            "slug": "sweepa",
+            "name": "Sweepa",
+            "speed": null
+          },
+          {
+            "slug": "ribbuny",
+            "name": "Ribbuny",
+            "speed": null
+          },
+          {
+            "slug": "paladius",
+            "name": "Paladius",
+            "speed": null
+          },
+          {
+            "slug": "chillet-ignis",
+            "name": "Chillet Ignis",
+            "speed": null
+          },
+          {
+            "slug": "helzephyr",
+            "name": "Helzephyr",
+            "speed": null
+          },
+          {
+            "slug": "celaray-lux",
+            "name": "Celaray Lux",
+            "speed": null
+          },
+          {
+            "slug": "necromus",
+            "name": "Necromus",
+            "speed": null
+          },
+          {
+            "slug": "cinnamoth",
+            "name": "Cinnamoth",
+            "speed": null
+          },
+          {
+            "slug": "flambelle",
+            "name": "Flambelle",
+            "speed": null
+          },
+          {
+            "slug": "croajiro",
+            "name": "Croajiro",
+            "speed": null
+          },
+          {
+            "slug": "croajiro-noct",
+            "name": "Croajiro Noct",
+            "speed": null
+          },
+          {
+            "slug": "xenovader",
+            "name": "Xenovader",
+            "speed": null
+          },
+          {
+            "slug": "xenogard",
+            "name": "Xenogard",
+            "speed": null
+          },
+          {
+            "slug": "silvegis",
+            "name": "Silvegis",
+            "speed": null
+          },
+          {
+            "slug": "jelliette",
+            "name": "Jelliette",
+            "speed": null
+          },
+          {
+            "slug": "caprity-noct",
+            "name": "Caprity Noct",
+            "speed": null
+          },
+          {
+            "slug": "ribbuny-botan",
+            "name": "Ribbuny Botan",
+            "speed": null
+          },
+          {
+            "slug": "dazzi-noct",
+            "name": "Dazzi Noct",
+            "speed": null
+          },
+          {
+            "slug": "fenglope-lux",
+            "name": "Fenglope Lux",
+            "speed": null
+          },
+          {
+            "slug": "herbil",
+            "name": "Herbil",
+            "speed": null
+          },
+          {
+            "slug": "munchill",
+            "name": "Munchill",
+            "speed": null
+          },
+          {
+            "slug": "finsider",
+            "name": "Finsider",
+            "speed": null
+          },
+          {
+            "slug": "frostplume",
+            "name": "Frostplume",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "D",
+        "pals": [
+          {
+            "slug": "gildane",
+            "name": "Gildane",
+            "speed": null
+          },
+          {
+            "slug": "mau",
+            "name": "Mau",
+            "speed": null
+          },
+          {
+            "slug": "mau-cryst",
+            "name": "Mau Cryst",
+            "speed": null
+          },
+          {
+            "slug": "rushoar",
+            "name": "Rushoar",
+            "speed": null
+          },
+          {
+            "slug": "tocotoco",
+            "name": "Tocotoco",
+            "speed": null
+          },
+          {
+            "slug": "eikthyrdeer",
+            "name": "Eikthyrdeer",
+            "speed": null
+          },
+          {
+            "slug": "eikthyrdeer-terra",
+            "name": "Eikthyrdeer Terra",
+            "speed": null
+          },
+          {
+            "slug": "galeclaw",
+            "name": "Galeclaw",
+            "speed": null
+          },
+          {
+            "slug": "teafant",
+            "name": "Teafant",
+            "speed": null
+          },
+          {
+            "slug": "direhowl",
+            "name": "Direhowl",
+            "speed": null
+          },
+          {
+            "slug": "jolthog",
+            "name": "Jolthog",
+            "speed": null
+          },
+          {
+            "slug": "jolthog-cryst",
+            "name": "Jolthog Cryst",
+            "speed": null
+          },
+          {
+            "slug": "foxparks",
+            "name": "Foxparks",
+            "speed": null
+          },
+          {
+            "slug": "loupmoon",
+            "name": "Loupmoon",
+            "speed": null
+          },
+          {
+            "slug": "elphidran",
+            "name": "Elphidran",
+            "speed": null
+          },
+          {
+            "slug": "woolipop",
+            "name": "Woolipop",
+            "speed": null
+          },
+          {
+            "slug": "melpaca",
+            "name": "Melpaca",
+            "speed": null
+          },
+          {
+            "slug": "surfent",
+            "name": "Surfent",
+            "speed": null
+          },
+          {
+            "slug": "surfent-terra",
+            "name": "Surfent Terra",
+            "speed": null
+          },
+          {
+            "slug": "cawgnito",
+            "name": "Cawgnito",
+            "speed": null
+          },
+          {
+            "slug": "fenglope",
+            "name": "Fenglope",
+            "speed": null
+          },
+          {
+            "slug": "kitsun",
+            "name": "Kitsun",
+            "speed": null
+          },
+          {
+            "slug": "chikipi",
+            "name": "Chikipi",
+            "speed": null
+          },
+          {
+            "slug": "shadowbeak",
+            "name": "Shadowbeak",
+            "speed": null
+          },
+          {
+            "slug": "vixy",
+            "name": "Vixy",
+            "speed": null
+          },
+          {
+            "slug": "hoocrates",
+            "name": "Hoocrates",
+            "speed": null
+          },
+          {
+            "slug": "kelpsea",
+            "name": "Kelpsea",
+            "speed": null
+          },
+          {
+            "slug": "kelpsea-ignis",
+            "name": "Kelpsea Ignis",
+            "speed": null
+          },
+          {
+            "slug": "mozzarina",
+            "name": "Mozzarina",
+            "speed": null
+          },
+          {
+            "slug": "nitewing",
+            "name": "Nitewing",
+            "speed": null
+          },
+          {
+            "slug": "rayhound",
+            "name": "Rayhound",
+            "speed": null
+          },
+          {
+            "slug": "foxcicle",
+            "name": "Foxcicle",
+            "speed": null
+          },
+          {
+            "slug": "kingpaca",
+            "name": "Kingpaca",
+            "speed": null
+          },
+          {
+            "slug": "gumoss",
+            "name": "Gumoss",
+            "speed": null
+          },
+          {
+            "slug": "swee",
+            "name": "Swee",
+            "speed": null
+          },
+          {
+            "slug": "nox",
+            "name": "Nox",
+            "speed": null
+          },
+          {
+            "slug": "chillet",
+            "name": "Chillet",
+            "speed": null
+          },
+          {
+            "slug": "celaray",
+            "name": "Celaray",
+            "speed": null
+          },
+          {
+            "slug": "grintale",
+            "name": "Grintale",
+            "speed": null
+          },
+          {
+            "slug": "cremis",
+            "name": "Cremis",
+            "speed": null
+          },
+          {
+            "slug": "rooby",
+            "name": "Rooby",
+            "speed": null
+          },
+          {
+            "slug": "kikit",
+            "name": "Kikit",
+            "speed": null
+          },
+          {
+            "slug": "yakumo",
+            "name": "Yakumo",
+            "speed": null
+          },
+          {
+            "slug": "dazemu",
+            "name": "Dazemu",
+            "speed": null
+          },
+          {
+            "slug": "mimog",
+            "name": "Mimog",
+            "speed": null
+          },
+          {
+            "slug": "xenolord",
+            "name": "Xenolord",
+            "speed": null
+          },
+          {
+            "slug": "starryon",
+            "name": "Starryon",
+            "speed": null
+          },
+          {
+            "slug": "smokie",
+            "name": "Smokie",
+            "speed": null
+          },
+          {
+            "slug": "omascul",
+            "name": "Omascul",
+            "speed": null
+          },
+          {
+            "slug": "foxparks-cryst",
+            "name": "Foxparks Cryst",
+            "speed": null
+          },
+          {
+            "slug": "kitsun-noct",
+            "name": "Kitsun Noct",
+            "speed": null
+          },
+          {
+            "slug": "green-slime",
+            "name": "Green Slime",
+            "speed": null
+          },
+          {
+            "slug": "blue-slime",
+            "name": "Blue Slime",
+            "speed": null
+          },
+          {
+            "slug": "red-slime",
+            "name": "Red Slime",
+            "speed": null
+          },
+          {
+            "slug": "purple-slime",
+            "name": "Purple Slime",
+            "speed": null
+          },
+          {
+            "slug": "illuminant-slime",
+            "name": "Illuminant Slime",
+            "speed": null
+          },
+          {
+            "slug": "rainbow-slime",
+            "name": "Rainbow Slime",
+            "speed": null
+          },
+          {
+            "slug": "enchanted-sword",
+            "name": "Enchanted Sword",
+            "speed": null
+          },
+          {
+            "slug": "cave-bat",
+            "name": "Cave Bat",
+            "speed": null
+          },
+          {
+            "slug": "illuminant-bat",
+            "name": "Illuminant Bat",
+            "speed": null
+          },
+          {
+            "slug": "demon-eye",
+            "name": "Demon Eye",
+            "speed": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flying",
+    "label": "Flying Mounts",
+    "title": "Flying Pals Tier List",
+    "description": "Best flying pals to mount in Palworld.",
+    "path": "/tier-list/flying-mounts",
+    "sourceUrl": "https://palworld.gg/tier-list/flying-mounts",
+    "tiers": [
+      {
+        "tier": "S",
+        "pals": [
+          {
+            "slug": "jetragon",
+            "name": "Jetragon",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "A",
+        "pals": [
+          {
+            "slug": "frostallion",
+            "name": "Frostallion",
+            "speed": null
+          },
+          {
+            "slug": "frostallion-noct",
+            "name": "Frostallion Noct",
+            "speed": null
+          },
+          {
+            "slug": "selyne",
+            "name": "Selyne",
+            "speed": null
+          },
+          {
+            "slug": "faleris",
+            "name": "Faleris",
+            "speed": null
+          },
+          {
+            "slug": "faleris-aqua",
+            "name": "Faleris Aqua",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "B",
+        "pals": [
+          {
+            "slug": "shadowbeak",
+            "name": "Shadowbeak",
+            "speed": null
+          },
+          {
+            "slug": "ragnahawk",
+            "name": "Ragnahawk",
+            "speed": null
+          },
+          {
+            "slug": "suzaku",
+            "name": "Suzaku",
+            "speed": null
+          },
+          {
+            "slug": "suzaku-aqua",
+            "name": "Suzaku Aqua",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "C",
+        "pals": [
+          {
+            "slug": "quivern-botan",
+            "name": "Quivern Botan",
+            "speed": null
+          },
+          {
+            "slug": "xenogard",
+            "name": "Xenogard",
+            "speed": null
+          },
+          {
+            "slug": "beakon",
+            "name": "Beakon",
+            "speed": null
+          },
+          {
+            "slug": "helzephyr",
+            "name": "Helzephyr",
+            "speed": null
+          },
+          {
+            "slug": "helzephyr-lux",
+            "name": "Helzephyr Lux",
+            "speed": null
+          },
+          {
+            "slug": "quivern",
+            "name": "Quivern",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "D",
+        "pals": [
+          {
+            "slug": "vanwyrm",
+            "name": "Vanwyrm",
+            "speed": null
+          },
+          {
+            "slug": "vanwyrm-cryst",
+            "name": "Vanwyrm Cryst",
+            "speed": null
+          },
+          {
+            "slug": "elphidran",
+            "name": "Elphidran",
+            "speed": null
+          },
+          {
+            "slug": "elphidran-aqua",
+            "name": "Elphidran Aqua",
+            "speed": null
+          },
+          {
+            "slug": "astegon",
+            "name": "Astegon",
+            "speed": null
+          },
+          {
+            "slug": "nitewing",
+            "name": "Nitewing",
+            "speed": null
+          },
+          {
+            "slug": "xenolord",
+            "name": "Xenolord",
+            "speed": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ground",
+    "label": "Ground Mounts",
+    "title": "Ground Mounts Tier List",
+    "description": "All ground mounts in Palworld.",
+    "path": "/tier-list/ground-mounts",
+    "sourceUrl": "https://palworld.gg/tier-list/ground-mounts",
+    "tiers": [
+      {
+        "tier": "S",
+        "pals": [
+          {
+            "slug": "necromus",
+            "name": "Necromus",
+            "speed": null
+          },
+          {
+            "slug": "paladius",
+            "name": "Paladius",
+            "speed": null
+          },
+          {
+            "slug": "pyrin",
+            "name": "Pyrin",
+            "speed": null
+          },
+          {
+            "slug": "fenglope",
+            "name": "Fenglope",
+            "speed": null
+          },
+          {
+            "slug": "azurmane",
+            "name": "Azurmane",
+            "speed": null
+          },
+          {
+            "slug": "dazemu",
+            "name": "Dazemu",
+            "speed": null
+          },
+          {
+            "slug": "starryon",
+            "name": "Starryon",
+            "speed": null
+          },
+          {
+            "slug": "gildane",
+            "name": "Gildane",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "A",
+        "pals": [
+          {
+            "slug": "bastigor",
+            "name": "Bastigor",
+            "speed": null
+          },
+          {
+            "slug": "rayhound",
+            "name": "Rayhound",
+            "speed": null
+          },
+          {
+            "slug": "direhowl",
+            "name": "Direhowl",
+            "speed": null
+          },
+          {
+            "slug": "univolt",
+            "name": "Univolt",
+            "speed": null
+          },
+          {
+            "slug": "silvegis",
+            "name": "Silvegis",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "B",
+        "pals": [
+          {
+            "slug": "celesdir",
+            "name": "Celesdir",
+            "speed": null
+          },
+          {
+            "slug": "blazehowl",
+            "name": "Blazehowl",
+            "speed": null
+          },
+          {
+            "slug": "blazamut",
+            "name": "Blazamut",
+            "speed": null
+          },
+          {
+            "slug": "eikthyrdeer",
+            "name": "Eikthyrdeer",
+            "speed": null
+          },
+          {
+            "slug": "kitsun",
+            "name": "Kitsun",
+            "speed": null
+          },
+          {
+            "slug": "shroomer",
+            "name": "Shroomer",
+            "speed": null
+          },
+          {
+            "slug": "chillet",
+            "name": "Chillet",
+            "speed": null
+          },
+          {
+            "slug": "azurobe",
+            "name": "Azurobe",
+            "speed": null
+          },
+          {
+            "slug": "maraith",
+            "name": "Maraith",
+            "speed": null
+          },
+          {
+            "slug": "grintale",
+            "name": "Grintale",
+            "speed": null
+          },
+          {
+            "slug": "arsox",
+            "name": "Arsox",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "C",
+        "pals": [
+          {
+            "slug": "reindrix",
+            "name": "Reindrix",
+            "speed": null
+          },
+          {
+            "slug": "dinossom",
+            "name": "Dinossom",
+            "speed": null
+          },
+          {
+            "slug": "jormuntide",
+            "name": "Jormuntide",
+            "speed": null
+          },
+          {
+            "slug": "jormuntide-ignis",
+            "name": "Jormuntide Ignis",
+            "speed": null
+          },
+          {
+            "slug": "kingpaca",
+            "name": "Kingpaca",
+            "speed": null
+          },
+          {
+            "slug": "melpaca",
+            "name": "Melpaca",
+            "speed": null
+          },
+          {
+            "slug": "surfent",
+            "name": "Surfent",
+            "speed": null
+          },
+          {
+            "slug": "rushoar",
+            "name": "Rushoar",
+            "speed": null
+          },
+          {
+            "slug": "shroomer-noct",
+            "name": "Shroomer Noct",
+            "speed": null
+          },
+          {
+            "slug": "shroomer",
+            "name": "Shroomer",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "D",
+        "pals": [
+          {
+            "slug": "mammorest",
+            "name": "Mammorest",
+            "speed": null
+          },
+          {
+            "slug": "reptyro",
+            "name": "Reptyro",
+            "speed": null
+          },
+          {
+            "slug": "wumpo",
+            "name": "Wumpo",
+            "speed": null
+          },
+          {
+            "slug": "yakumo",
+            "name": "Yakumo",
+            "speed": null
+          },
+          {
+            "slug": "broncherry",
+            "name": "Broncherry",
+            "speed": null
+          },
+          {
+            "slug": "sweepa",
+            "name": "Sweepa",
+            "speed": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "combat",
+    "label": "Combat",
+    "title": "Combat Pals Tier List",
+    "description": "Best combat Pals to fight beside you.",
+    "path": "/tier-list/combat",
+    "sourceUrl": "https://palworld.gg/tier-list/combat",
+    "tiers": [
+      {
+        "tier": "S",
+        "pals": [
+          {
+            "slug": "jormuntide",
+            "name": "Jormuntide",
+            "speed": null
+          },
+          {
+            "slug": "jormuntide-ignis",
+            "name": "Jormuntide Ignis",
+            "speed": null
+          },
+          {
+            "slug": "frostallion",
+            "name": "Frostallion",
+            "speed": null
+          },
+          {
+            "slug": "frostallion-noct",
+            "name": "Frostallion Noct",
+            "speed": null
+          },
+          {
+            "slug": "blazamut-ryu",
+            "name": "Blazamut Ryu",
+            "speed": null
+          },
+          {
+            "slug": "shadowbeak",
+            "name": "Shadowbeak",
+            "speed": null
+          },
+          {
+            "slug": "paladius",
+            "name": "Paladius",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "A",
+        "pals": [
+          {
+            "slug": "gildane",
+            "name": "Gildane",
+            "speed": null
+          },
+          {
+            "slug": "anubis",
+            "name": "Anubis",
+            "speed": null
+          },
+          {
+            "slug": "incineram",
+            "name": "Incineram",
+            "speed": null
+          },
+          {
+            "slug": "incineram-noct",
+            "name": "Incineram Noct",
+            "speed": null
+          },
+          {
+            "slug": "grizzbolt",
+            "name": "Grizzbolt",
+            "speed": null
+          },
+          {
+            "slug": "suzaku",
+            "name": "Suzaku",
+            "speed": null
+          },
+          {
+            "slug": "suzaku-aqua",
+            "name": "Suzaku Aqua",
+            "speed": null
+          },
+          {
+            "slug": "cryolinx",
+            "name": "Cryolinx",
+            "speed": null
+          },
+          {
+            "slug": "azurobe-cryst",
+            "name": "Azurobe Cryst",
+            "speed": null
+          },
+          {
+            "slug": "fenglope",
+            "name": "Fenglope",
+            "speed": null
+          },
+          {
+            "slug": "reptyro",
+            "name": "Reptyro",
+            "speed": null
+          },
+          {
+            "slug": "reptyro-cryst",
+            "name": "Reptyro Cryst",
+            "speed": null
+          },
+          {
+            "slug": "mammorest",
+            "name": "Mammorest",
+            "speed": null
+          },
+          {
+            "slug": "mammorest-cryst",
+            "name": "Mammorest Cryst",
+            "speed": null
+          },
+          {
+            "slug": "blazamut",
+            "name": "Blazamut",
+            "speed": null
+          },
+          {
+            "slug": "wumpo",
+            "name": "Wumpo",
+            "speed": null
+          },
+          {
+            "slug": "wumpo-botan",
+            "name": "Wumpo Botan",
+            "speed": null
+          },
+          {
+            "slug": "vaelet",
+            "name": "Vaelet",
+            "speed": null
+          },
+          {
+            "slug": "lyleen",
+            "name": "Lyleen",
+            "speed": null
+          },
+          {
+            "slug": "lyleen-noct",
+            "name": "Lyleen Noct",
+            "speed": null
+          },
+          {
+            "slug": "astegon",
+            "name": "Astegon",
+            "speed": null
+          },
+          {
+            "slug": "jetragon",
+            "name": "Jetragon",
+            "speed": null
+          },
+          {
+            "slug": "warsect",
+            "name": "Warsect",
+            "speed": null
+          },
+          {
+            "slug": "warsect-terra",
+            "name": "Warsect Terra",
+            "speed": null
+          },
+          {
+            "slug": "helzephyr",
+            "name": "Helzephyr",
+            "speed": null
+          },
+          {
+            "slug": "helzephyr-lux",
+            "name": "Helzephyr Lux",
+            "speed": null
+          },
+          {
+            "slug": "ragnahawk",
+            "name": "Ragnahawk",
+            "speed": null
+          },
+          {
+            "slug": "necromus",
+            "name": "Necromus",
+            "speed": null
+          },
+          {
+            "slug": "menasting",
+            "name": "Menasting",
+            "speed": null
+          },
+          {
+            "slug": "menasting-terra",
+            "name": "Menasting Terra",
+            "speed": null
+          },
+          {
+            "slug": "orserk",
+            "name": "Orserk",
+            "speed": null
+          },
+          {
+            "slug": "bellanoir",
+            "name": "Bellanoir",
+            "speed": null
+          },
+          {
+            "slug": "bellanoir-libero",
+            "name": "Bellanoir Libero",
+            "speed": null
+          },
+          {
+            "slug": "selyne",
+            "name": "Selyne",
+            "speed": null
+          },
+          {
+            "slug": "sootseer",
+            "name": "Sootseer",
+            "speed": null
+          },
+          {
+            "slug": "knocklem",
+            "name": "Knocklem",
+            "speed": null
+          },
+          {
+            "slug": "xenogard",
+            "name": "Xenogard",
+            "speed": null
+          },
+          {
+            "slug": "xenolord",
+            "name": "Xenolord",
+            "speed": null
+          },
+          {
+            "slug": "silvegis",
+            "name": "Silvegis",
+            "speed": null
+          },
+          {
+            "slug": "celesdir",
+            "name": "Celesdir",
+            "speed": null
+          },
+          {
+            "slug": "azurmane",
+            "name": "Azurmane",
+            "speed": null
+          },
+          {
+            "slug": "whalaska",
+            "name": "Whalaska",
+            "speed": null
+          },
+          {
+            "slug": "whalaska-ignis",
+            "name": "Whalaska Ignis",
+            "speed": null
+          },
+          {
+            "slug": "cryolinx-terra",
+            "name": "Cryolinx Terra",
+            "speed": null
+          },
+          {
+            "slug": "fenglope-lux",
+            "name": "Fenglope Lux",
+            "speed": null
+          },
+          {
+            "slug": "faleris-aqua",
+            "name": "Faleris Aqua",
+            "speed": null
+          },
+          {
+            "slug": "bastigor",
+            "name": "Bastigor",
+            "speed": null
+          },
+          {
+            "slug": "ghangler",
+            "name": "Ghangler",
+            "speed": null
+          },
+          {
+            "slug": "ghangler-ignis",
+            "name": "Ghangler Ignis",
+            "speed": null
+          },
+          {
+            "slug": "braloha",
+            "name": "Braloha",
+            "speed": null
+          },
+          {
+            "slug": "palumba",
+            "name": "Palumba",
+            "speed": null
+          },
+          {
+            "slug": "neptilius",
+            "name": "Neptilius",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "B",
+        "pals": [
+          {
+            "slug": "nyafia",
+            "name": "Nyafia",
+            "speed": null
+          },
+          {
+            "slug": "prunelia",
+            "name": "Prunelia",
+            "speed": null
+          },
+          {
+            "slug": "turtacle-terra",
+            "name": "Turtacle Terra",
+            "speed": null
+          },
+          {
+            "slug": "digtoise",
+            "name": "Digtoise",
+            "speed": null
+          },
+          {
+            "slug": "gorirat",
+            "name": "Gorirat",
+            "speed": null
+          },
+          {
+            "slug": "gorirat-terra",
+            "name": "Gorirat Terra",
+            "speed": null
+          },
+          {
+            "slug": "univolt",
+            "name": "Univolt",
+            "speed": null
+          },
+          {
+            "slug": "loupmoon",
+            "name": "Loupmoon",
+            "speed": null
+          },
+          {
+            "slug": "pyrin",
+            "name": "Pyrin",
+            "speed": null
+          },
+          {
+            "slug": "pyrin-noct",
+            "name": "Pyrin Noct",
+            "speed": null
+          },
+          {
+            "slug": "elphidran-aqua",
+            "name": "Elphidran Aqua",
+            "speed": null
+          },
+          {
+            "slug": "azurobe",
+            "name": "Azurobe",
+            "speed": null
+          },
+          {
+            "slug": "robinquill",
+            "name": "Robinquill",
+            "speed": null
+          },
+          {
+            "slug": "robinquill-terra",
+            "name": "Robinquill Terra",
+            "speed": null
+          },
+          {
+            "slug": "relaxaurus",
+            "name": "Relaxaurus",
+            "speed": null
+          },
+          {
+            "slug": "relaxaurus-lux",
+            "name": "Relaxaurus Lux",
+            "speed": null
+          },
+          {
+            "slug": "kitsun",
+            "name": "Kitsun",
+            "speed": null
+          },
+          {
+            "slug": "vanwyrm",
+            "name": "Vanwyrm",
+            "speed": null
+          },
+          {
+            "slug": "vanwyrm-cryst",
+            "name": "Vanwyrm Cryst",
+            "speed": null
+          },
+          {
+            "slug": "dinossom",
+            "name": "Dinossom",
+            "speed": null
+          },
+          {
+            "slug": "dinossom-lux",
+            "name": "Dinossom Lux",
+            "speed": null
+          },
+          {
+            "slug": "felbat",
+            "name": "Felbat",
+            "speed": null
+          },
+          {
+            "slug": "broncherry",
+            "name": "Broncherry",
+            "speed": null
+          },
+          {
+            "slug": "broncherry-aqua",
+            "name": "Broncherry Aqua",
+            "speed": null
+          },
+          {
+            "slug": "faleris",
+            "name": "Faleris",
+            "speed": null
+          },
+          {
+            "slug": "reindrix",
+            "name": "Reindrix",
+            "speed": null
+          },
+          {
+            "slug": "sibelyx",
+            "name": "Sibelyx",
+            "speed": null
+          },
+          {
+            "slug": "nitewing",
+            "name": "Nitewing",
+            "speed": null
+          },
+          {
+            "slug": "elizabee",
+            "name": "Elizabee",
+            "speed": null
+          },
+          {
+            "slug": "tombat",
+            "name": "Tombat",
+            "speed": null
+          },
+          {
+            "slug": "mossanda",
+            "name": "Mossanda",
+            "speed": null
+          },
+          {
+            "slug": "mossanda-lux",
+            "name": "Mossanda Lux",
+            "speed": null
+          },
+          {
+            "slug": "arsox",
+            "name": "Arsox",
+            "speed": null
+          },
+          {
+            "slug": "rayhound",
+            "name": "Rayhound",
+            "speed": null
+          },
+          {
+            "slug": "verdash",
+            "name": "Verdash",
+            "speed": null
+          },
+          {
+            "slug": "foxcicle",
+            "name": "Foxcicle",
+            "speed": null
+          },
+          {
+            "slug": "blazehowl",
+            "name": "Blazehowl",
+            "speed": null
+          },
+          {
+            "slug": "blazehowl-noct",
+            "name": "Blazehowl Noct",
+            "speed": null
+          },
+          {
+            "slug": "kingpaca",
+            "name": "Kingpaca",
+            "speed": null
+          },
+          {
+            "slug": "kingpaca-cryst",
+            "name": "Kingpaca Cryst",
+            "speed": null
+          },
+          {
+            "slug": "sweepa",
+            "name": "Sweepa",
+            "speed": null
+          },
+          {
+            "slug": "katress",
+            "name": "Katress",
+            "speed": null
+          },
+          {
+            "slug": "katress-ignis",
+            "name": "Katress Ignis",
+            "speed": null
+          },
+          {
+            "slug": "beakon",
+            "name": "Beakon",
+            "speed": null
+          },
+          {
+            "slug": "penking-lux",
+            "name": "Penking Lux",
+            "speed": null
+          },
+          {
+            "slug": "quivern",
+            "name": "Quivern",
+            "speed": null
+          },
+          {
+            "slug": "quivern-botan",
+            "name": "Quivern Botan",
+            "speed": null
+          },
+          {
+            "slug": "bushi",
+            "name": "Bushi",
+            "speed": null
+          },
+          {
+            "slug": "bushi-noct",
+            "name": "Bushi Noct",
+            "speed": null
+          },
+          {
+            "slug": "petallia",
+            "name": "Petallia",
+            "speed": null
+          },
+          {
+            "slug": "grintale",
+            "name": "Grintale",
+            "speed": null
+          },
+          {
+            "slug": "dumud-gild",
+            "name": "Dumud Gild",
+            "speed": null
+          },
+          {
+            "slug": "croajiro-noct",
+            "name": "Croajiro Noct",
+            "speed": null
+          },
+          {
+            "slug": "shroomer",
+            "name": "Shroomer",
+            "speed": null
+          },
+          {
+            "slug": "shroomer-noct",
+            "name": "Shroomer Noct",
+            "speed": null
+          },
+          {
+            "slug": "prixter",
+            "name": "Prixter",
+            "speed": null
+          },
+          {
+            "slug": "dogen",
+            "name": "Dogen",
+            "speed": null
+          },
+          {
+            "slug": "xenovader",
+            "name": "Xenovader",
+            "speed": null
+          },
+          {
+            "slug": "nitemary",
+            "name": "Nitemary",
+            "speed": null
+          },
+          {
+            "slug": "starryon",
+            "name": "Starryon",
+            "speed": null
+          },
+          {
+            "slug": "omascul",
+            "name": "Omascul",
+            "speed": null
+          },
+          {
+            "slug": "splatterina",
+            "name": "Splatterina",
+            "speed": null
+          },
+          {
+            "slug": "tarantriss",
+            "name": "Tarantriss",
+            "speed": null
+          },
+          {
+            "slug": "loupmoon-cryst",
+            "name": "Loupmoon Cryst",
+            "speed": null
+          },
+          {
+            "slug": "kitsun-noct",
+            "name": "Kitsun Noct",
+            "speed": null
+          },
+          {
+            "slug": "icelyn",
+            "name": "Icelyn",
+            "speed": null
+          },
+          {
+            "slug": "polapup",
+            "name": "Polapup",
+            "speed": null
+          },
+          {
+            "slug": "frostplume",
+            "name": "Frostplume",
+            "speed": null
+          },
+          {
+            "slug": "rainbow-slime",
+            "name": "Rainbow Slime",
+            "speed": null
+          },
+          {
+            "slug": "enchanted-sword",
+            "name": "Enchanted Sword",
+            "speed": null
+          },
+          {
+            "slug": "eye-of-cthulhu",
+            "name": "Eye of Cthulhu",
+            "speed": null
+          },
+          {
+            "slug": "demon-eye",
+            "name": "Demon Eye",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "C",
+        "pals": [
+          {
+            "slug": "turtacle",
+            "name": "Turtacle",
+            "speed": null
+          },
+          {
+            "slug": "rushoar",
+            "name": "Rushoar",
+            "speed": null
+          },
+          {
+            "slug": "eikthyrdeer",
+            "name": "Eikthyrdeer",
+            "speed": null
+          },
+          {
+            "slug": "eikthyrdeer-terra",
+            "name": "Eikthyrdeer Terra",
+            "speed": null
+          },
+          {
+            "slug": "galeclaw",
+            "name": "Galeclaw",
+            "speed": null
+          },
+          {
+            "slug": "direhowl",
+            "name": "Direhowl",
+            "speed": null
+          },
+          {
+            "slug": "bristla",
+            "name": "Bristla",
+            "speed": null
+          },
+          {
+            "slug": "lunaris",
+            "name": "Lunaris",
+            "speed": null
+          },
+          {
+            "slug": "pengullet-lux",
+            "name": "Pengullet Lux",
+            "speed": null
+          },
+          {
+            "slug": "dazzi",
+            "name": "Dazzi",
+            "speed": null
+          },
+          {
+            "slug": "gobfin",
+            "name": "Gobfin",
+            "speed": null
+          },
+          {
+            "slug": "gobfin-ignis",
+            "name": "Gobfin Ignis",
+            "speed": null
+          },
+          {
+            "slug": "elphidran",
+            "name": "Elphidran",
+            "speed": null
+          },
+          {
+            "slug": "melpaca",
+            "name": "Melpaca",
+            "speed": null
+          },
+          {
+            "slug": "surfent",
+            "name": "Surfent",
+            "speed": null
+          },
+          {
+            "slug": "surfent-terra",
+            "name": "Surfent Terra",
+            "speed": null
+          },
+          {
+            "slug": "cawgnito",
+            "name": "Cawgnito",
+            "speed": null
+          },
+          {
+            "slug": "caprity",
+            "name": "Caprity",
+            "speed": null
+          },
+          {
+            "slug": "wixen",
+            "name": "Wixen",
+            "speed": null
+          },
+          {
+            "slug": "wixen-noct",
+            "name": "Wixen Noct",
+            "speed": null
+          },
+          {
+            "slug": "lovander",
+            "name": "Lovander",
+            "speed": null
+          },
+          {
+            "slug": "mozzarina",
+            "name": "Mozzarina",
+            "speed": null
+          },
+          {
+            "slug": "beegarde",
+            "name": "Beegarde",
+            "speed": null
+          },
+          {
+            "slug": "tanzee",
+            "name": "Tanzee",
+            "speed": null
+          },
+          {
+            "slug": "penking",
+            "name": "Penking",
+            "speed": null
+          },
+          {
+            "slug": "chillet",
+            "name": "Chillet",
+            "speed": null
+          },
+          {
+            "slug": "chillet-ignis",
+            "name": "Chillet Ignis",
+            "speed": null
+          },
+          {
+            "slug": "celaray",
+            "name": "Celaray",
+            "speed": null
+          },
+          {
+            "slug": "celaray-lux",
+            "name": "Celaray Lux",
+            "speed": null
+          },
+          {
+            "slug": "cinnamoth",
+            "name": "Cinnamoth",
+            "speed": null
+          },
+          {
+            "slug": "dumud",
+            "name": "Dumud",
+            "speed": null
+          },
+          {
+            "slug": "rooby",
+            "name": "Rooby",
+            "speed": null
+          },
+          {
+            "slug": "croajiro",
+            "name": "Croajiro",
+            "speed": null
+          },
+          {
+            "slug": "lullu",
+            "name": "Lullu",
+            "speed": null
+          },
+          {
+            "slug": "kikit",
+            "name": "Kikit",
+            "speed": null
+          },
+          {
+            "slug": "yakumo",
+            "name": "Yakumo",
+            "speed": null
+          },
+          {
+            "slug": "dazemu",
+            "name": "Dazemu",
+            "speed": null
+          },
+          {
+            "slug": "mimog",
+            "name": "Mimog",
+            "speed": null
+          },
+          {
+            "slug": "smokie",
+            "name": "Smokie",
+            "speed": null
+          },
+          {
+            "slug": "gloopie",
+            "name": "Gloopie",
+            "speed": null
+          },
+          {
+            "slug": "jelliette",
+            "name": "Jelliette",
+            "speed": null
+          },
+          {
+            "slug": "caprity-noct",
+            "name": "Caprity Noct",
+            "speed": null
+          },
+          {
+            "slug": "dazzi-noct",
+            "name": "Dazzi Noct",
+            "speed": null
+          },
+          {
+            "slug": "herbil",
+            "name": "Herbil",
+            "speed": null
+          },
+          {
+            "slug": "munchill",
+            "name": "Munchill",
+            "speed": null
+          },
+          {
+            "slug": "finsider",
+            "name": "Finsider",
+            "speed": null
+          },
+          {
+            "slug": "finsider-ignis",
+            "name": "Finsider Ignis",
+            "speed": null
+          },
+          {
+            "slug": "jellroy",
+            "name": "Jellroy",
+            "speed": null
+          },
+          {
+            "slug": "blue-slime",
+            "name": "Blue Slime",
+            "speed": null
+          },
+          {
+            "slug": "red-slime",
+            "name": "Red Slime",
+            "speed": null
+          },
+          {
+            "slug": "purple-slime",
+            "name": "Purple Slime",
+            "speed": null
+          },
+          {
+            "slug": "illuminant-slime",
+            "name": "Illuminant Slime",
+            "speed": null
+          },
+          {
+            "slug": "cave-bat",
+            "name": "Cave Bat",
+            "speed": null
+          },
+          {
+            "slug": "illuminant-bat",
+            "name": "Illuminant Bat",
+            "speed": null
+          }
+        ]
+      },
+      {
+        "tier": "D",
+        "pals": [
+          {
+            "slug": "mau",
+            "name": "Mau",
+            "speed": null
+          },
+          {
+            "slug": "mau-cryst",
+            "name": "Mau Cryst",
+            "speed": null
+          },
+          {
+            "slug": "lifmunk",
+            "name": "Lifmunk",
+            "speed": null
+          },
+          {
+            "slug": "tocotoco",
+            "name": "Tocotoco",
+            "speed": null
+          },
+          {
+            "slug": "teafant",
+            "name": "Teafant",
+            "speed": null
+          },
+          {
+            "slug": "jolthog",
+            "name": "Jolthog",
+            "speed": null
+          },
+          {
+            "slug": "jolthog-cryst",
+            "name": "Jolthog Cryst",
+            "speed": null
+          },
+          {
+            "slug": "foxparks",
+            "name": "Foxparks",
+            "speed": null
+          },
+          {
+            "slug": "pengullet",
+            "name": "Pengullet",
+            "speed": null
+          },
+          {
+            "slug": "lamball",
+            "name": "Lamball",
+            "speed": null
+          },
+          {
+            "slug": "hangyu",
+            "name": "Hangyu",
+            "speed": null
+          },
+          {
+            "slug": "hangyu-cryst",
+            "name": "Hangyu Cryst",
+            "speed": null
+          },
+          {
+            "slug": "woolipop",
+            "name": "Woolipop",
+            "speed": null
+          },
+          {
+            "slug": "cattiva",
+            "name": "Cattiva",
+            "speed": null
+          },
+          {
+            "slug": "depresso",
+            "name": "Depresso",
+            "speed": null
+          },
+          {
+            "slug": "maraith",
+            "name": "Maraith",
+            "speed": null
+          },
+          {
+            "slug": "leezpunk",
+            "name": "Leezpunk",
+            "speed": null
+          },
+          {
+            "slug": "leezpunk-ignis",
+            "name": "Leezpunk Ignis",
+            "speed": null
+          },
+          {
+            "slug": "fuack",
+            "name": "Fuack",
+            "speed": null
+          },
+          {
+            "slug": "fuack-ignis",
+            "name": "Fuack Ignis",
+            "speed": null
+          },
+          {
+            "slug": "chikipi",
+            "name": "Chikipi",
+            "speed": null
+          },
+          {
+            "slug": "sparkit",
+            "name": "Sparkit",
+            "speed": null
+          },
+          {
+            "slug": "vixy",
+            "name": "Vixy",
+            "speed": null
+          },
+          {
+            "slug": "hoocrates",
+            "name": "Hoocrates",
+            "speed": null
+          },
+          {
+            "slug": "kelpsea",
+            "name": "Kelpsea",
+            "speed": null
+          },
+          {
+            "slug": "kelpsea-ignis",
+            "name": "Kelpsea Ignis",
+            "speed": null
+          },
+          {
+            "slug": "killamari",
+            "name": "Killamari",
+            "speed": null
+          },
+          {
+            "slug": "killamari-primo",
+            "name": "Killamari Primo",
+            "speed": null
+          },
+          {
+            "slug": "flopie",
+            "name": "Flopie",
+            "speed": null
+          },
+          {
+            "slug": "fuddler",
+            "name": "Fuddler",
+            "speed": null
+          },
+          {
+            "slug": "daedream",
+            "name": "Daedream",
+            "speed": null
+          },
+          {
+            "slug": "gumoss",
+            "name": "Gumoss",
+            "speed": null
+          },
+          {
+            "slug": "swee",
+            "name": "Swee",
+            "speed": null
+          },
+          {
+            "slug": "ribbuny",
+            "name": "Ribbuny",
+            "speed": null
+          },
+          {
+            "slug": "nox",
+            "name": "Nox",
+            "speed": null
+          },
+          {
+            "slug": "cremis",
+            "name": "Cremis",
+            "speed": null
+          },
+          {
+            "slug": "flambelle",
+            "name": "Flambelle",
+            "speed": null
+          },
+          {
+            "slug": "foxparks-cryst",
+            "name": "Foxparks Cryst",
+            "speed": null
+          },
+          {
+            "slug": "ribbuny-botan",
+            "name": "Ribbuny Botan",
+            "speed": null
+          },
+          {
+            "slug": "green-slime",
+            "name": "Green Slime",
+            "speed": null
+          }
+        ]
+      }
+    ]
+  }
+]
