@@ -25,6 +25,15 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   trailingSlash: false,
+  async redirects() {
+    return [
+      {
+        source: "/index.php",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

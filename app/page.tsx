@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import CalculatorCard from "@/components/CalculatorCard";
 import PalAvatar from "@/components/PalAvatar";
 import {
@@ -118,8 +119,8 @@ export default function HomePage() {
       <section className="pt-24 sm:pt-28 pb-12 px-4 sm:px-6 relative overflow-hidden">
         {/* Floating Game Characters */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-50 hidden lg:block -z-10 max-w-[1400px] mx-auto inset-x-0">
-          <img src="/images/img-intro-character-left.png" alt="" className="absolute left-[2%] top-24 w-[380px] object-contain animate-float" />
-          <img src="/images/img-intro-character-right.png" alt="" className="absolute right-[2%] top-32 w-[420px] object-contain animate-float-delayed" />
+          <Image src="/images/img-intro-character-left.png" alt="" width={380} height={380} priority className="absolute left-[2%] top-24 w-[380px] h-auto object-contain animate-float" />
+          <Image src="/images/img-intro-character-right.png" alt="" width={420} height={420} priority className="absolute right-[2%] top-32 w-[420px] h-auto object-contain animate-float-delayed" />
         </div>
 
         <div className="max-w-xl mx-auto text-center mb-8 relative z-10">
@@ -245,7 +246,7 @@ export default function HomePage() {
       {/* Official Game Features Section */}
       <section className="py-20 px-4 sm:px-6 relative mt-8 border-y border-[var(--pw-border)]">
         <div className="absolute inset-0 z-0">
-          <img src="/images/bg-features.jpg" className="w-full h-full object-cover opacity-[0.25]" alt="" />
+          <Image src="/images/bg-features.jpg" fill sizes="100vw" quality={75} className="object-cover opacity-[0.25]" alt="Palworld Features Background" />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--pw-bg)] via-transparent to-[var(--pw-bg)] opacity-90" />
         </div>
         <div className="max-w-6xl mx-auto relative z-10">
@@ -262,7 +263,7 @@ export default function HomePage() {
             {/* Feature 1 */}
             <div className="glass-card overflow-hidden group flex flex-col h-full bg-[var(--pw-bg-alt)] bg-opacity-40">
               <div className="h-52 overflow-hidden relative border-b border-[var(--pw-border)] shrink-0">
-                <img src="/images/img-features-01.jpg" alt="Capture and Train" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                <Image src="/images/img-features-01.jpg" alt="Capture and Train" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -279,7 +280,7 @@ export default function HomePage() {
             {/* Feature 2 */}
             <div className="glass-card overflow-hidden group flex flex-col h-full bg-[var(--pw-bg-alt)] bg-opacity-40">
               <div className="h-52 overflow-hidden relative border-b border-[var(--pw-border)] shrink-0">
-                <img src="/images/img-features-02.jpg" alt="Build and Automate" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                <Image src="/images/img-features-02.jpg" alt="Build and Automate" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -296,7 +297,7 @@ export default function HomePage() {
             {/* Feature 3 */}
             <div className="glass-card overflow-hidden group flex flex-col h-full bg-[var(--pw-bg-alt)] bg-opacity-40">
               <div className="h-52 overflow-hidden relative border-b border-[var(--pw-border)] shrink-0">
-                <img src="/images/img-features-03.jpg" alt="World and Multiplayer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                <Image src="/images/img-features-03.jpg" alt="World and Multiplayer" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
               <div className="p-6 flex-1 flex flex-col">

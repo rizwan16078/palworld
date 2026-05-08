@@ -64,6 +64,12 @@ export default function Navbar() {
             Structures
           </Link>
           <Link
+            href="/blog"
+            className="px-3 py-1.5 rounded-lg text-sm font-semibold text-[var(--pw-text-muted)] hover:text-[var(--pw-blue)] hover:bg-[var(--pw-surface)] transition-all duration-200"
+          >
+            Guides
+          </Link>
+          <Link
             href="/pals"
             className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200 hidden sm:block"
           >

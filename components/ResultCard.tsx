@@ -9,12 +9,15 @@ import {
   getRarity,
   RARITY_COLORS,
 } from "@/lib/breeding";
+import { calculatePassiveProbability, PASSIVE_SKILLS } from "@/lib/passives";
 
 interface ResultCardProps {
   child: Pal;
   childPower: number;
   parentA: Pal;
   parentB: Pal;
+  passivesA?: string[];
+  passivesB?: string[];
 }
 
 export default function ResultCard({
@@ -22,6 +25,8 @@ export default function ResultCard({
   childPower,
   parentA,
   parentB,
+  passivesA = [],
+  passivesB = [],
 }: ResultCardProps) {
   const rarity = getRarity(child.power);
   const rarityColor = RARITY_COLORS[rarity];
@@ -139,6 +144,39 @@ export default function ResultCard({
       <p className="text-xs text-[var(--pw-text-muted)] text-center mt-3 leading-relaxed">
         {child.description}
       </p>
+
+      {/* Passives Probability */}
+      {(passivesA.length > 0 || passivesB.length > 0) && (
+        <div className="mt-4 pt-4 border-t border-[var(--pw-border)]">
+          <div className="text-xs font-semibold uppercase tracking-widest text-[var(--pw-text-dim)] mb-3 text-center">
+            Passive Inheritance Odds
+          </div>
+          <div className="bg-[var(--pw-bg-alt)]/50 border border-[var(--pw-border)] rounded-xl p-3">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs text-[var(--pw-text-muted)]">
+                Chance to inherit selected traits:
+              </span>
+              <span className="text-sm font-bold text-[var(--pw-yellow)]">
+                {calculatePassiveProbability(passivesA, passivesB).text}
+              </span>
+            </div>
+            <div className="flex flex-wrap gap-1 mb-2">
+              {Array.from(new Set([...passivesA, ...passivesB])).map((id) => {
+                const p = PASSIVE_SKILLS.find(x => x.id === id);
+                if (!p) return null;
+                return (
+                  <span key={id} className="text-[0.65rem] font-medium bg-[var(--pw-yellow)]/10 text-[var(--pw-yellow)] px-1.5 py-0.5 rounded border border-[var(--pw-yellow)]/20">
+                    {p.name}
+                  </span>
+                );
+              })}
+            </div>
+            <p className="text-[0.6rem] text-[var(--pw-text-dim)] leading-tight">
+              Based on a pool size of {calculatePassiveProbability(passivesA, passivesB).poolSize} unique passives. Reduce noise by breeding parents with only these specific traits.
+            </p>
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 }

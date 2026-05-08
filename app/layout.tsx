@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import BackToTop from "@/components/back-to-top";
 import { siteName, siteUrl, siteDescription } from "@/lib/site";
 
 import "./globals.css";
@@ -57,6 +58,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

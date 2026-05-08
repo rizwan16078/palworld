@@ -2,11 +2,14 @@
 
 import { useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import PalSelector from "./PalSelector";
-import ResultCard from "./ResultCard";
-import ChainViewer from "./ChainViewer";
+import dynamic from "next/dynamic";
+
+const PalSelector = dynamic(() => import("./PalSelector"), { ssr: false });
+const ResultCard = dynamic(() => import("./ResultCard"), { ssr: false });
+const ChainViewer = dynamic(() => import("./ChainViewer"), { ssr: false });
+const PassiveSelector = dynamic(() => import("./PassiveSelector"), { ssr: false });
+
 import PalAvatar from "./PalAvatar";
-import PassiveSelector from "./PassiveSelector";
 import {
   type Pal,
   type PalElement,
