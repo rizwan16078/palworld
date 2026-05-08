@@ -6,6 +6,7 @@ import PalSelector from "./PalSelector";
 import ResultCard from "./ResultCard";
 import ChainViewer from "./ChainViewer";
 import PalAvatar from "./PalAvatar";
+import PassiveSelector from "./PassiveSelector";
 import {
   type Pal,
   type PalElement,
@@ -123,6 +124,8 @@ function TabButton({
 function BreedTab() {
   const [parentA, setParentA] = useState<Pal | null>(null);
   const [parentB, setParentB] = useState<Pal | null>(null);
+  const [passivesA, setPassivesA] = useState<string[]>([]);
+  const [passivesB, setPassivesB] = useState<string[]>([]);
   const [selectorTarget, setSelectorTarget] = useState<"A" | "B" | null>(null);
 
   const result = parentA && parentB ? breed(parentA, parentB) : null;
@@ -139,11 +142,13 @@ function BreedTab() {
     <>
       <div className="flex items-center justify-center gap-4 sm:gap-8">
         {/* Parent A */}
-        <PalCircleButton
-          pal={parentA}
-          label="Parent A"
-          onClick={() => setSelectorTarget("A")}
-        />
+        <div className="flex flex-col items-center">
+          <PalCircleButton
+            pal={parentA}
+            label="Parent A"
+            onClick={() => setSelectorTarget("A")}
+          />
+        </div>
 
         {/* Multiply icon */}
         <div className="flex flex-col items-center gap-1">
@@ -157,12 +162,21 @@ function BreedTab() {
         </div>
 
         {/* Parent B */}
-        <PalCircleButton
-          pal={parentB}
-          label="Parent B"
-          onClick={() => setSelectorTarget("B")}
-        />
+        <div className="flex flex-col items-center">
+          <PalCircleButton
+            pal={parentB}
+            label="Parent B"
+            onClick={() => setSelectorTarget("B")}
+          />
+        </div>
       </div>
+
+      {parentA && parentB && (
+        <div className="grid grid-cols-2 gap-6 mt-6 mb-2">
+          <PassiveSelector label="Parent A" selectedPassives={passivesA} onChange={setPassivesA} />
+          <PassiveSelector label="Parent B" selectedPassives={passivesB} onChange={setPassivesB} />
+        </div>
+      )}
 
       {/* Result */}
       <AnimatePresence mode="wait">
@@ -173,6 +187,8 @@ function BreedTab() {
             childPower={result.childPower}
             parentA={parentA}
             parentB={parentB}
+            passivesA={passivesA}
+            passivesB={passivesB}
           />
         )}
       </AnimatePresence>

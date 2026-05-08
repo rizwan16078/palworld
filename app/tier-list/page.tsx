@@ -5,7 +5,7 @@ import { TIER_LIST_CATEGORIES } from "@/lib/tier-list";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Tier List",
+  title: "Best Pals Tier List for Combat & Work",
   description:
     "Browse Palworld tier lists for best overall pals, workers, flying mounts, ground mounts, and combat picks.",
   alternates: {

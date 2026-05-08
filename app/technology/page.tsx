@@ -5,11 +5,15 @@ import { siteUrl } from "@/lib/site";
 import { TECHNOLOGY_TREE } from "@/lib/technology";
 
 export const metadata: Metadata = {
-  title: "Technology",
+  title: "Technology Tree & Unlocks",
   description:
     "Browse the full Palworld technology tree with local icons, unlock levels, point costs, and Ancient Technology unlocks.",
   alternates: {
     canonical: `${siteUrl}/technology`,
+    languages: {
+      'en': `${siteUrl}/technology`,
+      'x-default': `${siteUrl}/technology`,
+    },
   },
 };
 

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import CalculatorCard from "@/components/CalculatorCard";
 import PalAvatar from "@/components/PalAvatar";
@@ -8,7 +9,13 @@ import {
   RARITY_COLORS,
   type PalElement,
 } from "@/lib/breeding";
-import { siteUrl } from "@/lib/site";
+import { siteUrl, siteDescription } from "@/lib/site";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: siteUrl,
+  },
+};
 
 export default function HomePage() {
   const jsonLd = {
@@ -58,6 +65,27 @@ export default function HomePage() {
     ],
   };
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "PalBreeder",
+    url: siteUrl,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${siteUrl}/search?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "PalBreeder",
+    url: siteUrl,
+    logo: `${siteUrl}/og-image.png`,
+    description: siteDescription,
+  };
+
   return (
     <>
       {/* Structured data */}
@@ -71,6 +99,18 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema).replace(/</g, "\\u003c"),
         }}
       />
 

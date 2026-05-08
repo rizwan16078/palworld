@@ -5,11 +5,15 @@ import { PALDEX } from "@/lib/paldex";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Pals",
+  title: "All Pals Directory",
   description:
     "Browse the full Palworld pal directory with real local portraits, rarity, elements, and work suitability.",
   alternates: {
     canonical: `${siteUrl}/pals`,
+    languages: {
+      'en': `${siteUrl}/pals`,
+      'x-default': `${siteUrl}/pals`,
+    },
   },
 };
 

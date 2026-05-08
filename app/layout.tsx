@@ -13,9 +13,6 @@ export const metadata: Metadata = {
     template: `%s | PalBreeder`,
   },
   description: siteDescription,
-  alternates: {
-    canonical: siteUrl,
-  },
   openGraph: {
     title: siteName,
     description: siteDescription,

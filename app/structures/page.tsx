@@ -5,7 +5,7 @@ import { siteUrl } from "@/lib/site";
 import { STRUCTURE_CATEGORIES, STRUCTURES } from "@/lib/structures";
 
 export const metadata: Metadata = {
-  title: "Structures",
+  title: "Base Building Structures Guide",
   description:
     "Browse Palworld structures with local icons, descriptions, build work values, and crafting materials.",
   alternates: {

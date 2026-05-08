@@ -24,9 +24,9 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-[var(--pw-text-dim)] mb-3">
+            <div className="text-xs font-semibold uppercase tracking-widest text-[var(--pw-text-dim)] mb-3">
               Tools
-            </h4>
+            </div>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -60,30 +60,14 @@ export default function Footer() {
                   Structures
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/#find-parents"
-                  className="text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-blue)] transition-colors"
-                >
-                  Find Parents
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#breeding-chain"
-                  className="text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-blue)] transition-colors"
-                >
-                  Breeding Chains
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Popular Pals */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-widest text-[var(--pw-text-dim)] mb-3">
+            <div className="text-xs font-semibold uppercase tracking-widest text-[var(--pw-text-dim)] mb-3">
               Popular Pals
-            </h4>
+            </div>
             <ul className="space-y-2">
               {popularPals.map((pal) => (
                 <li key={pal.id}>

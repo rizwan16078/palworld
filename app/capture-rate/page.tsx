@@ -5,7 +5,7 @@ import { CAPTURE_RATE_PALS, CAPTURE_RATE_SPHERES } from "@/lib/capture-rate";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Capture Rate",
+  title: "Palworld Capture Rate Calculator",
   description:
     "Calculate Palworld capture odds with local pal portraits, sphere icons, boss modifiers, HP tuning, and every sphere tier.",
   alternates: {

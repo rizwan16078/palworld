@@ -31,8 +31,8 @@ export async function generateMetadata({
   if (!pal) return { title: "Pal Not Found" };
 
   const rarity = getRarity(pal.power);
-  const title = `How to Breed ${pal.name} in Palworld — Best Parent Combos`;
-  const description = `Complete ${pal.name} breeding guide for Palworld. Find all ${pal.element}-type parent combinations, breeding power ${pal.power}, ${rarity} rarity. Optimal breeding chains and calculator.`;
+  const title = `${pal.name} Breeding Guide`;
+  const description = `${pal.name} breeding guide for Palworld. Find all ${pal.element} parent combos, breeding power ${pal.power}, and step-by-step breeding chains.`;
 
   return {
     title,
@@ -44,7 +44,13 @@ export async function generateMetadata({
       url: `${siteUrl}/breeding/${palId}`,
     },
     twitter: { card: "summary_large_image", title, description },
-    alternates: { canonical: `${siteUrl}/breeding/${palId}` },
+    alternates: { 
+      canonical: `${siteUrl}/breeding/${palId}`,
+      languages: {
+        'en': `${siteUrl}/breeding/${palId}`,
+        'x-default': `${siteUrl}/breeding/${palId}`,
+      },
+    },
   };
 }
 
@@ -197,6 +203,12 @@ export default async function PalBreedingPage({
 
                 <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
                   {pal.description}
+                  {" "}This {pal.element}-type Pal features a breeding power of {pal.power}. 
+                  Whether you are looking to breed a powerful combat companion or a hard worker for your base, 
+                  understanding the optimal parent combinations is crucial. Below you will find every possible 
+                  breeding combination to obtain {pal.name}, as well as the shortest breeding chains connecting 
+                  common Pals to this specific target. Use our calculator to explore more possibilities and plan 
+                  your ultimate Palworld breeding strategy.
                 </p>
 
                 {/* Power bar */}
