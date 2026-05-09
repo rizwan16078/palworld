@@ -1,4 +1,11 @@
 import type { Metadata, Viewport } from "next";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -54,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">
+      <body className={`${poppins.className} min-h-full flex flex-col`}>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+
 import dynamic from "next/dynamic";
 
 const PalSelector = dynamic(() => import("./PalSelector"), { ssr: false });
@@ -53,41 +53,23 @@ export default function CalculatorCard() {
 
       {/* Tab content */}
       <div className="p-5">
-        <AnimatePresence mode="wait">
+        <div>
           {activeTab === "breed" && (
-            <motion.div
-              key="breed"
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.2 }}
-            >
+            <div key="breed" className="animate-fade-in">
               <BreedTab />
-            </motion.div>
+            </div>
           )}
           {activeTab === "parents" && (
-            <motion.div
-              key="parents"
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.2 }}
-            >
+            <div key="parents" className="animate-fade-in">
               <FindParentsTab />
-            </motion.div>
+            </div>
           )}
           {activeTab === "chain" && (
-            <motion.div
-              key="chain"
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.2 }}
-            >
+            <div key="chain" className="animate-fade-in">
               <ChainTab />
-            </motion.div>
+            </div>
           )}
-        </AnimatePresence>
+        </div>
       </div>
     </div>
   );
@@ -155,13 +137,11 @@ function BreedTab() {
 
         {/* Multiply icon */}
         <div className="flex flex-col items-center gap-1">
-          <motion.div
-            animate={{ rotate: result ? 360 : 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="w-10 h-10 rounded-full bg-[var(--pw-surface)] border border-[var(--pw-border)] flex items-center justify-center text-lg font-bold text-[var(--pw-yellow)]"
+          <div
+            className={`w-10 h-10 rounded-full bg-[var(--pw-surface)] border border-[var(--pw-border)] flex items-center justify-center text-lg font-bold text-[var(--pw-yellow)] transition-transform duration-500 ease-out ${result ? 'rotate-180' : 'rotate-0'}`}
           >
             ×
-          </motion.div>
+          </div>
         </div>
 
         {/* Parent B */}
@@ -182,7 +162,7 @@ function BreedTab() {
       )}
 
       {/* Result */}
-      <AnimatePresence mode="wait">
+      <div>
         {result && parentA && parentB && (
           <ResultCard
             key={`${parentA.id}-${parentB.id}`}
@@ -194,7 +174,7 @@ function BreedTab() {
             passivesB={passivesB}
           />
         )}
-      </AnimatePresence>
+      </div>
 
       {!result && (
         <div className="text-center mt-8 text-[var(--pw-text-dim)] text-sm">
@@ -241,14 +221,9 @@ function FindParentsTab() {
       </div>
 
       {/* Results */}
-      <AnimatePresence>
+      <div>
         {child && combos.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="mt-5"
-          >
+          <div className="mt-5 animate-fade-in">
             <div className="flex items-center justify-between mb-3">
               <span className="text-xs font-semibold uppercase tracking-widest text-[var(--pw-text-dim)]">
                 {combos.length} Combinations Found
@@ -268,9 +243,9 @@ function FindParentsTab() {
                 </div>
               )}
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+      </div>
 
       {child && combos.length === 0 && (
         <div className="text-center mt-6 text-[var(--pw-text-dim)] text-sm">
@@ -310,11 +285,11 @@ function ChainTab() {
         </div>
       </div>
 
-      <AnimatePresence>
+      <div>
         {chain && target && (
           <ChainViewer chain={chain} targetName={target.name} />
         )}
-      </AnimatePresence>
+      </div>
 
       <PalSelector
         isOpen={selectorOpen}
@@ -398,11 +373,9 @@ function ComboRow({ combo, rank }: { combo: ParentCombo; rank: number }) {
   const bColor = ELEMENT_COLORS[combo.parentB.element as PalElement];
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -10 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: rank * 0.02 }}
-      className="flex items-center gap-2 p-2.5 rounded-lg bg-[var(--pw-surface)] border border-[var(--pw-border)] hover:border-[var(--pw-border-hover)] transition-colors"
+    <div
+      className="flex items-center gap-2 p-2.5 rounded-lg bg-[var(--pw-surface)] border border-[var(--pw-border)] hover:border-[var(--pw-border-hover)] transition-colors animate-slide-in-left"
+      style={{ animationDelay: `${rank * 0.02}s` }}
     >
       <span className="text-[0.65rem] text-[var(--pw-text-dim)] w-5 text-right font-mono shrink-0">
         {rank}
@@ -431,6 +404,6 @@ function ComboRow({ combo, rank }: { combo: ParentCombo; rank: number }) {
           Δ{combo.powerDiff}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

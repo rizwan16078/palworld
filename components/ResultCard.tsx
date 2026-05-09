@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import PalAvatar from "./PalAvatar";
 import {
   type Pal,
@@ -34,12 +33,8 @@ export default function ResultCard({
   const powerPercent = Math.max(5, Math.min(100, ((1500 - child.power) / 1500) * 100));
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20, scale: 0.97 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, y: 10, scale: 0.97 }}
-      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-      className="glass-card p-6 mt-6"
+    <div
+      className="glass-card p-6 mt-6 animate-scale-in"
       id="breeding-result-card"
     >
       {/* Result header */}
@@ -61,11 +56,8 @@ export default function ResultCard({
       {/* Child display */}
       <div className="flex flex-col items-center gap-3 mb-5">
         {/* Large avatar */}
-        <motion.div
-          initial={{ scale: 0.5, rotate: -10 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ delay: 0.15, type: "spring", stiffness: 200 }}
-          className="w-20 h-20 rounded-full flex items-center justify-center text-3xl"
+        <div
+          className="w-20 h-20 rounded-full flex items-center justify-center text-3xl animate-bounce-in"
           style={{
             background: `radial-gradient(circle, ${elementColor}22 0%, ${elementColor}08 70%)`,
             border: `2px solid ${elementColor}55`,
@@ -78,7 +70,7 @@ export default function ResultCard({
             sizes="64px"
             priority
           />
-        </motion.div>
+        </div>
 
         <div className="text-center">
           <h3 className="text-xl font-bold">{child.name}</h3>
@@ -103,11 +95,9 @@ export default function ResultCard({
           </span>
         </div>
         <div className="power-bar">
-          <motion.div
+          <div
             className="power-bar-fill"
-            initial={{ width: 0 }}
-            animate={{ width: `${powerPercent}%` }}
-            transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+            style={{ width: `${powerPercent}%`, transitionDuration: '0.6s' }}
           />
         </div>
         <div className="flex justify-between text-[0.6rem] text-[var(--pw-text-dim)] mt-1">
@@ -177,6 +167,6 @@ export default function ResultCard({
           </div>
         </div>
       )}
-    </motion.div>
+    </div>
   );
 }

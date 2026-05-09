@@ -246,7 +246,7 @@ export default function HomePage() {
       {/* Official Game Features Section */}
       <section className="py-20 px-4 sm:px-6 relative mt-8 border-y border-[var(--pw-border)]">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/bg-features.jpg" fill sizes="100vw" quality={75} className="object-cover opacity-[0.25]" alt="Palworld Features Background" />
+          <Image src="/images/bg-features.jpg" fill sizes="100vw" quality={75} loading="lazy" className="object-cover opacity-[0.25]" alt="Palworld Features Background" />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--pw-bg)] via-transparent to-[var(--pw-bg)] opacity-90" />
         </div>
         <div className="max-w-6xl mx-auto relative z-10">
@@ -263,7 +263,7 @@ export default function HomePage() {
             {/* Feature 1 */}
             <div className="glass-card overflow-hidden group flex flex-col h-full bg-[var(--pw-bg-alt)] bg-opacity-40">
               <div className="h-52 overflow-hidden relative border-b border-[var(--pw-border)] shrink-0">
-                <Image src="/images/img-features-01.jpg" alt="Capture and Train" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                <Image src="/images/img-features-01.jpg" alt="Capture and Train" fill sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -280,7 +280,7 @@ export default function HomePage() {
             {/* Feature 2 */}
             <div className="glass-card overflow-hidden group flex flex-col h-full bg-[var(--pw-bg-alt)] bg-opacity-40">
               <div className="h-52 overflow-hidden relative border-b border-[var(--pw-border)] shrink-0">
-                <Image src="/images/img-features-02.jpg" alt="Build and Automate" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                <Image src="/images/img-features-02.jpg" alt="Build and Automate" fill sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
               <div className="p-6 flex-1 flex flex-col">
@@ -297,7 +297,7 @@ export default function HomePage() {
             {/* Feature 3 */}
             <div className="glass-card overflow-hidden group flex flex-col h-full bg-[var(--pw-bg-alt)] bg-opacity-40">
               <div className="h-52 overflow-hidden relative border-b border-[var(--pw-border)] shrink-0">
-                <Image src="/images/img-features-03.jpg" alt="World and Multiplayer" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                <Image src="/images/img-features-03.jpg" alt="World and Multiplayer" fill sizes="(max-width: 768px) 100vw, 33vw" loading="lazy" className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
               <div className="p-6 flex-1 flex flex-col">

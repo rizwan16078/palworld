@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import PalAvatar from "./PalAvatar";
 import {
   type ChainStep,
@@ -22,10 +21,8 @@ interface ChainViewerProps {
 export default function ChainViewer({ chain, targetName }: ChainViewerProps) {
   if (!chain.found) {
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="text-center py-8"
+      <div
+        className="text-center py-8 animate-fade-in"
       >
         <div className="text-4xl mb-3">🔍</div>
         <p className="text-[var(--pw-text-muted)] text-sm">
@@ -34,16 +31,14 @@ export default function ChainViewer({ chain, targetName }: ChainViewerProps) {
         <p className="text-[var(--pw-text-dim)] text-xs mt-1">
           Try selecting different start/target Pals
         </p>
-      </motion.div>
+      </div>
     );
   }
 
   if (chain.steps.length === 0) {
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="text-center py-8"
+      <div
+        className="text-center py-8 animate-fade-in"
       >
         <div className="text-4xl mb-3">✅</div>
         <p className="text-[var(--pw-text-muted)] text-sm">
@@ -52,16 +47,13 @@ export default function ChainViewer({ chain, targetName }: ChainViewerProps) {
         <p className="text-[var(--pw-text-dim)] text-xs mt-1">
           No breeding required
         </p>
-      </motion.div>
+      </div>
     );
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-      className="space-y-0 mt-4"
+    <div
+      className="space-y-0 mt-4 animate-fade-in"
     >
       {/* Chain header */}
       <div className="text-center mb-4">
@@ -80,7 +72,7 @@ export default function ChainViewer({ chain, targetName }: ChainViewerProps) {
           )}
         </div>
       ))}
-    </motion.div>
+    </div>
   );
 }
 
@@ -98,12 +90,9 @@ function StepCard({
   const isLast = index === total - 1;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: index * 0.1, duration: 0.3 }}
-      className={`glass-card-static p-4 ${isLast ? "ring-1 ring-[var(--pw-yellow)]" : ""}`}
-      style={isLast ? { boxShadow: `0 0 20px ${RARITY_COLORS[rarity]}20` } : {}}
+    <div
+      className={`glass-card-static p-4 animate-slide-in-left ${isLast ? "ring-1 ring-[var(--pw-yellow)]" : ""}`}
+      style={{ animationDelay: `${index * 0.1}s`, ...(isLast ? { boxShadow: `0 0 20px ${RARITY_COLORS[rarity]}20` } : {}) }}
     >
       <div className="flex items-center gap-3">
         {/* Step number */}
@@ -127,7 +116,7 @@ function StepCard({
           <PalChip pal={step.child} highlight={isLast} />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

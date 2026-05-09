@@ -25,6 +25,9 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   trailingSlash: false,
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
   async redirects() {
     return [
       {

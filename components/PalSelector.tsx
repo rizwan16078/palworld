@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+
 import PalAvatar from "./PalAvatar";
 import {
   ALL_PALS,
@@ -22,9 +22,9 @@ export default function PalSelector({
   onClose,
 }: PalSelectorProps) {
   return (
-    <AnimatePresence>
+    <>
       {isOpen && <PalSelectorDialog onSelect={onSelect} onClose={onClose} />}
-    </AnimatePresence>
+    </>
   );
 }
 
@@ -80,22 +80,14 @@ function PalSelectorDialog({
   };
 
   return (
-    <motion.div
-      className="search-overlay"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.15 }}
+    <div
+      className="search-overlay animate-fade-in"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <motion.div
-        className="search-modal"
-        initial={{ opacity: 0, scale: 0.96, y: -8 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.96, y: -8 }}
-        transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+      <div
+        className="search-modal animate-scale-in"
         role="dialog"
         aria-label="Select a Pal"
       >
@@ -139,7 +131,7 @@ function PalSelectorDialog({
               No Pals found for &ldquo;{query}&rdquo;
             </div>
           ) : (
-            filtered.map((pal, i) => (
+            filtered.slice(0, 50).map((pal, i) => (
               <button
                 key={pal.id}
                 className="search-item w-full text-left"
@@ -216,7 +208,7 @@ function PalSelectorDialog({
             Close
           </span>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }
