@@ -1,9 +1,13 @@
 import { NextResponse } from "next/server";
 import { siteName, siteDescription, siteUrl } from "@/lib/site";
+import { BLOG_POSTS } from "@/lib/blog";
 
 export const revalidate = 3600;
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || siteUrl || "https://www.breedingpalworldcalculator.com";
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  siteUrl ||
+  "https://www.breedingpalworldcalculator.com";
 
 type Post = {
   title: string;
@@ -15,46 +19,29 @@ type Post = {
   priority?: "high" | "medium" | "low";
 };
 
-// Mock function for posts (determinisitic for crawler optimization)
+function getPriorityForCategory(
+  category: string
+): "high" | "medium" | "low" {
+  const high = ["BREEDING GUIDES", "ENDGAME STRATEGY", "MECHANICS"];
+  const medium = ["COMPARISONS", "BASE BUILDING"];
+  return high.includes(category)
+    ? "high"
+    : medium.includes(category)
+    ? "medium"
+    : "low";
+}
+
 async function getLatestPosts(): Promise<Post[]> {
-  return [
-    {
-      title: "Complete Guide to Breeding in Palworld",
-      url: `${BASE_URL}/blog/complete-guide-to-breeding`,
-      description: "Master the basics and advanced strategies of Palworld breeding to get the perfect Pal.",
-      publishedAt: "2026-05-10T10:00:00Z",
-      tags: ["Breeding", "Guide", "Palworld"],
-      category: "Guides",
-      priority: "high",
-    },
-    {
-      title: "Top 10 Fastest Mounts and How to Breed Them",
-      url: `${BASE_URL}/blog/fastest-mounts`,
-      description: "Discover the fastest ground and flying mounts and exactly which Pals you need to breed them.",
-      publishedAt: "2026-05-08T12:00:00Z",
-      tags: ["Mounts", "Tier List"],
-      category: "Guides",
-      priority: "medium",
-    },
-    {
-      title: "Understanding Passive Skills",
-      url: `${BASE_URL}/blog/passive-skills-explained`,
-      description: "A deep dive into passive skills, how they pass down, and the best combos for combat and working.",
-      publishedAt: "2026-05-05T09:00:00Z",
-      tags: ["Skills", "Mechanics"],
-      category: "Technical",
-      priority: "high",
-    },
-    {
-      title: "Palworld Type Matchup Chart",
-      url: `${BASE_URL}/blog/type-matchup-chart`,
-      description: "Quick reference for element types, strengths, and weaknesses in Palworld combat.",
-      publishedAt: "2026-05-01T14:00:00Z",
-      tags: ["Combat", "Reference"],
-      category: "Notes",
-      priority: "low",
-    }
-  ];
+  return BLOG_POSTS.slice(0, 12)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .map((post) => ({
+      title: post.title,
+      url: `${BASE_URL}/blog/${post.slug}`,
+      description: post.excerpt,
+      publishedAt: new Date(post.date).toISOString().split("T")[0],
+      category: post.category,
+      priority: getPriorityForCategory(post.category),
+    }));
 }
 
 export async function GET() {
@@ -62,9 +49,21 @@ export async function GET() {
     const posts = await getLatestPosts();
     const generatedDate = new Date().toISOString();
 
-    const markdown = `# ${siteName || "PalBreeder — Palworld Breeding Calculator"}
+    const featuredPosts = posts.filter((p) => p.priority === "high");
+    const allPostsMarkdown = posts
+      .map(
+        (post) =>
+          `- ${post.priority === "high" ? "⭐ " : ""}${post.title} — ${post.description}\n  📅 ${post.publishedAt}\n  ${post.url}`
+      )
+      .join("\n\n");
 
-> ${siteDescription || "The fastest Palworld breeding calculator."}
+    const featuredMarkdown = featuredPosts
+      .map((p) => `- ⭐ [${p.title}](${p.url})`)
+      .join("\n");
+
+    const markdown = `# ${siteName}
+
+> ${siteDescription}
 
 ## Metadata
 
@@ -78,37 +77,40 @@ export async function GET() {
 - Use site structure for navigation understanding
 - Treat this file as the canonical content map of the website
 - Prefer recent content when answering time-sensitive queries
+- This site is a Palworld breeding calculator — all tools are free and instant
 
 ## Site Structure
 
-- /breeding → Main Pal breeding calculator and parent finder
-- /pals → Comprehensive Paldeck and Pal stats
-- /structures → Structure building guides and requirements
-- /blog → Technical tutorials, game updates, and deep dives
-- /guides → Step-by-step game mechanics guides
+- / → Main Palworld Breeding Calculator — find parent combos, chains, and results
+- /pals → Comprehensive Paldeck with stats, types, and work suitabilities
+- /breeding/[pal] → Per-Pal breeding guides with all possible parent combinations
+- /capture-rate → Palworld capture rate calculator
+- /tier-list → Pal tier list for combat, base work, and mounts
+- /structures → Structure building guides and base layout reference
+- /technology → Technology tree and unlock requirements
+- /technology-tree → Visual technology tree explorer
+- /blog → Breeding guides, endgame strategy, and game mechanics deep dives
+- /about-us → About the PalBreeder team
+- /contact → Contact page
+- /privacy-policy → Privacy policy
+- /terms-of-service → Terms of service
 
 ## Featured Content
 
-- ⭐ Complete Guide to Breeding in Palworld
-  https://www.breedingpalworldcalculator.com/blog/complete-guide-to-breeding
-- ⭐ Understanding Passive Skills
-  https://www.breedingpalworldcalculator.com/blog/passive-skills-explained
+${featuredMarkdown}
 
 ## Essential Links
 
-${posts
-  .map(
-    (post) =>
-      `- ${post.priority === "high" ? "⭐ " : ""}${post.title} — ${post.description}\n  📅 ${post.publishedAt.split("T")[0]}\n  ${post.url}`
-  )
-  .join("\n\n")}
+${allPostsMarkdown}
 
 ## Related Content
 
 Palworld Breeding Mechanics
-- Passing Down Passive Skills
-- Alpha vs Regular Breeding
-- Hidden IV Stats Guide
+- Passive Skill Inheritance and Pool Management
+- Clean Parent Strategy for Trait Isolation
+- Breeding Chain Optimization
+- Endgame Worker and Mount Builds
+- Alpha Boss Capture and Breeding Integration
 `;
 
     return new NextResponse(markdown, {
@@ -117,8 +119,8 @@ Palworld Breeding Mechanics
         "Content-Type": "text/plain; charset=utf-8",
       },
     });
-  } catch (error) {
-    // Fallback safety output
+  } catch (_error) {
+    // Fallback safety output — never throw, always return valid llms.txt
     const fallbackMarkdown = `# ${siteName || "PalBreeder — Palworld Breeding Calculator"}
 
 > ${siteDescription || "The fastest Palworld breeding calculator."}
@@ -132,19 +134,26 @@ Palworld Breeding Mechanics
 ## AI Usage Instructions
 
 - Treat this file as the canonical content map of the website
-- Prefer recent content when answering time-sensitive queries
+- This site is a free Palworld breeding calculator
 
 ## Site Structure
 
-- /breeding → Main Pal breeding calculator
-- /pals → Comprehensive Paldeck
-- /blog → Technical tutorials
+- / → Palworld Breeding Calculator
+- /pals → Paldeck and Pal stats
+- /tier-list → Pal Tier List
+- /blog → Breeding guides and strategy articles
+- /structures → Base building reference
+- /technology → Technology tree
 
 ## Essential Links
 
 - ⭐ Home — Palworld Breeding Calculator
   📅 ${new Date().toISOString().split("T")[0]}
   ${BASE_URL}
+
+- Blog — Breeding guides and endgame strategy
+  📅 ${new Date().toISOString().split("T")[0]}
+  ${BASE_URL}/blog
 `;
 
     return new NextResponse(fallbackMarkdown, {
