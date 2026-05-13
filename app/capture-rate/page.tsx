@@ -1,17 +1,22 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import CaptureRateCalculator from "@/components/CaptureRateCalculator";
 import { CAPTURE_RATE_PALS, CAPTURE_RATE_SPHERES } from "@/lib/capture-rate";
 import { siteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: "Palworld Capture Rate Calculator",
   description:
     "Calculate Palworld capture odds with local pal portraits, sphere icons, boss modifiers, HP tuning, and every sphere tier.",
-  alternates: {
-    canonical: `${siteUrl}/capture-rate`,
-  },
-};
+  path: "/capture-rate",
+  keywords: [
+    "capture rate",
+    "Palworld capture calculator",
+    "Pal Sphere",
+    "boss capture",
+    "Palworld HP",
+  ],
+});
 
 export default function CaptureRatePage() {
   const jsonLd = {
@@ -49,20 +54,50 @@ export default function CaptureRatePage() {
 
           <CaptureRateCalculator />
 
-          <p className="mt-6 text-center text-xs leading-relaxed text-[var(--pw-text-dim)]">
-            Reference data adapted from{" "}
-            <a
-              href="https://palworld.gg/capture-rate"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--pw-blue)] hover:underline"
-            >
-              Palworld.gg&apos;s capture rate calculator
-            </a>
-            . This local version includes {CAPTURE_RATE_PALS.length} pals and{" "}
-            {CAPTURE_RATE_SPHERES.length} sphere tiers using the assets in
-            `public/pal` and `public/technology`.
-          </p>
+          <section className="mt-12 glass-card-static p-6 sm:p-8 max-w-4xl mx-auto">
+            <h2 className="text-xl font-bold mb-4">How Palworld capture rates work</h2>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              Every Pal in Palworld has a base capture rate that the game uses
+              alongside its current HP, the sphere thrown, and a handful of
+              situational modifiers to produce the final throw odds. The calculator
+              above replicates the in-game formula across all {CAPTURE_RATE_PALS.length}{" "}
+              recorded Pals and all {CAPTURE_RATE_SPHERES.length} sphere tiers, so you
+              can compare options before you waste a Hyper Sphere on a 4&#37; chance.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              HP weighting is the biggest single lever. Hitting a Pal to roughly a
+              third of its maximum HP nearly doubles the base rate compared to throwing
+              at full HP, and triggering its sleep, frozen, or burning status applies a
+              further bonus on top. Throw direction matters too — a sphere that lands
+              on the Pal&apos;s back applies the stronger of two back-bonus
+              multipliers, which is why the tool exposes a toggle for that case.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              For Alpha and boss Pals the calculation is the same formula but with a
+              capture penalty layered on top. Even a Legendary Sphere will not push the
+              odds above the boss cap, which is why bringing a softening attack
+              loadout and aiming for low-HP back-throws is the difference between a
+              one-attempt capture and grinding the encounter for thirty minutes.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed">
+              If you have already captured a target and want to plan its breeding line,
+              jump to the{" "}
+              <Link
+                href="/"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                breeding calculator
+              </Link>{" "}
+              or browse the matching breeding guide from the{" "}
+              <Link
+                href="/pals"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                Paldex
+              </Link>
+              .
+            </p>
+          </section>
         </div>
       </section>
     </>

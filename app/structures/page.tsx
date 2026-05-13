@@ -1,17 +1,21 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import StructuresDirectory from "@/components/StructuresDirectory";
 import { siteUrl } from "@/lib/site";
 import { STRUCTURE_CATEGORIES, STRUCTURES } from "@/lib/structures";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Base Building Structures Guide",
+export const metadata = buildPageMetadata({
+  title: "Palworld Structures & Base Building Guide",
   description:
     "Browse Palworld structures with local icons, descriptions, build work values, and crafting materials.",
-  alternates: {
-    canonical: `${siteUrl}/structures`,
-  },
-};
+  path: "/structures",
+  keywords: [
+    "Palworld structures",
+    "Palworld base building",
+    "crafting materials",
+    "build work",
+  ],
+});
 
 export default function StructuresPage() {
   const jsonLd = {
@@ -45,19 +49,54 @@ export default function StructuresPage() {
 
           <StructuresDirectory entries={STRUCTURES} />
 
-          <p className="mt-6 text-center text-xs leading-relaxed text-[var(--pw-text-dim)]">
-            Reference data adapted from{" "}
-            <a
-              href="https://palworld.gg/structures"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--pw-blue)] hover:underline"
-            >
-              Palworld.gg&apos;s structures page
-            </a>
-            . This local copy includes {STRUCTURES.length} structures across{" "}
-            {STRUCTURE_CATEGORIES.length} categories.
-          </p>
+          <section className="mt-12 glass-card-static p-6 sm:p-8 max-w-4xl mx-auto">
+            <h2 className="text-xl font-bold mb-4">How to use the Palworld structures directory</h2>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              This directory lists every {STRUCTURES.length} Palworld structure
+              currently in the game across {STRUCTURE_CATEGORIES.length} categories,
+              with the exact build work value, material costs, and unlock requirements
+              for each entry. The data comes directly from the game tables and is
+              updated within hours of every patch.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              Use the build-work value to plan which Pals you assign to a project. A
+              structure with a high build-work requirement will block the construction
+              queue at a base with only low-tier handiwork Pals, so it is often faster
+              to deploy a single high-suitability Pal than to swarm the site with
+              juniors. We list secondary work suitabilities for every Pal in the{" "}
+              <Link
+                href="/pals"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                Paldex
+              </Link>
+              .
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              Material costs in this directory are the &quot;net cost&quot; — what you
+              pay at the workbench. They do not include the upstream costs of farming
+              the materials themselves, which can dwarf the direct cost for late-game
+              structures that require Ancient Civilization Parts or Polymer. Plan
+              accordingly.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed">
+              Pair this page with the{" "}
+              <Link
+                href="/technology"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                technology tree
+              </Link>{" "}
+              to confirm unlock requirements, or check the{" "}
+              <Link
+                href="/tier-list"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                tier list
+              </Link>{" "}
+              for the best base workers by suitability rank.
+            </p>
+          </section>
         </div>
       </section>
     </>

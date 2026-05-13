@@ -1,21 +1,21 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import TechnologyTree from "@/components/TechnologyTree";
 import { siteUrl } from "@/lib/site";
 import { TECHNOLOGY_TREE } from "@/lib/technology";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Technology Tree & Unlocks",
+export const metadata = buildPageMetadata({
+  title: "Palworld Technology Tree & Unlocks Guide",
   description:
     "Browse the full Palworld technology tree with local icons, unlock levels, point costs, and Ancient Technology unlocks.",
-  alternates: {
-    canonical: `${siteUrl}/technology`,
-    languages: {
-      'en': `${siteUrl}/technology`,
-      'x-default': `${siteUrl}/technology`,
-    },
-  },
-};
+  path: "/technology",
+  keywords: [
+    "Palworld technology tree",
+    "Ancient Technology",
+    "Palworld unlocks",
+    "tech points",
+  ],
+});
 
 export default function TechnologyPage() {
   const ancientCount = TECHNOLOGY_TREE.filter((entry) => entry.ancient).length;
@@ -50,20 +50,50 @@ export default function TechnologyPage() {
 
           <TechnologyTree entries={TECHNOLOGY_TREE} />
 
-          <p className="mt-6 text-center text-xs leading-relaxed text-[var(--pw-text-dim)]">
-            Reference data adapted from{" "}
-            <a
-              href="https://palworld.gg/technology-tree"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--pw-blue)] hover:underline"
-            >
-              Palworld.gg&apos;s technology tree
-            </a>
-            . This local copy includes {TECHNOLOGY_TREE.length} unlocks, with{" "}
-            {ancientCount} Ancient Technology entries and icons served from
-            `public/technology`.
-          </p>
+          <section className="mt-12 glass-card-static p-6 sm:p-8 max-w-4xl mx-auto">
+            <h2 className="text-xl font-bold mb-4">Planning your Palworld technology unlocks</h2>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              The Palworld technology tree splits into two parallel tracks: regular
+              tech, unlocked with Technology Points earned from levelling up, and
+              Ancient Technology, unlocked with Ancient Technology Points dropped only
+              by Alpha and Tower bosses. This page lists all {TECHNOLOGY_TREE.length}{" "}
+              entries currently in the game, of which{" "}
+              <strong className="text-white">{ancientCount}</strong> require the
+              Ancient track.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              Because Ancient Technology Points are gated by boss fights, your unlock
+              order genuinely matters. Spending an early Ancient Point on a cosmetic
+              decoration locks you out of a real progression upgrade for hours. We
+              recommend prioritising the high-impact ancient unlocks first — usually
+              one upgraded sphere tier and one logistics upgrade — and saving the rest
+              until you have a comfortable point surplus.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              For regular tech, the practical question is rarely whether to unlock a
+              tier but when. Many mid-tier crafting stations get replaced within a few
+              levels, so spending Technology Points on a transitional tool is rarely
+              worth it if you are close to the next tier. The level column above is
+              the easiest way to spot that pattern.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed">
+              Once you have an unlock in mind, jump to the{" "}
+              <Link
+                href="/structures"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                structures directory
+              </Link>{" "}
+              to see exactly what the recipe will cost in materials, or check the{" "}
+              <Link
+                href="/tier-list"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                base workers tier list
+              </Link>{" "}
+              for the Pals best suited to the new station.
+            </p>
+          </section>
         </div>
       </section>
     </>

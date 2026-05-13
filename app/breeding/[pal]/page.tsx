@@ -14,6 +14,21 @@ import {
 } from "@/lib/breeding";
 import { findBreedingChain } from "@/lib/graph";
 import { siteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
+
+// ── Element-specific strategy copy ─────────────────────────────────────────────
+
+const ELEMENT_STRATEGY: Partial<Record<PalElement, string>> = {
+  Fire: "pairs naturally with Ice or Grass parents that share a similar power band, since the Fire breeding lines tend to cluster around kindling and ranged combat roles. Avoid Water-aligned partners only if you care about the resulting child's combat matchup; for the breeding math itself, element compatibility is purely cosmetic.",
+  Water: "slots well into worker-focused breeding lines that need watering or cooling at base. Water parents tend to have moderate-to-high breeding power, so two Water parents will often overshoot the target — mix one Water parent with a Neutral or low-power donor to land the math correctly.",
+  Grass: "is most useful in plantation and lumbering setups, so most breeding projects targeting it will start from worker-heavy parents. Grass parents typically sit in the low-to-mid power band, which gives you plenty of donor flexibility.",
+  Electric: "is one of the harder elements to breed cleanly because most Electric Pals carry medium-to-high breeding power. Plan a chain that walks down from a strong Electric parent through a Neutral intermediate rather than forcing two Electric parents together.",
+  Ice: "rewards careful parent selection — the Ice element clusters around endgame mounts and cooling workers, so messy passive pools punish you harder here than in other elements. Use a confirmed clean Ice donor whenever possible.",
+  Ground: "is the go-to element for mining and excavation breeding lines. Ground parents almost always carry the Mining work suitability, which makes them easy donors to identify in your storage box.",
+  Dark: "tends to sit in the higher power bands and is best treated as a multi-step chain rather than a single-pair breed. Many endgame projects pass through a Dark intermediate at some point.",
+  Dragon: "is end-of-progression territory. Direct Dragon × Dragon pairs are almost never the optimal route — instead, find a single clean Dragon donor and walk it down through a longer chain so the passive pool stays manageable.",
+  Neutral: "is the most flexible building block in any breeding project. Neutral Pals act as power-balancing donors for higher-tier targets, which makes them disproportionately useful relative to how unimpressive they look on paper.",
+};
 
 // ── Static Generation ──────────────────────────────────────────────────────────
 
@@ -30,28 +45,22 @@ export async function generateMetadata({
   const pal = getPalById(palId);
   if (!pal) return { title: "Pal Not Found" };
 
-  const rarity = getRarity(pal.power);
-  const title = `${pal.name} Breeding Guide`;
+  const title = `${pal.name} Breeding Guide — Palworld`;
   const description = `${pal.name} breeding guide for Palworld. Find all ${pal.element} parent combos, breeding power ${pal.power}, and step-by-step breeding chains.`;
 
-  return {
+  return buildPageMetadata({
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      type: "article",
-      url: `${siteUrl}/breeding/${palId}`,
-    },
-    twitter: { card: "summary_large_image", title, description },
-    alternates: { 
-      canonical: `${siteUrl}/breeding/${palId}`,
-      languages: {
-        'en': `${siteUrl}/breeding/${palId}`,
-        'x-default': `${siteUrl}/breeding/${palId}`,
-      },
-    },
-  };
+    path: `/breeding/${palId}`,
+    ogType: "article",
+    keywords: [
+      `${pal.name} breeding`,
+      `${pal.name} Palworld`,
+      `${pal.element} Pal`,
+      `breed ${pal.name}`,
+      "breeding chain",
+    ],
+  });
 }
 
 // ── Page ───────────────────────────────────────────────────────────────────────
@@ -84,6 +93,19 @@ export default async function PalBreedingPage({
   const combos = findParentsForChild(pal.id);
   const chain = findBreedingChain(pal.id);
   const powerPercent = Math.max(5, Math.min(100, ((1500 - pal.power) / 1500) * 100));
+
+  // Power tier classification for narrative content
+  const powerTier =
+    pal.power <= 500 ? "low" : pal.power <= 1000 ? "mid" : "high";
+  const powerTierLabel =
+    powerTier === "low"
+      ? "low (under 500)"
+      : powerTier === "mid"
+      ? "mid (500–1000)"
+      : "high (over 1000)";
+
+  const topCombo = combos[0];
+  const chainSteps = chain.found ? chain.totalSteps : 0;
 
   // What this pal can breed with others
   const breedResults = ALL_PALS.slice(0, 10).map((other) => ({
@@ -427,6 +449,75 @@ export default async function PalBreedingPage({
                 </div>
               </details>
             </div>
+          </section>
+
+          {/* Long-form strategy & narrative content for SEO and player value */}
+          <section className="mb-8 glass-card-static p-6 sm:p-8">
+            <h2 className="text-lg font-bold mb-3">
+              {pal.name} Breeding Strategy
+            </h2>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              {pal.name} sits in the {powerTierLabel} breeding-power band at exactly{" "}
+              <strong className="text-white">{pal.power}</strong>, which makes it a{" "}
+              {powerTier === "low"
+                ? "great early-game target you can usually pull off with two readily available parents and a single cake. Because the breeding pool is wide at this band, you can afford to optimise for passives rather than species selection — pick parents whose passive pool is already clean rather than chasing the absolute closest power match."
+                : powerTier === "mid"
+                ? "mid-game project that rewards planning. There are usually multiple viable parent pairs at this band, so the question is rarely whether you can breed it but how efficiently you can layer the passives you want. Use the parent list above as a starting point and treat any messy donor as a separate clean-up project before committing to the final breed."
+                : "high-tier breeding project. Direct parent combinations exist but they are rarely your fastest route — most players will get a better result by walking the breeding chain shown above one step at a time, isolating one passive per generation, and keeping the donor side as clean as possible. Cakes burn fast at this tier, so the cheapest path is the one with the fewest wasted eggs, not the one with the fanciest parents."}
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              As a {pal.element}-type Pal, {pal.name}{" "}
+              {ELEMENT_STRATEGY[pal.element as PalElement] ??
+                "fits most parent line-ups without elemental conflict, which makes it a flexible building block in longer breeding projects."}{" "}
+              You can mix any two parents regardless of element — Palworld does not restrict cross-element breeding — but matching elements on at least one parent makes the resulting line easier to track when you are juggling several breeding boxes at once.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              {combos.length > 0 ? (
+                <>
+                  This guide lists{" "}
+                  <strong className="text-white">{combos.length}</strong> verified
+                  parent combination{combos.length === 1 ? "" : "s"} that produce {pal.name}.
+                  The closest match in pure breeding-power terms is{" "}
+                  {topCombo ? (
+                    <strong className="text-white">
+                      {topCombo.parentA.name} + {topCombo.parentB.name}
+                    </strong>
+                  ) : (
+                    "shown above"
+                  )}
+                  , but &quot;closest&quot; is not always &quot;best&quot;. If the perfect-math pair drags four random passives into the egg, a slightly looser pair with cleaner parents will out-perform it every single time. Open the{" "}
+                  <Link href="/" className="text-[var(--pw-blue)] hover:underline">
+                    breeding calculator
+                  </Link>{" "}
+                  if you want to test alternative pairs against parents you already own.
+                </>
+              ) : (
+                <>
+                  {pal.name} is a special-case Pal with no standard parent combinations in the calculator&apos;s dataset. It is typically obtained through wild capture, alpha encounters, or specific quest rewards rather than the breeding farm. Check the{" "}
+                  <Link href="/pals" className="text-[var(--pw-blue)] hover:underline">
+                    Paldex
+                  </Link>{" "}
+                  for spawn locations.
+                </>
+              )}
+            </p>
+            {chainSteps > 0 ? (
+              <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+                The shortest breeding chain to {pal.name} is{" "}
+                <strong className="text-white">{chainSteps} step{chainSteps === 1 ? "" : "s"}</strong> from common starter Pals. Walking the chain instead of forcing the final breed has two real advantages: each intermediate child is also a usable Pal you can deploy or sell, and you can clean the passive pool one generation at a time instead of inheriting a messy stew from two unrelated parents. Players who skip the chain and brute-force the final pair almost always burn more cakes overall.
+              </p>
+            ) : null}
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed">
+              When you are ready to commit, prepare a stock of cakes ahead of the breeding session — the Palworld breeding farm consumes one cake per attempted egg, and a long chain can chew through twenty or thirty before the final {pal.name} hatches. Pair this guide with our{" "}
+              <Link href="/blog/how-to-calculate-passive-probabilities" className="text-[var(--pw-blue)] hover:underline">
+                passive inheritance guide
+              </Link>{" "}
+              if you care about which passives land on the final child, and our{" "}
+              <Link href="/blog/how-to-organize-breeding-boxes-palworld" className="text-[var(--pw-blue)] hover:underline">
+                breeding box organisation guide
+              </Link>{" "}
+              if your roster is getting unmanageable.
+            </p>
           </section>
 
           {/* Internal links — Related Pals */}

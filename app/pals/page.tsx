@@ -1,21 +1,22 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import PalsDirectory from "@/components/PalsDirectory";
 import { PALDEX } from "@/lib/paldex";
 import { siteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "All Pals Directory",
+export const metadata = buildPageMetadata({
+  title: "Palworld Pals Directory & Paldex",
   description:
     "Browse the full Palworld pal directory with real local portraits, rarity, elements, and work suitability.",
-  alternates: {
-    canonical: `${siteUrl}/pals`,
-    languages: {
-      'en': `${siteUrl}/pals`,
-      'x-default': `${siteUrl}/pals`,
-    },
-  },
-};
+  path: "/pals",
+  keywords: [
+    "Paldex",
+    "Pals list",
+    "Palworld elements",
+    "Pal rarity",
+    "work suitability",
+  ],
+});
 
 export default function PalsPage() {
   const guideCount = PALDEX.filter((pal) => pal.guideId !== null).length;
@@ -50,18 +51,48 @@ export default function PalsPage() {
 
           <PalsDirectory pals={PALDEX} guideCount={guideCount} />
 
-          <p className="mt-6 text-center text-xs leading-relaxed text-[var(--pw-text-dim)]">
-            Reference data adapted from{" "}
-            <a
-              href="https://palworld.gg/pals"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--pw-blue)] hover:underline"
-            >
-              Palworld.gg&apos;s full paldeck
-            </a>
-            . Portraits use the local pal assets already in this project.
-          </p>
+          <section className="mt-12 glass-card-static p-6 sm:p-8 max-w-4xl mx-auto">
+            <h2 className="text-xl font-bold mb-4">About the Palworld Paldex</h2>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              This directory contains all {PALDEX.length} confirmed Palworld Pals with
+              verified base stats, element typing, rarity tier, and work suitability
+              levels. {guideCount} of them have a dedicated breeding guide that walks
+              through every parent combination and the shortest breeding chain to
+              produce them.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              Use the filters above to narrow the list by element, rarity, or work
+              suitability. If you are building a mining base, filtering by Mining
+              suitability and sorting by suitability level immediately surfaces the
+              practical candidates without the noise of unrelated combat Pals. The
+              same trick works for kindling, lumbering, watering, and every other
+              suitability the game tracks.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              Each Pal card links straight into the matching breeding guide so you
+              can go from &quot;I want this Pal&quot; to &quot;here is the exact
+              parent pair&quot; in two clicks. Rarity here follows the official
+              breeding-power bands rather than community guesswork, which is why a
+              few Pals are tagged differently than fan wikis classify them.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed">
+              To plan a breeding chain that ends in any Pal on this page, open the{" "}
+              <Link
+                href="/"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                breeding calculator
+              </Link>
+              . For ranked recommendations by role, see the{" "}
+              <Link
+                href="/tier-list"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                tier list
+              </Link>
+              .
+            </p>
+          </section>
         </div>
       </section>
     </>

@@ -1,14 +1,18 @@
-import type { Metadata } from "next";
 import { ShieldCheck, Target, Users } from "lucide-react";
-import { siteName, siteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: `About Us | ${siteName}`,
-  description: "Learn about PalBreeder, who we are, what we do, and why we are a trusted source for exact Palworld breeding and game data.",
-  alternates: {
-    canonical: `${siteUrl}/about-us`,
-  },
-};
+export const metadata = buildPageMetadata({
+  title: "About PalBreeder — Palworld Tools & Data",
+  description:
+    "Learn about PalBreeder, who we are, what we do, and why we are a trusted source for exact Palworld breeding and game data.",
+  path: "/about-us",
+  ogType: "website",
+  keywords: [
+    "about PalBreeder",
+    "Palworld team",
+    "Palworld data accuracy",
+  ],
+});
 
 export default function AboutUsPage() {
   return (

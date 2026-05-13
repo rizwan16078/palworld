@@ -10,13 +10,24 @@ import {
   RARITY_COLORS,
   type PalElement,
 } from "@/lib/breeding";
-import { siteUrl, siteDescription } from "@/lib/site";
+import { siteUrl, siteDescription, siteName } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
+import { BLOG_POSTS } from "@/lib/blog";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: siteUrl,
-  },
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: "PalBreeder — Palworld Breeding Calculator",
+  description: siteDescription,
+  path: "/",
+  keywords: [
+    "breeding calculator",
+    "Palworld parent finder",
+    "Palworld breeding chains",
+    "Palworld breeding math",
+    "Anubis breeding",
+    "Jetragon breeding",
+    "passive inheritance",
+  ],
+});
 
 export default function HomePage() {
   const jsonLd = {
@@ -119,8 +130,8 @@ export default function HomePage() {
       <section className="pt-24 sm:pt-28 pb-12 px-4 sm:px-6 relative overflow-hidden">
         {/* Floating Game Characters */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-50 hidden lg:block -z-10 max-w-[1400px] mx-auto inset-x-0">
-          <Image src="/images/img-intro-character-left.png" alt="" width={380} height={380} priority className="absolute left-[2%] top-24 w-[380px] h-auto object-contain animate-float" />
-          <Image src="/images/img-intro-character-right.png" alt="" width={420} height={420} priority className="absolute right-[2%] top-32 w-[420px] h-auto object-contain animate-float-delayed" />
+          <Image src="/images/img-intro-character-left.png" alt="Palworld Pal character illustration on the left of the breeding calculator hero" width={380} height={380} priority className="absolute left-[2%] top-24 w-[380px] h-auto object-contain animate-float" />
+          <Image src="/images/img-intro-character-right.png" alt="Palworld Pal character illustration on the right of the breeding calculator hero" width={420} height={420} priority className="absolute right-[2%] top-32 w-[420px] h-auto object-contain animate-float-delayed" />
         </div>
 
         <div className="max-w-xl mx-auto text-center mb-8 relative z-10">
@@ -310,6 +321,59 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Guides Section */}
+      <section className="py-16 px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-extrabold mb-3 text-gradient">
+              Featured Palworld Guides
+            </h2>
+            <p className="text-sm text-[var(--pw-text-muted)] max-w-xl mx-auto">
+              Hand-written breeding strategies, passive inheritance math, and endgame optimization.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {BLOG_POSTS.slice(0, 6).map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group flex flex-col rounded-2xl border border-[var(--pw-border)] bg-[#131b26] overflow-hidden hover:border-[var(--pw-blue)] transition-colors"
+              >
+                <div className="relative h-40 bg-[#0a0f16]">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    loading="lazy"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-5 flex flex-col flex-1">
+                  <p className="text-[10px] uppercase tracking-widest font-bold text-[var(--pw-blue)] mb-2">
+                    {post.category}
+                  </p>
+                  <h3 className="text-base font-bold text-white leading-snug line-clamp-2 group-hover:text-[var(--pw-blue)] transition-colors mb-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-xs text-[var(--pw-text-muted)] line-clamp-2">
+                    {post.excerpt}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--pw-blue)]/15 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--pw-blue)] transition-colors hover:bg-[var(--pw-blue)]/25"
+            >
+              Browse All Guides
+            </Link>
           </div>
         </div>
       </section>

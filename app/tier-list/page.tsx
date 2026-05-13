@@ -1,17 +1,22 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import TierListExplorer from "@/components/TierListExplorer";
 import { TIER_LIST_CATEGORIES } from "@/lib/tier-list";
 import { siteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Best Pals Tier List for Combat & Work",
+export const metadata = buildPageMetadata({
+  title: "Palworld Tier List — Best Pals for Combat & Work",
   description:
     "Browse Palworld tier lists for best overall pals, workers, flying mounts, ground mounts, and combat picks.",
-  alternates: {
-    canonical: `${siteUrl}/tier-list`,
-  },
-};
+  path: "/tier-list",
+  keywords: [
+    "Palworld tier list",
+    "best Pals",
+    "flying mount tier",
+    "Palworld workers",
+    "combat Pals",
+  ],
+});
 
 export default function TierListPage() {
   const jsonLd = {
@@ -52,20 +57,49 @@ export default function TierListPage() {
 
           <TierListExplorer />
 
-          <p className="mt-6 text-center text-xs leading-relaxed text-[var(--pw-text-dim)]">
-            Reference data adapted from{" "}
-            <a
-              href="https://palworld.gg/tier-list"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--pw-blue)] hover:underline"
-            >
-              Palworld.gg&apos;s tier list pages
-            </a>
-            . This local version includes {TIER_LIST_CATEGORIES.length} ranking
-            categories and {totalPals} ranked entries using your project&apos;s
-            pal portraits plus the work icons in `public/icons`.
-          </p>
+          <section className="mt-12 glass-card-static p-6 sm:p-8 max-w-4xl mx-auto">
+            <h2 className="text-xl font-bold mb-4">How we rank Palworld Pals</h2>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              Every Pal in this list is scored against the role we placed it in, not
+              against the whole roster at once. A Pal that is S-tier as a flying mount
+              might be C-tier as a base worker, so we publish category-specific lists
+              instead of one combined ranking. The {totalPals} Pals on this page are
+              split across overall power, base workers, combat damage, flying mounts,
+              and ground mounts, and each ranking weights different stats.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              For combat tiers, we weight raw damage output, the Pal&apos;s active
+              skill kit, and survivability under boss-tier pressure. For base workers,
+              we weight work suitability levels, secondary suitabilities, movement
+              speed inside the base, and stamina under sustained workload. Mount tiers
+              prioritise travel speed and stamina pool over flashy combat numbers.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed mb-4">
+              We do not chase Twitch meta or YouTube hot takes. The tier rankings only
+              move when a balance patch ships, when a previously overlooked Pal turns
+              out to be quietly excellent after deeper testing, or when a new Pal
+              enters the game. If you disagree with a placement, we genuinely want the
+              feedback — every category has a comment thread linked from the explorer
+              and we read all of them.
+            </p>
+            <p className="text-sm text-[var(--pw-text-muted)] leading-relaxed">
+              For breeding strategies that pair with this tier list, browse our{" "}
+              <Link
+                href="/blog"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                Palworld guides
+              </Link>{" "}
+              or open the{" "}
+              <Link
+                href="/"
+                className="text-[var(--pw-blue)] hover:underline font-medium"
+              >
+                breeding calculator
+              </Link>{" "}
+              to plan the parent chain for any Pal on this page.
+            </p>
+          </section>
         </div>
       </section>
     </>

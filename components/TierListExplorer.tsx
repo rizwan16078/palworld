@@ -146,7 +146,7 @@ export default function TierListExplorer() {
                       <div className="relative h-10 w-10 shrink-0 rounded-2xl border border-white/10 bg-black/10">
                         <Image
                           src={icon}
-                          alt=""
+                          alt={`${category.label} tier list category icon`}
                           fill
                           sizes="40px"
                           className="object-contain p-2"
