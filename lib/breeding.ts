@@ -8,6 +8,7 @@ export interface Pal {
   element: PalElement;
   power: number;
   description: string;
+  suitabilities?: { type: string; level: number }[];
 }
 
 export type PalElement =

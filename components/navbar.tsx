@@ -7,12 +7,13 @@ import { Search } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/", label: "Calculator" },
+  { href: "/box-breeder", label: "Box Breeder" },
   { href: "/capture-rate", label: "Capture Rate Calculator" },
   { href: "/tier-list", label: "Tier List" },
-  { href: "/structures", label: "Structures" },
+  { href: "/work", label: "Work Suitability" },
+  { href: "/passives", label: "Passive Skills" },
   { href: "/blog", label: "Guides" },
   { href: "/pals", label: "Pals" },
-  { href: "/technology", label: "Technology" },
 ];
 
 const SITE_NAME = "PalBreeder — Palworld Breeding Calculator";
@@ -103,6 +104,12 @@ export default function Navbar() {
               Calculator
             </Link>
             <Link
+              href="/box-breeder"
+              className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200 hidden lg:block"
+            >
+              Box Breeder
+            </Link>
+            <Link
               href="/capture-rate"
               className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200"
             >
@@ -115,10 +122,16 @@ export default function Navbar() {
               Tier List
             </Link>
             <Link
-              href="/structures"
-              className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200"
+              href="/work"
+              className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200 hidden md:block"
             >
-              Structures
+              Work
+            </Link>
+            <Link
+              href="/passives"
+              className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200 hidden md:block"
+            >
+              Passives
             </Link>
             <Link
               href="/blog"
@@ -131,12 +144,6 @@ export default function Navbar() {
               className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200 hidden sm:block"
             >
               Pals
-            </Link>
-            <Link
-              href="/technology"
-              className="px-3 py-1.5 rounded-lg text-sm text-[var(--pw-text-muted)] hover:text-[var(--pw-text)] hover:bg-[var(--pw-surface)] transition-all duration-200 hidden sm:block"
-            >
-              Technology
             </Link>
 
             {/* Search toggle */}
