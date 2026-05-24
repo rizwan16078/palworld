@@ -5,7 +5,8 @@ import Image from "next/image";
 import { BLOG_POSTS, BLOG_SEO } from "@/lib/blog";
 import { siteUrl } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
-import { ArrowLeft, Calendar } from "lucide-react";
+import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import BlogPostActions from "@/components/blog/BlogPostActions";
 
 export async function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
@@ -49,7 +50,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     ? post.image
     : `${siteUrl}${post.image}`;
   const faqItems = seo?.faqs ?? [];
-  const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const readTime = Math.max(1, Math.round(post.content.replace(/<[^>]*>/g, "").split(/\s+/).length / 200));
+  const relatedPosts = BLOG_POSTS
+    .filter((p) => p.slug !== post.slug)
+    .sort((a, b) => (a.category === post.category ? -1 : 1) - (b.category === post.category ? -1 : 1))
+    .slice(0, 3);
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -117,13 +122,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <span className="text-[var(--pw-blue)]">{post.category}</span>
             <span>•</span>
             <span className="flex items-center gap-1.5"><Calendar className="w-3.5 h-3.5" /> {post.date}</span>
+            <span>•</span>
+            <span className="flex items-center gap-1.5"><Clock className="w-3.5 h-3.5" /> {readTime} min read</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-6">
             {post.title}
           </h1>
-          <p className="text-lg text-[#8b95a5] leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg text-[#8b95a5] leading-relaxed max-w-2xl mx-auto mb-6">
             {post.excerpt}
           </p>
+          <div className="flex justify-center">
+            <BlogPostActions slug={post.slug} title={post.title} />
+          </div>
         </header>
 
         <div className="relative w-full h-[400px] rounded-2xl overflow-hidden mb-12 border border-[#232f40] bg-[#0a0f16]">

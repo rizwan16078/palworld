@@ -1,3 +1,24 @@
+export type BlogCategory =
+  | "BREEDING GUIDES"
+  | "ENDGAME STRATEGY"
+  | "COMPARISONS"
+  | "MECHANICS"
+  | "BASE BUILDING"
+  | "LONG-TAIL GUIDES";
+
+export type BlogSortOption = "latest" | "oldest" | "az";
+
+export const BLOG_CATEGORIES: BlogCategory[] = [
+  "BREEDING GUIDES",
+  "ENDGAME STRATEGY",
+  "COMPARISONS",
+  "MECHANICS",
+  "BASE BUILDING",
+  "LONG-TAIL GUIDES",
+];
+
+export const POSTS_PER_PAGE = 12;
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -18,6 +39,92 @@ export interface BlogSeo {
   metaTitle: string;
   metaDescription: string;
   faqs: BlogFaq[];
+}
+
+export interface BlogPageResult {
+  posts: BlogPost[];
+  total: number;
+  page: number;
+  totalPages: number;
+  categoryCounts: Record<string, number>;
+}
+
+function parseDate(dateStr: string): number {
+  const d = new Date(dateStr);
+  return isNaN(d.getTime()) ? 0 : d.getTime();
+}
+
+export function getCategoryCounts(posts: BlogPost[]): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const post of posts) {
+    counts[post.category] = (counts[post.category] ?? 0) + 1;
+  }
+  return counts;
+}
+
+export function searchPosts(posts: BlogPost[], query: string): BlogPost[] {
+  if (!query.trim()) return posts;
+  const q = query.toLowerCase();
+  return posts.filter(
+    (p) =>
+      p.title.toLowerCase().includes(q) ||
+      p.excerpt.toLowerCase().includes(q) ||
+      p.category.toLowerCase().includes(q) ||
+      p.badge.toLowerCase().includes(q)
+  );
+}
+
+export function filterByCategory(posts: BlogPost[], category: string): BlogPost[] {
+  if (!category || category === "All") return posts;
+  return posts.filter((p) => p.category === category);
+}
+
+export function sortPosts(posts: BlogPost[], sort: BlogSortOption): BlogPost[] {
+  const sorted = [...posts];
+  switch (sort) {
+    case "oldest":
+      return sorted.sort((a, b) => parseDate(a.date) - parseDate(b.date));
+    case "az":
+      return sorted.sort((a, b) => a.title.localeCompare(b.title));
+    case "latest":
+    default:
+      return sorted.sort((a, b) => parseDate(b.date) - parseDate(a.date));
+  }
+}
+
+export function paginatePosts(
+  posts: BlogPost[],
+  page: number,
+  perPage: number = POSTS_PER_PAGE
+): { posts: BlogPost[]; total: number; page: number; totalPages: number } {
+  const total = posts.length;
+  const totalPages = Math.max(1, Math.ceil(total / perPage));
+  const safePage = Math.min(Math.max(1, page), totalPages);
+  const start = (safePage - 1) * perPage;
+  return {
+    posts: posts.slice(start, start + perPage),
+    total,
+    page: safePage,
+    totalPages,
+  };
+}
+
+export function getBlogPage(params: {
+  page?: number;
+  search?: string;
+  category?: string;
+  sort?: BlogSortOption;
+}): BlogPageResult {
+  let posts = [...BLOG_POSTS];
+
+  if (params.search) posts = searchPosts(posts, params.search);
+  if (params.category) posts = filterByCategory(posts, params.category);
+  posts = sortPosts(posts, params.sort ?? "latest");
+
+  const categoryCounts = getCategoryCounts(BLOG_POSTS);
+  const paginated = paginatePosts(posts, params.page ?? 1);
+
+  return { ...paginated, categoryCounts };
 }
 
 export const BLOG_POSTS: BlogPost[] = [
