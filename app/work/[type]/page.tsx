@@ -5,6 +5,7 @@ import { WORK_SUITABILITIES, getWorkDefById } from "@/lib/work";
 import { ALL_PALS, ELEMENT_COLORS, type PalElement } from "@/lib/breeding";
 import PalAvatar from "@/components/PalAvatar";
 import { siteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{
@@ -26,12 +27,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `Best Pals for ${workDef.name} in Palworld (Tier List)`;
   const description = `Discover the fastest and most efficient Pals for ${workDef.name} in Palworld. See full tier lists and optimal passive skills for base workers.`;
 
-  return {
+  return buildPageMetadata({
     title,
     description,
-    alternates: { canonical: `${siteUrl}/work/${workDef.id}` },
-    openGraph: { title, description, url: `${siteUrl}/work/${workDef.id}` },
-  };
+    path: `/work/${workDef.id}`,
+    ogType: "article",
+    keywords: [
+      workDef.name,
+      `best ${workDef.name} Pals`,
+      `Palworld ${workDef.name}`,
+      "Palworld work suitability",
+      "best base workers Palworld",
+    ],
+  });
 }
 
 export default async function WorkSuitabilityDetailPage({ params }: PageProps) {

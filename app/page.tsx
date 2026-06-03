@@ -74,6 +74,14 @@ export default function HomePage() {
           text: "To breed Anubis (Ground, Power 100), you need parent combinations whose average breeding power is closest to 100. Use our Find Parents tool to see all possible combinations.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Can I breed any two Pals together in Palworld?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — any two Pals can be bred together in Palworld regardless of element or rarity. The offspring species is determined solely by the average of both parents' breeding power values.",
+        },
+      },
     ],
   };
 
@@ -84,10 +92,13 @@ export default function HomePage() {
     url: siteUrl,
     potentialAction: {
       "@type": "SearchAction",
-      target: `${siteUrl}/search?q={search_term_string}`,
+      target: `${siteUrl}/blog?search={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };
+
+  // Add your verified social profile URLs to this array (Reddit, Discord, Twitter/X, YouTube, etc.)
+  const SOCIAL_PROFILES: string[] = [];
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -96,6 +107,7 @@ export default function HomePage() {
     url: siteUrl,
     logo: `${siteUrl}/og-image.png`,
     description: siteDescription,
+    ...(SOCIAL_PROFILES.length > 0 && { sameAs: SOCIAL_PROFILES }),
   };
 
   return (

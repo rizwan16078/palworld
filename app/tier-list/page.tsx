@@ -28,6 +28,15 @@ export default function TierListPage() {
     url: `${siteUrl}/tier-list`,
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Tier List", item: `${siteUrl}/tier-list` },
+    ],
+  };
+
   const totalPals = TIER_LIST_CATEGORIES.reduce(
     (total, category) => total + category.totalPals,
     0
@@ -39,6 +48,12 @@ export default function TierListPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
         }}
       />
 

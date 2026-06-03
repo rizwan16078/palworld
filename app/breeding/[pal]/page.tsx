@@ -15,6 +15,7 @@ import {
 import { findBreedingChain } from "@/lib/graph";
 import { siteUrl } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
+import { getPalImageSrc } from "@/lib/pal-images";
 
 // ── Element-specific strategy copy ─────────────────────────────────────────────
 
@@ -53,6 +54,8 @@ export async function generateMetadata({
     description,
     path: `/breeding/${palId}`,
     ogType: "article",
+    image: getPalImageSrc(palId) ?? undefined,
+    imageAlt: `${pal.name} Palworld icon`,
     keywords: [
       `${pal.name} breeding`,
       `${pal.name} Palworld`,
@@ -107,13 +110,18 @@ export default async function PalBreedingPage({
   const topCombo = combos[0];
   const chainSteps = chain.found ? chain.totalSteps : 0;
 
-  // What this pal can breed with others
-  const breedResults = ALL_PALS.slice(0, 10).map((other) => ({
-    other,
-    result: breed(pal, other),
-  }));
+  // What this pal can breed with others — sorted by power proximity for relevance
+  const breedResults = ALL_PALS
+    .filter((p) => p.id !== pal.id)
+    .sort((a, b) => Math.abs(a.power - pal.power) - Math.abs(b.power - pal.power))
+    .slice(0, 10)
+    .map((other) => ({
+      other,
+      result: breed(pal, other),
+    }));
 
   // JSON-LD
+  const palImageSrc = getPalImageSrc(pal.id);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -121,6 +129,22 @@ export default async function PalBreedingPage({
     description: pal.description,
     url: `${siteUrl}/breeding/${pal.id}`,
     mainEntityOfPage: { "@type": "WebPage", "@id": `${siteUrl}/breeding/${pal.id}` },
+    author: {
+      "@type": "Organization",
+      name: "PalBreeder",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "PalBreeder",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/og-image.png`,
+      },
+    },
+    image: [palImageSrc ? `${siteUrl}${palImageSrc}` : `${siteUrl}/og-image.png`],
+    datePublished: "2024-01-19T00:00:00Z",
+    dateModified: new Date().toISOString(),
   };
 
   const faqJsonLd = {
@@ -143,6 +167,34 @@ export default async function PalBreedingPage({
           text: `${pal.name} is a ${pal.element}-type Pal with a breeding power of ${pal.power} and ${rarity} rarity.`,
         },
       },
+      {
+        "@type": "Question",
+        name: `How many parent combinations does ${pal.name} have?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${pal.name} has ${combos.length} possible parent combination${combos.length === 1 ? "" : "s"} in Palworld.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `What is the shortest breeding chain for ${pal.name}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: chain.found
+            ? `The shortest breeding chain for ${pal.name} is ${chain.totalSteps} step${chain.totalSteps === 1 ? "" : "s"} from common starter Pals.`
+            : `${pal.name} can be obtained directly from a single parent pair without a multi-step breeding chain.`,
+        },
+      },
+    ],
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Breeding", item: siteUrl },
+      { "@type": "ListItem", position: 3, name: `${pal.name}`, item: `${siteUrl}/breeding/${pal.id}` },
     ],
   };
 
@@ -158,6 +210,12 @@ export default async function PalBreedingPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
         }}
       />
 
@@ -446,6 +504,31 @@ export default async function PalBreedingPage({
                 <div className="px-4 pb-4 text-sm text-[var(--pw-text-muted)] leading-relaxed">
                   {pal.name} is a {pal.element}-type Pal with {rarity} rarity
                   and a breeding power of {pal.power}. {pal.description}
+                </div>
+              </details>
+              <details className="glass-card-static group">
+                <summary className="flex items-center justify-between cursor-pointer p-4 text-sm font-medium list-none">
+                  <span>How many parent combinations does {pal.name} have?</span>
+                  <svg className="w-4 h-4 text-[var(--pw-text-dim)] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-4 pb-4 text-sm text-[var(--pw-text-muted)] leading-relaxed">
+                  There are {combos.length} verified parent combination{combos.length === 1 ? "" : "s"} that
+                  produce {pal.name}. All combinations are listed above, sorted by breeding accuracy.
+                </div>
+              </details>
+              <details className="glass-card-static group">
+                <summary className="flex items-center justify-between cursor-pointer p-4 text-sm font-medium list-none">
+                  <span>What is the shortest breeding chain for {pal.name}?</span>
+                  <svg className="w-4 h-4 text-[var(--pw-text-dim)] group-open:rotate-180 transition-transform duration-200 shrink-0 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-4 pb-4 text-sm text-[var(--pw-text-muted)] leading-relaxed">
+                  {chain.found
+                    ? `The shortest path to ${pal.name} from common starter Pals is ${chain.totalSteps} step${chain.totalSteps === 1 ? "" : "s"}. The full chain is shown above.`
+                    : `${pal.name} can be obtained directly from a single parent pair — no multi-step chain is required.`}
                 </div>
               </details>
             </div>

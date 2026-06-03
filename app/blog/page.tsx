@@ -1,7 +1,8 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
-import { getBlogPage, type BlogSortOption } from "@/lib/blog";
+import { getBlogPage, BLOG_POSTS, type BlogSortOption } from "@/lib/blog";
+import { siteUrl } from "@/lib/site";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogControls from "@/components/blog/BlogControls";
 import BlogPagination from "@/components/blog/BlogPagination";
@@ -39,7 +40,29 @@ export default async function BlogIndex({ searchParams }: BlogPageProps) {
 
   const result = getBlogPage({ page, search, category, sort });
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Palworld Breeding Guides & Strategies",
+    description: "Expert Palworld breeding guides, passive skill inheritance breakdowns, and endgame optimization strategies.",
+    url: `${siteUrl}/blog`,
+    numberOfItems: BLOG_POSTS.length,
+    hasPart: BLOG_POSTS.map((post) => ({
+      "@type": "Article",
+      headline: post.title,
+      url: `${siteUrl}/blog/${post.slug}`,
+      datePublished: new Date(post.date).toISOString(),
+    })),
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
     <div className="pt-24 sm:pt-28 pb-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -87,5 +110,6 @@ export default async function BlogIndex({ searchParams }: BlogPageProps) {
         </Suspense>
       </div>
     </div>
+    </>
   );
 }

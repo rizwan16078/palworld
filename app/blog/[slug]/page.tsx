@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     headline: post.title,
     description: seo?.metaDescription ?? post.excerpt,
     datePublished: new Date(post.date).toISOString(),
-    dateModified: new Date(post.date).toISOString(),
+    dateModified: new Date(post.lastModified ?? post.date).toISOString(),
     author: {
       "@type": "Organization",
       name: "PalBreeder",

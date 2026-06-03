@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { PASSIVE_SKILLS } from "@/lib/passives";
-import { siteUrl } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{
@@ -24,12 +24,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `How to get ${skill.name} passive in Palworld`;
   const description = `Learn what the ${skill.name} passive skill does (${skill.description}) and how to breed it onto your favorite Pals.`;
 
-  return {
+  return buildPageMetadata({
     title,
     description,
-    alternates: { canonical: `${siteUrl}/passives/${skill.id}` },
-    openGraph: { title, description, url: `${siteUrl}/passives/${skill.id}` },
-  };
+    path: `/passives/${skill.id}`,
+    ogType: "article",
+    keywords: [
+      skill.name,
+      `${skill.name} passive`,
+      `Palworld ${skill.name}`,
+      "Palworld passive skills",
+      "how to get passive Palworld",
+    ],
+  });
 }
 
 export default async function PassiveSkillDetailPage({ params }: PageProps) {

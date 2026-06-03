@@ -36,6 +36,7 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
   trailingSlash: false,
   images: {
     formats: ["image/avif", "image/webp"],

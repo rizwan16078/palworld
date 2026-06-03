@@ -1,5 +1,6 @@
 import { BookOpen, ShieldCheck, Target, Users } from "lucide-react";
 import { buildPageMetadata } from "@/lib/seo";
+import { siteUrl } from "@/lib/site";
 
 export const metadata = buildPageMetadata({
   title: "About PalBreeder — Palworld Tools & Data",
@@ -46,7 +47,34 @@ const TEAM = [
 ];
 
 export default function AboutUsPage() {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "PalBreeder",
+    url: siteUrl,
+    logo: `${siteUrl}/og-image.png`,
+    description: "The most accurate and reliable tools for the Palworld community, built from reverse-engineered game data.",
+    foundingDate: "2024-01",
+    member: TEAM.map((member) => ({
+      "@type": "OrganizationRole",
+      member: {
+        "@type": "Person",
+        name: member.name,
+        jobTitle: member.role,
+        description: member.bio,
+      },
+      roleName: member.role,
+    })),
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
     <div className="pt-24 sm:pt-32 pb-16 px-4 sm:px-6 relative overflow-hidden">
       {/* Background glow effects */}
       <div className="absolute top-40 left-10 w-96 h-96 bg-[var(--pw-blue)] opacity-10 blur-[120px] rounded-full pointer-events-none" />
@@ -290,5 +318,6 @@ export default function AboutUsPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

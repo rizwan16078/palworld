@@ -23,6 +23,7 @@ export interface BlogPost {
   slug: string;
   title: string;
   date: string;
+  lastModified?: string;
   category: string;
   badge: string;
   excerpt: string;
