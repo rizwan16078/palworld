@@ -49,6 +49,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased`}>
+      <head>
+        {/* Preconnect to Google Analytics origins so those requests start immediately */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+      </head>
       <body className={`${poppins.className} min-h-full flex flex-col`}>
         <Navbar />
         <main className="flex-1">{children}</main>

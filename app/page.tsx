@@ -269,7 +269,7 @@ export default function HomePage() {
       {/* Official Game Features Section */}
       <section className="py-20 px-4 sm:px-6 relative mt-8 border-y border-[var(--pw-border)]">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/bg-features.jpg" fill sizes="100vw" quality={75} loading="lazy" className="object-cover opacity-[0.25]" alt="Palworld Features Background" />
+          <Image src="/images/bg-features.jpg" fill sizes="100vw" quality={40} loading="lazy" className="object-cover opacity-[0.25]" alt="Palworld Features Background" />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--pw-bg)] via-transparent to-[var(--pw-bg)] opacity-90" />
         </div>
         <div className="max-w-6xl mx-auto relative z-10">

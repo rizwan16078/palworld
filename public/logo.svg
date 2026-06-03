@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" role="img" aria-label="PalBreeder logo">
+  <defs>
+    <linearGradient id="pb-g" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#286fff"/>
+      <stop offset="1" stop-color="#6b21a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="36" height="36" rx="10" fill="url(#pb-g)"/>
+  <text x="18" y="24" text-anchor="middle" font-family="system-ui,-apple-system,BlinkMacSystemFont,sans-serif" font-size="13" font-weight="800" fill="white" letter-spacing="-0.5">PB</text>
+</svg>

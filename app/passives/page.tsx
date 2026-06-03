@@ -66,7 +66,7 @@ export default function PassivesPage() {
                 {grouped[tier].map((skill) => (
                   <Link 
                     key={skill.id} 
-                    href={`/passives/${skill.id}`}
+                    href={`/passives/${skill.id.replace(/_/g, '-')}`}
                     className="glass-card p-5 hover:-translate-y-1 transition-all group hover:border-[var(--pw-blue)]/50"
                   >
                     <div className="flex justify-between items-start mb-2">

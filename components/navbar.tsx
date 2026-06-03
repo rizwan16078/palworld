@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Search } from "lucide-react";
 
 const NAV_LINKS = [
@@ -78,13 +79,15 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group" aria-label="PalBreeder — Palworld Breeding Calculator home">
-            <div
-              role="img"
-              aria-label="PalBreeder logo"
-              className="w-9 h-9 rounded-xl bg-gradient-to-br from-[var(--pw-blue)] to-[var(--pw-blue)]/70 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:shadow-[var(--pw-blue)]/30 group-hover:shadow-xl transition-shadow"
-            >
-              PB
-            </div>
+            <Image
+              src="/logo.svg"
+              alt="PalBreeder logo"
+              width={36}
+              height={36}
+              className="rounded-xl shadow-lg group-hover:shadow-[var(--pw-blue)]/30 group-hover:shadow-xl transition-shadow"
+              unoptimized
+              priority
+            />
             <div className="flex flex-col">
               <span className="text-sm font-bold tracking-tight text-[var(--pw-text)]">
                 PalBreeder
@@ -170,41 +173,42 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Search bar — expands below nav when open */}
-        {searchOpen && (
-          <div className="border-t border-[var(--pw-border)] bg-[var(--pw-bg)]/95 backdrop-blur-xl px-4 sm:px-6 py-3">
-            <form
-              role="search"
-              onSubmit={handleSearch}
-              className="max-w-6xl mx-auto flex items-center gap-3"
+        {/* Search bar — always in DOM so crawlers detect it; CSS-hidden when closed */}
+        <div
+          className={`border-t border-[var(--pw-border)] bg-[var(--pw-bg)]/95 backdrop-blur-xl px-4 sm:px-6 py-3${searchOpen ? "" : " hidden"}`}
+          aria-hidden={!searchOpen}
+        >
+          <form
+            role="search"
+            onSubmit={handleSearch}
+            className="max-w-6xl mx-auto flex items-center gap-3"
+          >
+            <Search className="w-4 h-4 text-[var(--pw-text-dim)] flex-shrink-0" />
+            <input
+              ref={searchRef}
+              type="search"
+              name="q"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search Pals, guides, calculators…"
+              aria-label="Search site"
+              className="flex-1 bg-transparent text-sm text-[var(--pw-text)] placeholder-[var(--pw-text-dim)] focus:outline-none"
+            />
+            <button
+              type="submit"
+              className="text-xs font-semibold text-[var(--pw-blue)] hover:underline"
             >
-              <Search className="w-4 h-4 text-[var(--pw-text-dim)] flex-shrink-0" />
-              <input
-                ref={searchRef}
-                type="search"
-                name="q"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search Pals, guides, calculators…"
-                aria-label="Search site"
-                className="flex-1 bg-transparent text-sm text-[var(--pw-text)] placeholder-[var(--pw-text-dim)] focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="text-xs font-semibold text-[var(--pw-blue)] hover:underline"
-              >
-                Search
-              </button>
-              <button
-                type="button"
-                onClick={() => setSearchOpen(false)}
-                className="text-xs text-[var(--pw-text-dim)] hover:text-[var(--pw-text)]"
-              >
-                Cancel
-              </button>
-            </form>
-          </div>
-        )}
+              Search
+            </button>
+            <button
+              type="button"
+              onClick={() => setSearchOpen(false)}
+              className="text-xs text-[var(--pw-text-dim)] hover:text-[var(--pw-text)]"
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
       </nav>
     </>
   );

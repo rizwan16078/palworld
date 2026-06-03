@@ -3,6 +3,7 @@
 import { useDeferredValue, useMemo, useState } from "react";
 import Image from "next/image";
 import {
+  STRUCTURES,
   STRUCTURE_CATEGORIES,
   STRUCTURES_MAX_BUILD_WORK,
   STRUCTURES_WITH_LOCAL_ICONS,
@@ -12,11 +13,8 @@ import {
 
 type StructureCategoryFilter = "All" | (typeof STRUCTURE_CATEGORIES)[number];
 
-export default function StructuresDirectory({
-  entries,
-}: {
-  entries: StructureEntry[];
-}) {
+export default function StructuresDirectory() {
+  const entries = STRUCTURES;
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<StructureCategoryFilter>("All");
   const deferredQuery = useDeferredValue(query);

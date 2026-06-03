@@ -62,7 +62,7 @@ export default function StructuresPage() {
             <span className="text-[var(--pw-text-muted)]">Structures</span>
           </nav>
 
-          <StructuresDirectory entries={STRUCTURES} />
+          <StructuresDirectory />
 
           <section className="mt-12 glass-card-static p-6 sm:p-8 max-w-4xl mx-auto">
             <h2 className="text-xl font-bold mb-4">How to use the Palworld structures directory</h2>

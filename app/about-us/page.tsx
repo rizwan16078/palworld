@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BookOpen, ShieldCheck, Target, Users } from "lucide-react";
 import { buildPageMetadata } from "@/lib/seo";
 import { siteUrl } from "@/lib/site";
@@ -134,6 +135,18 @@ export default function AboutUsPage() {
                   since that weekend script. We build for players who want exact
                   math, not guesses.
                 </p>
+                <p className="text-sm text-[#5e6a7e] pt-4 border-t border-[#232f40]/50">
+                  PalBreeder is an independently operated platform, not affiliated with or
+                  endorsed by Pocketpair, Inc. (the developer of Palworld). For business or
+                  legal correspondence, contact{" "}
+                  <a
+                    href="mailto:hello@breedingpalworldcalculator.com"
+                    className="text-[var(--pw-blue)] hover:underline"
+                  >
+                    hello@breedingpalworldcalculator.com
+                  </a>
+                  .
+                </p>
               </div>
             </div>
           </section>
@@ -189,6 +202,27 @@ export default function AboutUsPage() {
                 The people who keep PalBreeder accurate, fast, and free.
               </p>
             </div>
+
+            {/* Team workspace photo */}
+            <div className="relative w-full h-52 sm:h-64 rounded-2xl overflow-hidden mb-8 border border-[#232f40]">
+              <Image
+                src="/images/img-product.jpg"
+                alt="PalBreeder team at work — developers and data engineers building Palworld tools"
+                fill
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="object-cover opacity-60"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f16]/90 via-[#0a0f16]/30 to-transparent" />
+              <div className="absolute bottom-4 left-5 right-5">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[var(--pw-blue)] mb-1">
+                  Our Workspace
+                </p>
+                <p className="text-sm font-medium text-white leading-snug">
+                  The PalBreeder team — building and maintaining tools for the Palworld community since 2024
+                </p>
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {TEAM.map((member) => (
                 <div
@@ -233,10 +267,13 @@ export default function AboutUsPage() {
               </div>
               <h2
                 id="what-we-do-heading"
-                className="text-3xl font-bold text-white mb-5"
+                className="text-3xl font-bold text-white mb-2"
               >
-                Precision Tools for Every Player
+                What We Do
               </h2>
+              <p className="text-lg text-[#c0cad8] font-medium mb-5">
+                Precision Tools for Every Player
+              </p>
               <p className="text-[15px] text-[#8b95a5] leading-relaxed mb-6">
                 At PalBreeder, we build production-grade applications that
                 calculate exact probabilities, optimal breeding chains, and
@@ -289,7 +326,20 @@ export default function AboutUsPage() {
 
           {/* Trusted Source Statement */}
           <section className="bg-gradient-to-br from-[#131b26] to-[#0a0f16] border border-[#232f40] rounded-3xl p-8 sm:p-14 relative overflow-hidden shadow-2xl mt-8">
-            <div className="absolute inset-0 bg-[url('/images/bg-features.jpg')] opacity-5 mix-blend-overlay pointer-events-none" />
+            {/* Next.js Image so this decorative background goes through WebP/AVIF optimisation,
+                lazy loading, and responsive sizing — raw CSS bg-url bypasses all of that */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-[0.05] mix-blend-overlay">
+              <Image
+                src="/images/bg-features.jpg"
+                fill
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                quality={20}
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[var(--pw-blue)] opacity-5 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="relative z-10 flex flex-col items-center text-center">

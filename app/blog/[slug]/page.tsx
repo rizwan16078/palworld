@@ -32,7 +32,7 @@ export async function generateMetadata({
     image: post.image,
     imageAlt: post.title,
     ogType: "article",
-    keywords: [post.category, "Palworld guide", "Palworld breeding"],
+    keywords: seo?.keywords ?? [post.category, "Palworld guide", "Palworld breeding"],
   });
 }
 
@@ -224,7 +224,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </nav>
 
         <div className="mt-12 pt-8 border-t border-[#232f40] text-center">
-          <h3 className="text-xl font-bold text-white mb-4">Ready to test the math?</h3>
+          <h2 className="text-xl font-bold text-white mb-4">Ready to test the math?</h2>
           <Link 
             href="/"
             className="inline-flex items-center gap-2 bg-[var(--pw-blue)] text-white font-bold py-3 px-8 rounded-xl hover:bg-opacity-90 transition-all shadow-[0_0_20px_rgba(40,111,255,0.3)]"

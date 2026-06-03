@@ -39,6 +39,7 @@ export interface BlogFaq {
 export interface BlogSeo {
   metaTitle: string;
   metaDescription: string;
+  keywords?: string[];
   faqs: BlogFaq[];
 }
 
@@ -141,7 +142,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>We have all been there. You finally line up an Anubis project, burn through a pile of cakes, and hatch another child stuffed with junk passives you never wanted. The fix is not luck. The fix is building a tiny passive pool, using a clean parent, and checking the route before you commit the next hour of breeding.</p>
 
-<h2>Short answer</h2>
+<h2>The cleanest route to Anubis with Musclehead</h2>
 <p>If your goal is <strong>Anubis with Musclehead</strong>, stop pairing two messy parents and hoping the game feels generous. The fastest repeatable path is to create <strong>one parent with only Musclehead</strong>, pair it with a blank or near-blank partner, and use the <a href="/" class="text-[var(--pw-blue)] hover:underline font-medium">breeding calculator</a> to move that trait into the exact breeding chain you need.</p>
 
 <p>This is also where a lot of players waste time. They try to solve <strong>species selection and perfect passive refinement at the same time</strong>. In practice, breeding is usually faster as a two-phase process: first get the right species line with one essential passive, then refine once the target Pal already exists in your box.</p>
@@ -217,7 +218,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Getting your first Legendary Pal feels amazing right up until you realize the real job has not started yet. Now you need to move <strong>Legend</strong> onto something you actually use, and that is where people start wasting time. The fastest route is not random pair spam. It is isolating Legend first, then stepping it down the chain with clean parents and a very boring amount of discipline.</p>
 
-<h2>Short answer</h2>
+<h2>The fastest route to Legend on any Pal</h2>
 <p>If you want the <strong>Legend passive on any target Pal</strong>, do not rush straight to the final breed. First hatch an intermediate child that carries <strong>only Legend</strong> or as little extra noise as possible. Then use the breeding chain tool to walk that trait toward your target one controlled step at a time.</p>
 
 <p>One opinion worth saying directly: <strong>legendary parents are not automatically the best parents</strong>. If they drag extra passives into the project and pollute the inheritance pool, they can slow the whole breeding line down instead of speeding it up.</p>
@@ -292,7 +293,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>You hit endgame, look at your breeding box, and suddenly every mount decision feels expensive. Jetragon looks like the obvious answer, Frostallion Noct looks cooler than it has any right to, and now you are trying to decide which grind deserves your next stack of cakes. Here is the calm version: if you care most about pure travel value, Jetragon is still the easier recommendation for most players.</p>
 
-<h2>Short answer</h2>
+<h2>Jetragon vs Frostallion Noct: the practical verdict</h2>
 <p>Pick <strong>Jetragon</strong> if your priority is efficient map movement and a cleaner payoff for the breeding effort. Pick <strong>Frostallion Noct</strong> if you care more about collection appeal, dark-element flavor, or building a favorite rather than chasing the most practical travel result.</p>
 
 <div class="my-8 overflow-hidden rounded-xl border border-[var(--pw-border)] bg-[var(--pw-surface)]">
@@ -361,7 +362,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Staring at two parents with "pretty good" traits and trying to guess the child outcome is exactly how players talk themselves into bad odds. Human brains are terrible at reading breeding probability on sight. The good news is that you do not need fancy math to improve your results. You just need to understand the passive pool and stop feeding it extra junk.</p>
 
-<h2>Short answer</h2>
+<h2>The one passive inheritance rule that changes everything</h2>
 <p>To estimate passive inheritance in Palworld, first count the <strong>unique passives across both parents</strong>. That combined list is your pool. The smaller that pool is, the easier it becomes to pass down the traits you actually care about and avoid wasting eggs on random clutter.</p>
 
 <div class="my-8 overflow-hidden rounded-xl border border-[var(--pw-border)] bg-[var(--pw-surface)]">
@@ -432,7 +433,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Nothing makes a base feel cursed faster than empty food boxes, stalled furnaces, and miners taking the scenic route around one decorative wall. Endgame automation is supposed to reduce chores, not create a new full-time job. The fix is not owning more random workers. The fix is picking a very small group of specialists, breeding clean work passives onto them, and building your base around what they actually do well.</p>
 
-<h2>Short answer</h2>
+<h2>The three base worker lines that actually pay off</h2>
 <p>If you want a stable endgame base, start with <strong>a serious miner, a serious kindler, and a serious planter or waterer</strong>. In practical terms, that usually means prioritizing workers in the same orbit as <strong>Astegon</strong>, <strong>Jormuntide Ignis</strong>, and <strong>Lyleen or Jormuntide</strong>.</p>
 
 <div class="my-8 overflow-hidden rounded-xl border border-[var(--pw-border)] bg-[var(--pw-surface)]">
@@ -503,7 +504,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Most players ask the wrong question when breeding a flying mount in Palworld. They ask, "What is the perfect passive set?" when the smarter question is, "What mount build will improve my next ten hours the most?" Those are not the same thing. If your mount exists mainly to move you faster, then movement value should dominate the build long before combat vanity does.</p>
 
-<h2>Short answer</h2>
+<h2>What flying mount passives actually matter in practice</h2>
 <p>For a flying mount, the best passives are usually the ones that improve <strong>speed, consistency, and daily usability</strong>. In practice, that means movement-focused traits matter more for most players than stuffing the mount with every prestige combat passive they can find.</p>
 
 <h2>Start with these pages</h2>
@@ -557,7 +558,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><a href="https://palworld.wiki.gg/wiki/Passive_Skills" target="_blank" rel="noopener noreferrer">Palworld Wiki - Passive Skills overview</a></li>
   <li><a href="https://palworld.wiki.gg/wiki/Breeding" target="_blank" rel="noopener noreferrer">Palworld Wiki - Breeding mechanics</a></li>
-  <li><a href="https://www.palworldgame.com/en/" target="_blank" rel="noopener noreferrer">Official Palworld site</a></li>
 </ul>
     `,
   },
@@ -573,7 +573,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>A surprising amount of Palworld breeding pain has nothing to do with passive odds. It comes from opening your boxes and seeing chaos. Once projects reach a few generations, bad organization quietly becomes its own debuff. If you cannot tell which Pal is a trait carrier, which one is an active breeder, and which one is already finished, you will waste time, cakes, and good hatch results.</p>
 
-<h2>Short answer</h2>
+<h2>The purpose-based system for breeding box organization</h2>
 <p>The best way to organize breeding boxes in Palworld is to sort Pals by <strong>purpose</strong>, not by species. That means separating trait carriers, active projects, final candidates, and disposable overflow instead of throwing everything into broad categories like combat or workers.</p>
 
 <h2>Open these first</h2>
@@ -627,7 +627,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><a href="https://palworld.wiki.gg/wiki/Breeding" target="_blank" rel="noopener noreferrer">Palworld Wiki - Breeding mechanics</a></li>
   <li><a href="https://palworld.wiki.gg/wiki/Passive_Skills/List" target="_blank" rel="noopener noreferrer">Palworld Wiki - Passive Skill list</a></li>
-  <li><a href="https://www.palworldgame.com/en/" target="_blank" rel="noopener noreferrer">Official Palworld site</a></li>
 </ul>
     `,
   },
@@ -643,7 +642,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Palworld breeding guides love to imply that stopping early is laziness. It is not. In a lot of real projects, stopping early is the smart move. There comes a point where the extra optimization costs dozens of cakes, several breeder swaps, and a pile of box space for a result you will barely feel outside of a damage number or a screenshot.</p>
 
-<h2>Short answer</h2>
+<h2>How to know when your Pal is good enough to stop breeding</h2>
 <p>You should stop breeding for perfect passives when the current Pal already <strong>solves the gameplay problem consistently</strong>. If the next round of optimization only offers a tiny upgrade while multiplying frustration, clutter, and resource burn, the efficient choice is to stop.</p>
 
 <h2>Check these pages first</h2>
@@ -688,7 +687,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><a href="https://palworld.wiki.gg/wiki/Breeding" target="_blank" rel="noopener noreferrer">Palworld Wiki - Breeding mechanics</a></li>
   <li><a href="https://palworld.wiki.gg/wiki/Passive_Skills" target="_blank" rel="noopener noreferrer">Palworld Wiki - Passive Skills overview</a></li>
-  <li><a href="https://www.palworldgame.com/en/" target="_blank" rel="noopener noreferrer">Official Palworld site</a></li>
 </ul>
     `,
   },
@@ -704,7 +702,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Early-game breeding is where a lot of players accidentally sabotage their own progress. They see endgame builds online, assume that is the correct standard immediately, and burn their first serious breeding resources chasing a perfect Pal they do not actually need yet. That usually leads to a painful mix of low cake production, messy boxes, and almost no real gameplay improvement.</p>
 
-<h2>Short answer</h2>
+<h2>The right breeding priority order for early-game Palworld</h2>
 <p>The best early-game breeding priorities in Palworld are the ones that improve your <strong>daily loop</strong>: a useful worker, a better movement option, and a reliable combat helper. Early-game breeding should be about usefulness, not perfection.</p>
 
 <h2>Start with these tools</h2>
@@ -754,7 +752,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><a href="https://palworld.wiki.gg/wiki/Breeding" target="_blank" rel="noopener noreferrer">Palworld Wiki - Breeding mechanics</a></li>
   <li><a href="https://palworld.wiki.gg/wiki/Breeding_Farm" target="_blank" rel="noopener noreferrer">Palworld Wiki - Breeding Farm</a></li>
-  <li><a href="https://www.palworldgame.com/en/" target="_blank" rel="noopener noreferrer">Official Palworld site</a></li>
 </ul>
     `,
   },
@@ -770,7 +767,7 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
 <p>Jormuntide Ignis is exactly the kind of Pal that tempts players into a prestige grind before they are ready for it. It looks powerful, has obvious endgame appeal, and instantly triggers the "I need this now" part of the brain. The problem is that high-status projects are not always high-efficiency projects. If you want Jormuntide Ignis without turning the whole process into a resource sink, you need a practical reason for the chase and a clean workflow around it.</p>
 
-<h2>Short answer</h2>
+<h2>When Jormuntide Ignis is actually worth the grind</h2>
 <p>The best way to get Jormuntide Ignis is to treat it like a <strong>late-midgame or endgame utility target</strong>, not an urgent early vanity project. Make sure your breeding setup, storage discipline, and cake production are stable first. Then the grind becomes manageable instead of miserable.</p>
 
 <h2>Open these pages first</h2>
@@ -813,7 +810,6 @@ export const BLOG_POSTS: BlogPost[] = [
 <ul>
   <li><a href="https://palworld.wiki.gg/wiki/Jormuntide_Ignis" target="_blank" rel="noopener noreferrer">Palworld Wiki - Jormuntide Ignis</a></li>
   <li><a href="https://palworld.wiki.gg/wiki/Breeding" target="_blank" rel="noopener noreferrer">Palworld Wiki - Breeding mechanics</a></li>
-  <li><a href="https://www.palworldgame.com/en/" target="_blank" rel="noopener noreferrer">Official Palworld site</a></li>
 </ul>
     `,
   },
@@ -824,6 +820,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     metaTitle: "Breed Anubis With Musclehead | Palworld Guide",
     metaDescription:
       "Learn the fastest clean-parent strategy to breed Anubis with Musclehead in Palworld without wasting cakes on messy passive pools.",
+    keywords: ["Anubis breeding Palworld", "Musclehead passive guide", "how to breed Anubis", "clean parent breeding", "Palworld Anubis guide"],
     faqs: [
       {
         question: "What is the fastest way to breed Anubis with Musclehead?",
@@ -846,6 +843,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     metaTitle: "Fastest Way to Get Legend Passive in Palworld",
     metaDescription:
       "Move the Legend passive onto any target Pal in Palworld by isolating it first, cleaning the passive pool, and using shorter breeding chains.",
+    keywords: ["Legend passive Palworld", "how to get Legend passive", "Frostallion breeding", "legendary passive guide", "endgame breeding Palworld"],
     faqs: [
       {
         question: "What is the fastest way to pass down the Legend passive?",
@@ -868,6 +866,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     metaTitle: "Jetragon vs Frostallion Noct | Best Flying Mount",
     metaDescription:
       "Compare Jetragon vs Frostallion Noct in Palworld and decide which flying mount is better for travel efficiency, breeding effort, and practical value.",
+    keywords: ["Jetragon vs Frostallion Noct", "best flying mount Palworld", "Jetragon breeding guide", "Frostallion Noct breeding", "Palworld flying mount comparison"],
     faqs: [
       {
         question: "Is Jetragon or Frostallion Noct better for travel?",
@@ -890,6 +889,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     metaTitle: "How Passive Inheritance Works in Palworld",
     metaDescription:
       "Understand Palworld passive inheritance with a simple clean-parent framework so you can stop guessing and start breeding with better odds.",
+    keywords: ["passive inheritance Palworld", "Palworld breeding odds", "passive probability guide", "passive pool mechanics", "breeding RNG Palworld"],
     faqs: [
       {
         question: "How do passive inheritance odds work in Palworld?",
@@ -911,7 +911,8 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
   "best-base-workers-endgame-mining": {
     metaTitle: "Best Base Workers for Mining and Farming | Palworld",
     metaDescription:
-      "Build a more efficient Palworld base with practical worker priorities for mining, kindling, and farming instead of wasting effort on flashy but low-impact projects.",
+      "Build a more efficient Palworld base with the best workers for mining, kindling, and farming — no wasted effort on flashy, low-impact projects.",
+    keywords: ["best base workers Palworld", "endgame mining Palworld", "Astegon base worker", "Jormuntide Ignis kindling", "Palworld base automation"],
     faqs: [
       {
         question: "What base workers should I prioritize first in Palworld?",
@@ -934,6 +935,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     metaTitle: "Best Flying Mount Passives in Palworld",
     metaDescription:
       "Find the best passives for flying mounts in Palworld by focusing on movement value, clean inheritance, and practical day-to-day travel upgrades.",
+    keywords: ["best flying mount passives Palworld", "Swift passive Palworld", "Palworld mount build guide", "Jetragon passives", "flying mount breeding Palworld"],
     faqs: [
       {
         question: "What passives matter most on a flying mount?",
@@ -956,6 +958,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     metaTitle: "How to Organize Breeding Boxes in Palworld",
     metaDescription:
       "Organize Palworld breeding boxes by purpose instead of species so trait carriers, active projects, and final builds stop turning into chaos.",
+    keywords: ["organize breeding boxes Palworld", "Palworld box storage guide", "breeding workflow Palworld", "passive trait carriers", "Palworld Palbox organization"],
     faqs: [
       {
         question: "What is the best way to organize breeding boxes in Palworld?",
@@ -978,6 +981,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     metaTitle: "When to Stop Breeding Perfect Passives | Palworld",
     metaDescription:
       "Know when to stop breeding perfect passives in Palworld by judging real gameplay payoff, breeding friction, and diminishing returns.",
+    keywords: ["when to stop breeding Palworld", "good enough Pal Palworld", "Palworld breeding efficiency", "diminishing returns breeding", "perfect passive Palworld"],
     faqs: [
       {
         question: "When should I stop breeding for perfect passives?",
@@ -999,7 +1003,8 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
   "best-early-game-breeding-priorities-palworld": {
     metaTitle: "Best Early-Game Breeding Priorities | Palworld",
     metaDescription:
-      "Learn the best early-game breeding priorities in Palworld so you can focus on useful workers, movement, and practical progression instead of prestige builds.",
+      "Learn the best early-game breeding priorities in Palworld to focus on useful workers, movement, and practical progression over prestige builds.",
+    keywords: ["early game breeding Palworld", "first breeding priorities Palworld", "beginner breeding guide Palworld", "Palworld early progression", "early base worker Palworld"],
     faqs: [
       {
         question: "What should I breed first in early-game Palworld?",
@@ -1022,6 +1027,7 @@ export const BLOG_SEO: Record<string, BlogSeo> = {
     metaTitle: "How to Get Jormuntide Ignis in Palworld",
     metaDescription:
       "Get Jormuntide Ignis in Palworld with a more practical plan that treats it as a late utility milestone instead of an early prestige trap.",
+    keywords: ["how to get Jormuntide Ignis", "Jormuntide Ignis breeding guide", "Palworld fire kindling Pal", "Jormuntide Ignis Palworld", "best kindling Pal Palworld"],
     faqs: [
       {
         question: "When is Jormuntide Ignis worth chasing in Palworld?",

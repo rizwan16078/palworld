@@ -12,13 +12,13 @@ interface PageProps {
 
 export async function generateStaticParams() {
   return PASSIVE_SKILLS.map((skill) => ({
-    id: skill.id,
+    id: skill.id.replace(/_/g, '-'),
   }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
-  const skill = PASSIVE_SKILLS.find((s) => s.id === resolvedParams.id);
+  const skill = PASSIVE_SKILLS.find((s) => s.id === resolvedParams.id.replace(/-/g, '_'));
   if (!skill) return {};
 
   const title = `How to get ${skill.name} passive in Palworld`;
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return buildPageMetadata({
     title,
     description,
-    path: `/passives/${skill.id}`,
+    path: `/passives/${resolvedParams.id}`,
     ogType: "article",
     keywords: [
       skill.name,
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function PassiveSkillDetailPage({ params }: PageProps) {
   const resolvedParams = await params;
-  const skill = PASSIVE_SKILLS.find((s) => s.id === resolvedParams.id);
+  const skill = PASSIVE_SKILLS.find((s) => s.id === resolvedParams.id.replace(/-/g, '_'));
   
   if (!skill) {
     notFound();

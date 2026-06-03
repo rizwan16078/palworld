@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+/*
+ * Explicit font-display: swap declaration so performance audit tools that scan
+ * CSS directly detect it. next/font/google also generates this at runtime, but
+ * some tools only check static CSS files. The src falls back to the system font
+ * stack if Poppins has not loaded yet (swap behaviour).
+ */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: local("Poppins");
+}
+
 /* ── Palworld Design System ─────────────────────────────────────────────────── */
 
 :root {

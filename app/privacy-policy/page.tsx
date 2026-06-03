@@ -2,7 +2,7 @@ import { siteUrl } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
-  title: "Privacy Policy — PalBreeder",
+  title: "Privacy Policy — PalBreeder Palworld Tools",
   description:
     "Privacy Policy for PalBreeder — what data we collect, how analytics work, cookie usage, and how to contact us about your data.",
   path: "/privacy-policy",

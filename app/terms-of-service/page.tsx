@@ -2,7 +2,7 @@ import { siteUrl } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
-  title: "Terms of Service — PalBreeder",
+  title: "Terms of Service — PalBreeder Palworld Tools",
   description:
     "Terms of Service for PalBreeder — the rules for using our Palworld calculators, content, and APIs.",
   path: "/terms-of-service",

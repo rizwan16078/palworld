@@ -29,6 +29,8 @@ const STATIC_PAGES: ReadonlyArray<{
   { path: "/work", changeFrequency: "weekly", priority: 0.9 },
   { path: "/passives", changeFrequency: "weekly", priority: 0.9 },
   { path: "/box-breeder", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/structures", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/technology", changeFrequency: "weekly", priority: 0.9 },
 
   // Tier 3 — content hubs
   { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
@@ -79,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const passivePages: MetadataRoute.Sitemap = PASSIVE_SKILLS.map((skill) => ({
-    url: `${siteUrl}/passives/${skill.id}`,
+    url: `${siteUrl}/passives/${skill.id.replace(/_/g, "-")}`,
     lastModified: buildTime,
     changeFrequency: "weekly" as const,
     priority: 0.8,
