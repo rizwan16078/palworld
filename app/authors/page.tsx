@@ -7,7 +7,7 @@ export const metadata = buildPageMetadata({
   description:
     "Meet the PalBreeder authors and editors — the developers, data analysts, and Palworld veterans behind every guide and calculator on the site.",
   path: "/authors",
-  ogType: "profile",
+  ogType: "website",
   keywords: ["PalBreeder authors", "Palworld editors", "Palworld writers"],
 });
 

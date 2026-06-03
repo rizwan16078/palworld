@@ -10,7 +10,7 @@ import {
   RARITY_COLORS,
   type PalElement,
 } from "@/lib/breeding";
-import { siteUrl, siteDescription, siteName } from "@/lib/site";
+import { siteUrl, siteDescription } from "@/lib/site";
 import { buildPageMetadata } from "@/lib/seo";
 import { BLOG_POSTS } from "@/lib/blog";
 
